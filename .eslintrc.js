@@ -7,12 +7,14 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'airbnb-base',
+    'airbnb-typescript/base',
     'plugin:@typescript-eslint/recommended',
     'prettier',
   ],
   overrides: [],
   parser: '@typescript-eslint/parser',
   parserOptions: {
+    project: './car scraper back-end/tsconfig.json',
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
@@ -24,12 +26,6 @@ module.exports = {
       'error',
       { args: 'none', ignoreRestSiblings: true },
     ],
-    ignorePackages: {
-      js: 'never',
-      jsx: 'never',
-      ts: 'never',
-      tsx: 'never',
-    },
   },
   settings: {
     'import/resolver': {
