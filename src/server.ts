@@ -2,8 +2,8 @@ import express from 'express';
 import cors from 'cors';
 import session from 'express-session';
 
-import indexRouter from './routes/index'
-import usersRouter from './routes/users';
+import indexRouter from './api/index'
+import usersRouter from './api/users';
 
 const port = 3000;
 const app = express();

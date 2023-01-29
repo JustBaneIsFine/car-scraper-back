@@ -5,8 +5,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
-const index_1 = __importDefault(require("./routes/index"));
-const users_1 = __importDefault(require("./routes/users"));
+const index_1 = __importDefault(require("./api/index"));
+const users_1 = __importDefault(require("./api/users"));
 const port = 3000;
 const app = (0, express_1.default)();
 // app.use(logger('dev'));
