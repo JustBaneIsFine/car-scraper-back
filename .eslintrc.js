@@ -14,7 +14,7 @@ module.exports = {
   overrides: [],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: './car scraper back-end/tsconfig.json',
+    project: './tsconfig.json',
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
