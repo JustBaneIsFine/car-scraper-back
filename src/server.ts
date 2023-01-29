@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import session from 'express-session';
 
-import indexRouter from './routes/index';
+import indexRouter from './routes/index'
 import usersRouter from './routes/users';
 
 const port = 3000;

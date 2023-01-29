@@ -1,9 +1,10 @@
 import express from 'express';
 
 const router = express.Router();
-/* GET users listing. */
+
+/* GET home page. */
 router.get('/', (req, res, next) => {
-  res.send('respond with a resourceee');
+  res.json({ name: 'hello' });
 });
 
 export default router;
