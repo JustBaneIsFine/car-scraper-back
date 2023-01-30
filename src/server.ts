@@ -16,7 +16,7 @@ if (process.env.USERNAME === 'Theseus') {
 }
 // app.use(logger('dev'));
 const devOrigin = 'http://localhost:5173';
-const prodOrigin = 'https://car-scraper-api.vercel.app';
+const prodOrigin = 'https://car-scraper.netlify.app';
 
 app.use(
   cors({
