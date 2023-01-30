@@ -8,15 +8,15 @@ import usersRouter from './api/users';
 const port = process.env.PORT || 3000;
 const app = express();
 
-const isDevMode = true;
-
+let isDevMode = false;
+if (process.env.USERNAME === 'Theseus') {
+  isDevMode = true;
+} else {
+  isDevMode = false;
+}
 // app.use(logger('dev'));
 const devOrigin = 'http://localhost:5173';
 const prodOrigin = 'https://car-scraper-api.vercel.app';
-const allowedOrigins = [
-  'http://localhost:5173',
-  'https://car-scraper-api.vercel.app',
-];
 
 app.use(
   cors({
