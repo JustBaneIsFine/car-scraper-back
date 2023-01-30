@@ -14,13 +14,15 @@ if (process.env.USERNAME === 'Theseus') {
 } else {
   isDevMode = false;
 }
+console.log(process.env.USERNAME);
 // app.use(logger('dev'));
 const devOrigin = 'http://localhost:5173';
 const prodOrigin = 'https://car-scraper.netlify.app';
 
 app.use(
   cors({
-    origin: isDevMode ? devOrigin : prodOrigin,
+    origin: 'https://car-scraper.netlify.app',
+    // origin: isDevMode ? devOrigin : prodOrigin,
   })
 );
 app.use(express.json());
