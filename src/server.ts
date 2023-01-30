@@ -8,16 +8,16 @@ import usersRouter from './api/users';
 const port = process.env.PORT || 3000;
 const app = express();
 
-let isDevMode = false;
-if (process.env.USERNAME === 'Theseus') {
-  isDevMode = true;
-} else {
-  isDevMode = false;
-}
-console.log(process.env.USERNAME);
-// app.use(logger('dev'));
-const devOrigin = 'http://localhost:5173';
-const prodOrigin = 'https://car-scraper.netlify.app';
+// let isDevMode = false;
+// if (process.env.USERNAME === 'Theseus') {
+//   isDevMode = true;
+// } else {
+//   isDevMode = false;
+// }
+// console.log(process.env.USERNAME);
+// // app.use(logger('dev'));
+// const devOrigin = 'http://localhost:5173';
+// const prodOrigin = 'https://car-scraper.netlify.app';
 
 app.use(
   cors({
