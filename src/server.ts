@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import session from 'express-session';
+// import session from 'express-session';
 
 import indexRouter from './api/index';
 import usersRouter from './api/users';
@@ -9,13 +9,16 @@ const port = process.env.PORT || 3000;
 const app = express();
 
 // app.use(logger('dev'));
-const allowedOrigins = 'https://car-scraper-api.vercel.app/';
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://car-scraper-api.vercel.app',
+];
 
-const corsOptions = {
-  origin: allowedOrigins,
-  credentials: true,
-};
-app.use(cors(corsOptions));
+app.use(
+  cors({
+    origin: allowedOrigins,
+  })
+);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 // app.use(
