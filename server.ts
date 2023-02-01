@@ -4,6 +4,7 @@ import cors from 'cors';
 
 import indexRouter from './api/index';
 import usersRouter from './api/users';
+import testScraping from './api/testScraping';
 
 const port = process.env.PORT || 3000;
 const app = express();
@@ -47,6 +48,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/test', testScraping);
 app.use((req, res) => {
   res.send('error2');
 });
