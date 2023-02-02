@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "main": "./src/server.ts",
+  "engines": {
+    "node": "^14.x"
+  },
   "scripts": {
     "start": "vercel dev",
     "start1": "nodemon server.ts",
