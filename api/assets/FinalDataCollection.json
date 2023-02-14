@@ -1,0 +1,6910 @@
+[
+    {
+        "name": "Alfa Romeo",
+        "altPol": "alfa-romeo",
+        "altKup": "2015",
+        "models": [
+            {
+                "name": "4C",
+                "altKup": 21,
+                "altPol": "4c"
+            },
+            {
+                "name": "33",
+                "altKup": 5,
+                "altPol": "33"
+            },
+            {
+                "name": "145",
+                "altKup": 6,
+                "altPol": "145"
+            },
+            {
+                "name": "146",
+                "altKup": 7,
+                "altPol": "146"
+            },
+            {
+                "name": "147",
+                "altKup": 8,
+                "altPol": "147"
+            },
+            {
+                "name": "155",
+                "altKup": 11,
+                "altPol": "155"
+            },
+            {
+                "name": "156",
+                "altKup": 12,
+                "altPol": "156"
+            },
+            {
+                "name": "156 Crosswagon",
+                "altKup": 1442,
+                "altPol": "156-crosswagon"
+            },
+            {
+                "name": "159",
+                "altKup": 13,
+                "altPol": "159"
+            },
+            {
+                "name": "164",
+                "altKup": 16,
+                "altPol": "164"
+            },
+            {
+                "name": "166",
+                "altKup": 17,
+                "altPol": "166"
+            },
+            {
+                "name": "Alfasud",
+                "altKup": "",
+                "altPol": "alfasud"
+            },
+            {
+                "name": "Brera",
+                "altKup": 20,
+                "altPol": "brera"
+            },
+            {
+                "name": "Giulia",
+                "altKup": 1443,
+                "altPol": "giulia"
+            },
+            {
+                "name": "Giulietta",
+                "altKup": 9,
+                "altPol": "giulietta"
+            },
+            {
+                "name": "GT",
+                "altKup": 14,
+                "altPol": "gt"
+            },
+            {
+                "name": "GTV",
+                "altKup": 18,
+                "altPol": "gtv"
+            },
+            {
+                "name": "Junior",
+                "altKup": "",
+                "altPol": "junior"
+            },
+            {
+                "name": "MiTo",
+                "altKup": 3,
+                "altPol": "mito"
+            },
+            {
+                "name": "Spider",
+                "altKup": 19,
+                "altPol": "spider"
+            },
+            {
+                "name": "Stelvio",
+                "altKup": 1444,
+                "altPol": "stelvio"
+            },
+            {
+                "name": "Tonale",
+                "altKup": "",
+                "altPol": "tonale"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Aro",
+        "altPol": "aro",
+        "altKup": "",
+        "models": [
+            {
+                "name": "Serija 10",
+                "altKup": "",
+                "altPol": "serija-10"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Asia Motors",
+        "altPol": "asia-motors",
+        "altKup": "",
+        "models": [
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Audi",
+        "altPol": "audi",
+        "altKup": "2019",
+        "models": [
+            {
+                "name": "80",
+                "altKup": 47,
+                "altPol": "80"
+            },
+            {
+                "name": "90",
+                "altKup": 48,
+                "altPol": "90"
+            },
+            {
+                "name": "100",
+                "altKup": 60,
+                "altPol": "100"
+            },
+            {
+                "name": "200",
+                "altKup": 61,
+                "altPol": "200"
+            },
+            {
+                "name": "A1",
+                "altKup": 40,
+                "altPol": "a1"
+            },
+            {
+                "name": "A2",
+                "altKup": 39,
+                "altPol": "a2"
+            },
+            {
+                "name": "A3",
+                "altKup": 41,
+                "altPol": "a3"
+            },
+            {
+                "name": "A4",
+                "altKup": 53,
+                "altPol": "a4"
+            },
+            {
+                "name": "A4 Allroad",
+                "altKup": 1445,
+                "altPol": "a4-allroad"
+            },
+            {
+                "name": "A5",
+                "altKup": 56,
+                "altPol": "a5"
+            },
+            {
+                "name": "A6",
+                "altKup": 62,
+                "altPol": "a6"
+            },
+            {
+                "name": "A6 Allroad",
+                "altKup": 1446,
+                "altPol": "a6-allroad"
+            },
+            {
+                "name": "A7",
+                "altKup": 65,
+                "altPol": "a7"
+            },
+            {
+                "name": "A8",
+                "altKup": 68,
+                "altPol": "a8"
+            },
+            {
+                "name": "Coupe",
+                "altKup": 51,
+                "altPol": "coupe"
+            },
+            {
+                "name": "e-tron",
+                "altKup": "",
+                "altPol": "e-tron"
+            },
+            {
+                "name": "Q2",
+                "altKup": 1447,
+                "altPol": "q2"
+            },
+            {
+                "name": "Q3",
+                "altKup": 74,
+                "altPol": "q3"
+            },
+            {
+                "name": "Q5",
+                "altKup": 75,
+                "altPol": "q5"
+            },
+            {
+                "name": "Q7",
+                "altKup": 76,
+                "altPol": "q7"
+            },
+            {
+                "name": "Q8",
+                "altKup": 1448,
+                "altPol": "q8"
+            },
+            {
+                "name": "R8",
+                "altKup": 73,
+                "altPol": "r8"
+            },
+            {
+                "name": "RS3",
+                "altKup": 43,
+                "altPol": "rs3"
+            },
+            {
+                "name": "RS6",
+                "altKup": 64,
+                "altPol": "rs6"
+            },
+            {
+                "name": "RS7",
+                "altKup": "",
+                "altPol": "rs7"
+            },
+            {
+                "name": "RS e-tron GT",
+                "altKup": "",
+                "altPol": "rs-e-tron-gt"
+            },
+            {
+                "name": "RS Q3",
+                "altKup": 1449,
+                "altPol": "rs-q3"
+            },
+            {
+                "name": "RS Q8",
+                "altKup": "",
+                "altPol": "rs-q8"
+            },
+            {
+                "name": "S3",
+                "altKup": 42,
+                "altPol": "s3"
+            },
+            {
+                "name": "S4",
+                "altKup": 54,
+                "altPol": "s4"
+            },
+            {
+                "name": "S5",
+                "altKup": 57,
+                "altPol": "s5"
+            },
+            {
+                "name": "S6",
+                "altKup": 63,
+                "altPol": "s6"
+            },
+            {
+                "name": "S8",
+                "altKup": 69,
+                "altPol": "s8"
+            },
+            {
+                "name": "SQ5",
+                "altKup": 1450,
+                "altPol": "sq5"
+            },
+            {
+                "name": "SQ7",
+                "altKup": 1451,
+                "altPol": "sq7"
+            },
+            {
+                "name": "SQ8",
+                "altKup": 1452,
+                "altPol": "sq8"
+            },
+            {
+                "name": "TT",
+                "altKup": 70,
+                "altPol": "tt"
+            },
+            {
+                "name": "TTS",
+                "altKup": 71,
+                "altPol": "tts"
+            },
+            {
+                "name": "V8",
+                "altKup": 67,
+                "altPol": "v8"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Austin",
+        "altPol": "austin",
+        "altKup": "2427",
+        "models": [
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Bentley",
+        "altPol": "bentley",
+        "altKup": "",
+        "models": [
+            {
+                "name": "Bentayga",
+                "altKup": "",
+                "altPol": "bentayga"
+            },
+            {
+                "name": "Continental",
+                "altKup": "",
+                "altPol": "continental"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "BMW",
+        "altPol": "bmw",
+        "altKup": "2022",
+        "models": [
+            {
+                "name": "Serija 1",
+                "altKup": "",
+                "altPol": "serija-1"
+            },
+            {
+                "name": "114",
+                "altKup": 124,
+                "altPol": "114"
+            },
+            {
+                "name": "116",
+                "altKup": 116,
+                "altPol": "116"
+            },
+            {
+                "name": "118",
+                "altKup": 117,
+                "altPol": "118"
+            },
+            {
+                "name": "120",
+                "altKup": 118,
+                "altPol": "120"
+            },
+            {
+                "name": "123",
+                "altKup": 120,
+                "altPol": "123"
+            },
+            {
+                "name": "125",
+                "altKup": 121,
+                "altPol": "125"
+            },
+            {
+                "name": "Serija 2",
+                "altKup": "",
+                "altPol": "serija-2"
+            },
+            {
+                "name": "214",
+                "altKup": 1453,
+                "altPol": "214"
+            },
+            {
+                "name": "216",
+                "altKup": 1455,
+                "altPol": "216"
+            },
+            {
+                "name": "218",
+                "altKup": 129,
+                "altPol": "218"
+            },
+            {
+                "name": "220",
+                "altKup": 126,
+                "altPol": "220"
+            },
+            {
+                "name": "225",
+                "altKup": 130,
+                "altPol": "225"
+            },
+            {
+                "name": "Serija 3",
+                "altKup": "",
+                "altPol": "serija-3"
+            },
+            {
+                "name": "315",
+                "altKup": 131,
+                "altPol": "315"
+            },
+            {
+                "name": "316",
+                "altKup": 132,
+                "altPol": "316"
+            },
+            {
+                "name": "318",
+                "altKup": 133,
+                "altPol": "318"
+            },
+            {
+                "name": "318 GT",
+                "altKup": 1457,
+                "altPol": "318-gt"
+            },
+            {
+                "name": "320",
+                "altKup": 134,
+                "altPol": "320"
+            },
+            {
+                "name": "320 GT",
+                "altKup": 1458,
+                "altPol": "320-gt"
+            },
+            {
+                "name": "323",
+                "altKup": 135,
+                "altPol": "323"
+            },
+            {
+                "name": "324",
+                "altKup": 138,
+                "altPol": "324"
+            },
+            {
+                "name": "325",
+                "altKup": 136,
+                "altPol": "325"
+            },
+            {
+                "name": "325 GT",
+                "altKup": "",
+                "altPol": "325-gt"
+            },
+            {
+                "name": "328",
+                "altKup": 139,
+                "altPol": "328"
+            },
+            {
+                "name": "330",
+                "altKup": 140,
+                "altPol": "330"
+            },
+            {
+                "name": "335",
+                "altKup": 141,
+                "altPol": "335"
+            },
+            {
+                "name": "Compact",
+                "altKup": 1456,
+                "altPol": "compact"
+            },
+            {
+                "name": "Serija 4",
+                "altKup": "",
+                "altPol": "serija-4"
+            },
+            {
+                "name": "418",
+                "altKup": 1459,
+                "altPol": "418"
+            },
+            {
+                "name": "420",
+                "altKup": 143,
+                "altPol": "420"
+            },
+            {
+                "name": "425",
+                "altKup": 147,
+                "altPol": "425"
+            },
+            {
+                "name": "428",
+                "altKup": 144,
+                "altPol": "428"
+            },
+            {
+                "name": "430",
+                "altKup": 148,
+                "altPol": "430"
+            },
+            {
+                "name": "435",
+                "altKup": 145,
+                "altPol": "435"
+            },
+            {
+                "name": "440",
+                "altKup": "",
+                "altPol": "440"
+            },
+            {
+                "name": "Serija 5",
+                "altKup": "",
+                "altPol": "serija-5"
+            },
+            {
+                "name": "518",
+                "altKup": 149,
+                "altPol": "518"
+            },
+            {
+                "name": "520",
+                "altKup": 150,
+                "altPol": "520"
+            },
+            {
+                "name": "520 GT",
+                "altKup": 1461,
+                "altPol": "520-gt"
+            },
+            {
+                "name": "523",
+                "altKup": 158,
+                "altPol": "523"
+            },
+            {
+                "name": "524",
+                "altKup": 155,
+                "altPol": "524"
+            },
+            {
+                "name": "525",
+                "altKup": 151,
+                "altPol": "525"
+            },
+            {
+                "name": "528",
+                "altKup": 152,
+                "altPol": "528"
+            },
+            {
+                "name": "530",
+                "altKup": 156,
+                "altPol": "530"
+            },
+            {
+                "name": "530 GT",
+                "altKup": 1462,
+                "altPol": "530-gt"
+            },
+            {
+                "name": "535",
+                "altKup": 153,
+                "altPol": "535"
+            },
+            {
+                "name": "535 GT",
+                "altKup": 1463,
+                "altPol": "535-gt"
+            },
+            {
+                "name": "540",
+                "altKup": 157,
+                "altPol": "540"
+            },
+            {
+                "name": "545",
+                "altKup": 159,
+                "altPol": "545"
+            },
+            {
+                "name": "550",
+                "altKup": 160,
+                "altPol": "550"
+            },
+            {
+                "name": "Serija 6",
+                "altKup": "",
+                "altPol": "serija-6"
+            },
+            {
+                "name": "620 GT",
+                "altKup": "",
+                "altPol": "620-gt"
+            },
+            {
+                "name": "630",
+                "altKup": 163,
+                "altPol": "630"
+            },
+            {
+                "name": "630 GT",
+                "altKup": "",
+                "altPol": "630-gt"
+            },
+            {
+                "name": "635",
+                "altKup": 165,
+                "altPol": "635"
+            },
+            {
+                "name": "640",
+                "altKup": 169,
+                "altPol": "640"
+            },
+            {
+                "name": "645",
+                "altKup": 166,
+                "altPol": "645"
+            },
+            {
+                "name": "650",
+                "altKup": 167,
+                "altPol": "650"
+            },
+            {
+                "name": "Serija 7",
+                "altKup": "",
+                "altPol": "serija-7"
+            },
+            {
+                "name": "725",
+                "altKup": 177,
+                "altPol": "725"
+            },
+            {
+                "name": "728",
+                "altKup": 170,
+                "altPol": "728"
+            },
+            {
+                "name": "730",
+                "altKup": 171,
+                "altPol": "730"
+            },
+            {
+                "name": "735",
+                "altKup": 173,
+                "altPol": "735"
+            },
+            {
+                "name": "740",
+                "altKup": 175,
+                "altPol": "740"
+            },
+            {
+                "name": "745",
+                "altKup": 174,
+                "altPol": "745"
+            },
+            {
+                "name": "750",
+                "altKup": 176,
+                "altPol": "750"
+            },
+            {
+                "name": "760",
+                "altKup": 178,
+                "altPol": "760"
+            },
+            {
+                "name": "Serija 8",
+                "altKup": "",
+                "altPol": "serija-8"
+            },
+            {
+                "name": "840",
+                "altKup": 180,
+                "altPol": "840"
+            },
+            {
+                "name": "850",
+                "altKup": 181,
+                "altPol": "850"
+            },
+            {
+                "name": "Serija i",
+                "altKup": "",
+                "altPol": "serija-i"
+            },
+            {
+                "name": "i3",
+                "altKup": 114,
+                "altPol": "i3"
+            },
+            {
+                "name": "i4",
+                "altKup": "",
+                "altPol": "i4"
+            },
+            {
+                "name": "i8",
+                "altKup": 115,
+                "altPol": "i8"
+            },
+            {
+                "name": "iX",
+                "altKup": "",
+                "altPol": "ix"
+            },
+            {
+                "name": "iX3",
+                "altKup": "",
+                "altPol": "ix3"
+            },
+            {
+                "name": "Serija M",
+                "altKup": "",
+                "altPol": "serija-m"
+            },
+            {
+                "name": "M 135i",
+                "altKup": "",
+                "altPol": "m-135i"
+            },
+            {
+                "name": "M 140i",
+                "altKup": "",
+                "altPol": "m-140i"
+            },
+            {
+                "name": "M 235i",
+                "altKup": "",
+                "altPol": "m-235i"
+            },
+            {
+                "name": "M 340i",
+                "altKup": "",
+                "altPol": "m-340i"
+            },
+            {
+                "name": "M550",
+                "altKup": 1460,
+                "altPol": "m550"
+            },
+            {
+                "name": "M 550i",
+                "altKup": "",
+                "altPol": "m-550i"
+            },
+            {
+                "name": "M 850i",
+                "altKup": "",
+                "altPol": "m-850i"
+            },
+            {
+                "name": "M3",
+                "altKup": 137,
+                "altPol": "m3"
+            },
+            {
+                "name": "M4",
+                "altKup": 146,
+                "altPol": "m4"
+            },
+            {
+                "name": "M5",
+                "altKup": 154,
+                "altPol": "m5"
+            },
+            {
+                "name": "M6",
+                "altKup": 168,
+                "altPol": "m6"
+            },
+            {
+                "name": "M8",
+                "altKup": "",
+                "altPol": "m8"
+            },
+            {
+                "name": "X3 M",
+                "altKup": "",
+                "altPol": "x3-m"
+            },
+            {
+                "name": "X4 M",
+                "altKup": "",
+                "altPol": "x4-m"
+            },
+            {
+                "name": "X5 M",
+                "altKup": 1464,
+                "altPol": "x5-m"
+            },
+            {
+                "name": "X6 M",
+                "altKup": 1465,
+                "altPol": "x6-m"
+            },
+            {
+                "name": "Serija X",
+                "altKup": "",
+                "altPol": "serija-x"
+            },
+            {
+                "name": "X1",
+                "altKup": 187,
+                "altPol": "x1"
+            },
+            {
+                "name": "X2",
+                "altKup": 1466,
+                "altPol": "x2"
+            },
+            {
+                "name": "X3",
+                "altKup": 188,
+                "altPol": "x3"
+            },
+            {
+                "name": "X4",
+                "altKup": 189,
+                "altPol": "x4"
+            },
+            {
+                "name": "X5",
+                "altKup": 190,
+                "altPol": "x5"
+            },
+            {
+                "name": "X6",
+                "altKup": 191,
+                "altPol": "x6"
+            },
+            {
+                "name": "X7",
+                "altKup": 1467,
+                "altPol": "x7"
+            },
+            {
+                "name": "Serija Z",
+                "altKup": "",
+                "altPol": "serija-z"
+            },
+            {
+                "name": "Z3",
+                "altKup": 183,
+                "altPol": "z3"
+            },
+            {
+                "name": "Z4",
+                "altKup": 184,
+                "altPol": "z4"
+            },
+            {
+                "name": "1802",
+                "altKup": "",
+                "altPol": "1802"
+            },
+            {
+                "name": "2002",
+                "altKup": 194,
+                "altPol": "2002"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Buick",
+        "altPol": "buick",
+        "altKup": "2025",
+        "models": [
+            {
+                "name": "Century",
+                "altKup": 1468,
+                "altPol": "century"
+            },
+            {
+                "name": "Electra",
+                "altKup": "",
+                "altPol": "electra"
+            },
+            {
+                "name": "Park Avenue",
+                "altKup": 200,
+                "altPol": "park-avenue"
+            },
+            {
+                "name": "Regal",
+                "altKup": "",
+                "altPol": "regal"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Cadillac",
+        "altPol": "cadillac",
+        "altKup": "2026",
+        "models": [
+            {
+                "name": "BLS",
+                "altKup": 201,
+                "altPol": "bls"
+            },
+            {
+                "name": "CTS",
+                "altKup": 202,
+                "altPol": "cts"
+            },
+            {
+                "name": "Deville",
+                "altKup": 1469,
+                "altPol": "deville"
+            },
+            {
+                "name": "Escalade",
+                "altKup": 210,
+                "altPol": "escalade"
+            },
+            {
+                "name": "SRX",
+                "altKup": 209,
+                "altPol": "srx"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Chery",
+        "altPol": "chery",
+        "altKup": "2189",
+        "models": [
+            {
+                "name": "Ego",
+                "altKup": 1349,
+                "altPol": "ego"
+            },
+            {
+                "name": "Tengo",
+                "altKup": 1350,
+                "altPol": "tengo"
+            },
+            {
+                "name": "Tiggo",
+                "altKup": 1351,
+                "altPol": "tiggo"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Chevrolet",
+        "altPol": "chevrolet",
+        "altKup": "2027",
+        "models": [
+            {
+                "name": "Aveo",
+                "altKup": 289,
+                "altPol": "aveo"
+            },
+            {
+                "name": "Blazer",
+                "altKup": 221,
+                "altPol": "blazer"
+            },
+            {
+                "name": "Camaro",
+                "altKup": 217,
+                "altPol": "camaro"
+            },
+            {
+                "name": "Captiva",
+                "altKup": 305,
+                "altPol": "captiva"
+            },
+            {
+                "name": "Corvette",
+                "altKup": 218,
+                "altPol": "corvette"
+            },
+            {
+                "name": "Cruze",
+                "altKup": 293,
+                "altPol": "cruze"
+            },
+            {
+                "name": "Epica",
+                "altKup": 297,
+                "altPol": "epica"
+            },
+            {
+                "name": "Evanda",
+                "altKup": 1348,
+                "altPol": "evanda"
+            },
+            {
+                "name": "Kalos",
+                "altKup": 1352,
+                "altPol": "kalos"
+            },
+            {
+                "name": "Lacetti",
+                "altKup": 1329,
+                "altPol": "lacetti"
+            },
+            {
+                "name": "Lumina",
+                "altKup": 1472,
+                "altPol": "lumina"
+            },
+            {
+                "name": "Malibu",
+                "altKup": 215,
+                "altPol": "malibu"
+            },
+            {
+                "name": "Matiz",
+                "altKup": 1473,
+                "altPol": "matiz"
+            },
+            {
+                "name": "Nubira",
+                "altKup": 1474,
+                "altPol": "nubira"
+            },
+            {
+                "name": "Orlando",
+                "altKup": 303,
+                "altPol": "orlando"
+            },
+            {
+                "name": "Spark",
+                "altKup": 286,
+                "altPol": "spark"
+            },
+            {
+                "name": "Suburban",
+                "altKup": 224,
+                "altPol": "suburban"
+            },
+            {
+                "name": "Tacuma",
+                "altKup": 1475,
+                "altPol": "tacuma"
+            },
+            {
+                "name": "Trax",
+                "altKup": 304,
+                "altPol": "trax"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Chrysler",
+        "altPol": "chrysler",
+        "altKup": "2028",
+        "models": [
+            {
+                "name": "300M",
+                "altKup": 235,
+                "altPol": "300m"
+            },
+            {
+                "name": "300C",
+                "altKup": 236,
+                "altPol": "300c"
+            },
+            {
+                "name": "Crossfire",
+                "altKup": 237,
+                "altPol": "crossfire"
+            },
+            {
+                "name": "Grand Voyager",
+                "altKup": 240,
+                "altPol": "grand-voyager"
+            },
+            {
+                "name": "Le Baron",
+                "altKup": "",
+                "altPol": "le-baron"
+            },
+            {
+                "name": "Neon",
+                "altKup": 227,
+                "altPol": "neon"
+            },
+            {
+                "name": "Pacifica",
+                "altKup": 1363,
+                "altPol": "pacifica"
+            },
+            {
+                "name": "PT Cruiser",
+                "altKup": 226,
+                "altPol": "pt-cruiser"
+            },
+            {
+                "name": "Sebring",
+                "altKup": 232,
+                "altPol": "sebring"
+            },
+            {
+                "name": "Stratus",
+                "altKup": 231,
+                "altPol": "stratus"
+            },
+            {
+                "name": "Voyager",
+                "altKup": 239,
+                "altPol": "voyager"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Citroen",
+        "altPol": "citroen",
+        "altKup": "2029",
+        "models": [
+            {
+                "name": "2CV",
+                "altKup": "",
+                "altPol": "2cv"
+            },
+            {
+                "name": "AX",
+                "altKup": 246,
+                "altPol": "ax"
+            },
+            {
+                "name": "Berlingo",
+                "altKup": 266,
+                "altPol": "berlingo"
+            },
+            {
+                "name": "BX",
+                "altKup": 251,
+                "altPol": "bx"
+            },
+            {
+                "name": "C-Aircross",
+                "altKup": "",
+                "altPol": "c-aircross"
+            },
+            {
+                "name": "C-Crosser",
+                "altKup": 270,
+                "altPol": "c-crosser"
+            },
+            {
+                "name": "C-ELYSEE",
+                "altKup": 1394,
+                "altPol": "c-elysee"
+            },
+            {
+                "name": "C-Zero",
+                "altKup": 255,
+                "altPol": "c-zero"
+            },
+            {
+                "name": "C1",
+                "altKup": 256,
+                "altPol": "c1"
+            },
+            {
+                "name": "C2",
+                "altKup": 257,
+                "altPol": "c2"
+            },
+            {
+                "name": "C3",
+                "altKup": 258,
+                "altPol": "c3"
+            },
+            {
+                "name": "C3 Aircross",
+                "altKup": 1479,
+                "altPol": "c3-aircross"
+            },
+            {
+                "name": "C3 Picasso",
+                "altKup": 259,
+                "altPol": "c3-picasso"
+            },
+            {
+                "name": "C3 pluriel",
+                "altKup": 1480,
+                "altPol": "c3-pluriel"
+            },
+            {
+                "name": "e-C4",
+                "altKup": "",
+                "altPol": "e-c4"
+            },
+            {
+                "name": "C4",
+                "altKup": 260,
+                "altPol": "c4"
+            },
+            {
+                "name": "C4 Aircross",
+                "altKup": 271,
+                "altPol": "c4-aircross"
+            },
+            {
+                "name": "C4 Cactus",
+                "altKup": 269,
+                "altPol": "c4-cactus"
+            },
+            {
+                "name": "C4 Grand Picasso",
+                "altKup": 262,
+                "altPol": "c4-grand-picasso"
+            },
+            {
+                "name": "C4 Picasso",
+                "altKup": 261,
+                "altPol": "c4-picasso"
+            },
+            {
+                "name": "C4 SpaceTourer",
+                "altKup": "",
+                "altPol": "c4-spacetourer"
+            },
+            {
+                "name": "C4X",
+                "altKup": "",
+                "altPol": "c4x"
+            },
+            {
+                "name": "C5",
+                "altKup": 263,
+                "altPol": "c5"
+            },
+            {
+                "name": "C5 Aircross",
+                "altKup": 1482,
+                "altPol": "c5-aircross"
+            },
+            {
+                "name": "C5X",
+                "altKup": "",
+                "altPol": "c5x"
+            },
+            {
+                "name": "C6",
+                "altKup": 264,
+                "altPol": "c6"
+            },
+            {
+                "name": "C8",
+                "altKup": 268,
+                "altPol": "c8"
+            },
+            {
+                "name": "CX",
+                "altKup": 253,
+                "altPol": "cx"
+            },
+            {
+                "name": "DS",
+                "altKup": "",
+                "altPol": "ds"
+            },
+            {
+                "name": "DS3",
+                "altKup": 1356,
+                "altPol": "ds3"
+            },
+            {
+                "name": "DS4",
+                "altKup": 1357,
+                "altPol": "ds4"
+            },
+            {
+                "name": "DS5",
+                "altKup": 1358,
+                "altPol": "ds5"
+            },
+            {
+                "name": "DS7",
+                "altKup": 1484,
+                "altPol": "ds7"
+            },
+            {
+                "name": "Dyane",
+                "altKup": 1485,
+                "altPol": "dyane"
+            },
+            {
+                "name": "Evasion",
+                "altKup": 267,
+                "altPol": "evasion"
+            },
+            {
+                "name": "GS",
+                "altKup": 1486,
+                "altPol": "gs"
+            },
+            {
+                "name": "Jumpy",
+                "altKup": 1337,
+                "altPol": "jumpy"
+            },
+            {
+                "name": "Nemo",
+                "altKup": 265,
+                "altPol": "nemo"
+            },
+            {
+                "name": "Saxo",
+                "altKup": 247,
+                "altPol": "saxo"
+            },
+            {
+                "name": "Xantia",
+                "altKup": 252,
+                "altPol": "xantia"
+            },
+            {
+                "name": "XM",
+                "altKup": 254,
+                "altPol": "xm"
+            },
+            {
+                "name": "Xsara",
+                "altKup": 249,
+                "altPol": "xsara"
+            },
+            {
+                "name": "Xsara Picasso",
+                "altKup": 250,
+                "altPol": "xsara-picasso"
+            },
+            {
+                "name": "ZX",
+                "altKup": 248,
+                "altPol": "zx"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Dacia",
+        "altPol": "dacia",
+        "altKup": "2031",
+        "models": [
+            {
+                "name": "Dokker",
+                "altKup": 281,
+                "altPol": "dokker"
+            },
+            {
+                "name": "Double",
+                "altKup": "",
+                "altPol": "double"
+            },
+            {
+                "name": "Duster",
+                "altKup": 283,
+                "altPol": "duster"
+            },
+            {
+                "name": "Jogger",
+                "altKup": "",
+                "altPol": "jogger"
+            },
+            {
+                "name": "Lodgy",
+                "altKup": 282,
+                "altPol": "lodgy"
+            },
+            {
+                "name": "Logan",
+                "altKup": 279,
+                "altPol": "logan"
+            },
+            {
+                "name": "Pickup",
+                "altKup": "",
+                "altPol": "pickup"
+            },
+            {
+                "name": "Sandero",
+                "altKup": 278,
+                "altPol": "sandero"
+            },
+            {
+                "name": "Solenza",
+                "altKup": 277,
+                "altPol": "solenza"
+            },
+            {
+                "name": "Stepway",
+                "altKup": 1488,
+                "altPol": "stepway"
+            },
+            {
+                "name": "Super Nova",
+                "altKup": 276,
+                "altPol": "super-nova"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Daewoo",
+        "altPol": "daewoo",
+        "altKup": "2032",
+        "models": [
+            {
+                "name": "Espero",
+                "altKup": 294,
+                "altPol": "espero"
+            },
+            {
+                "name": "Evanda",
+                "altKup": 296,
+                "altPol": "evanda"
+            },
+            {
+                "name": "Kalos",
+                "altKup": 288,
+                "altPol": "kalos"
+            },
+            {
+                "name": "Lacetti",
+                "altKup": 1489,
+                "altPol": "lacetti"
+            },
+            {
+                "name": "Lanos",
+                "altKup": 287,
+                "altPol": "lanos"
+            },
+            {
+                "name": "Leganza",
+                "altKup": 295,
+                "altPol": "leganza"
+            },
+            {
+                "name": "Matiz",
+                "altKup": 285,
+                "altPol": "matiz"
+            },
+            {
+                "name": "Musso",
+                "altKup": "",
+                "altPol": "musso"
+            },
+            {
+                "name": "Nexia",
+                "altKup": 291,
+                "altPol": "nexia"
+            },
+            {
+                "name": "Nubira",
+                "altKup": 292,
+                "altPol": "nubira"
+            },
+            {
+                "name": "Rezzo",
+                "altKup": 1490,
+                "altPol": "rezzo"
+            },
+            {
+                "name": "Tacuma",
+                "altKup": 302,
+                "altPol": "tacuma"
+            },
+            {
+                "name": "Tico",
+                "altKup": 284,
+                "altPol": "tico"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Daihatsu",
+        "altPol": "daihatsu",
+        "altKup": "2033",
+        "models": [
+            {
+                "name": "Charade",
+                "altKup": 310,
+                "altPol": "charade"
+            },
+            {
+                "name": "Cuore",
+                "altKup": 307,
+                "altPol": "cuore"
+            },
+            {
+                "name": "Feroza",
+                "altKup": 1491,
+                "altPol": "feroza"
+            },
+            {
+                "name": "Materia",
+                "altKup": 316,
+                "altPol": "materia"
+            },
+            {
+                "name": "Move",
+                "altKup": 313,
+                "altPol": "move"
+            },
+            {
+                "name": "Sirion",
+                "altKup": 309,
+                "altPol": "sirion"
+            },
+            {
+                "name": "Terios",
+                "altKup": 318,
+                "altPol": "terios"
+            },
+            {
+                "name": "YRV",
+                "altKup": 315,
+                "altPol": "yrv"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Dodge",
+        "altPol": "dodge",
+        "altKup": "2035",
+        "models": [
+            {
+                "name": "Avenger",
+                "altKup": 320,
+                "altPol": "avenger"
+            },
+            {
+                "name": "Caliber",
+                "altKup": 319,
+                "altPol": "caliber"
+            },
+            {
+                "name": "Durango",
+                "altKup": "",
+                "altPol": "durango"
+            },
+            {
+                "name": "Journey",
+                "altKup": 322,
+                "altPol": "journey"
+            },
+            {
+                "name": "Neon",
+                "altKup": 1338,
+                "altPol": "neon"
+            },
+            {
+                "name": "Nitro",
+                "altKup": 323,
+                "altPol": "nitro"
+            },
+            {
+                "name": "RAM",
+                "altKup": 1494,
+                "altPol": "ram"
+            },
+            {
+                "name": "Stealth",
+                "altKup": 1495,
+                "altPol": "stealth"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "DR",
+        "altPol": "dr",
+        "altKup": "",
+        "models": [
+            {
+                "name": "D5",
+                "altKup": "",
+                "altPol": "d5"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Ferrari",
+        "altPol": "ferrari",
+        "altKup": "",
+        "models": [
+            {
+                "name": "458 Italia",
+                "altKup": "",
+                "altPol": "458-italia"
+            },
+            {
+                "name": "599",
+                "altKup": "",
+                "altPol": "599"
+            },
+            {
+                "name": "Roma",
+                "altKup": "",
+                "altPol": "roma"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Fiat",
+        "altPol": "fiat",
+        "altKup": "2037",
+        "models": [
+            {
+                "name": "124 Spider",
+                "altKup": "",
+                "altPol": "124-spider"
+            },
+            {
+                "name": "125",
+                "altKup": 1359,
+                "altPol": "125"
+            },
+            {
+                "name": "126",
+                "altKup": 350,
+                "altPol": "126"
+            },
+            {
+                "name": "127",
+                "altKup": 1496,
+                "altPol": "127"
+            },
+            {
+                "name": "132",
+                "altKup": 1498,
+                "altPol": "132"
+            },
+            {
+                "name": "500",
+                "altKup": 353,
+                "altPol": "500"
+            },
+            {
+                "name": "500C",
+                "altKup": 1499,
+                "altPol": "500c"
+            },
+            {
+                "name": "500L",
+                "altKup": 354,
+                "altPol": "500l"
+            },
+            {
+                "name": "500X",
+                "altKup": 1403,
+                "altPol": "500x"
+            },
+            {
+                "name": "600",
+                "altKup": "",
+                "altPol": "600"
+            },
+            {
+                "name": "850",
+                "altKup": 1500,
+                "altPol": "850"
+            },
+            {
+                "name": "1107",
+                "altKup": 1502,
+                "altPol": "1107"
+            },
+            {
+                "name": "1300",
+                "altKup": 1503,
+                "altPol": "1300"
+            },
+            {
+                "name": "Albea",
+                "altKup": 1504,
+                "altPol": "albea"
+            },
+            {
+                "name": "Barchetta",
+                "altKup": 372,
+                "altPol": "barchetta"
+            },
+            {
+                "name": "Brava",
+                "altKup": 366,
+                "altPol": "brava"
+            },
+            {
+                "name": "Bravo",
+                "altKup": 365,
+                "altPol": "bravo"
+            },
+            {
+                "name": "Campagnola",
+                "altKup": 1383,
+                "altPol": "campagnola"
+            },
+            {
+                "name": "Cinquecento",
+                "altKup": 351,
+                "altPol": "cinquecento"
+            },
+            {
+                "name": "Coupe",
+                "altKup": 371,
+                "altPol": "coupe"
+            },
+            {
+                "name": "Croma",
+                "altKup": 370,
+                "altPol": "croma"
+            },
+            {
+                "name": "Doblo",
+                "altKup": 375,
+                "altPol": "doblo"
+            },
+            {
+                "name": "EVO",
+                "altKup": 1505,
+                "altPol": "evo"
+            },
+            {
+                "name": "Fiorino",
+                "altKup": "",
+                "altPol": "fiorino"
+            },
+            {
+                "name": "Freemont",
+                "altKup": 377,
+                "altPol": "freemont"
+            },
+            {
+                "name": "Grande Punto",
+                "altKup": 360,
+                "altPol": "grande-punto"
+            },
+            {
+                "name": "Idea",
+                "altKup": 359,
+                "altPol": "idea"
+            },
+            {
+                "name": "Linea",
+                "altKup": 369,
+                "altPol": "linea"
+            },
+            {
+                "name": "Marea",
+                "altKup": 367,
+                "altPol": "marea"
+            },
+            {
+                "name": "Marengo",
+                "altKup": 1506,
+                "altPol": "marengo"
+            },
+            {
+                "name": "Multipla",
+                "altKup": 373,
+                "altPol": "multipla"
+            },
+            {
+                "name": "Palio",
+                "altKup": 1327,
+                "altPol": "palio"
+            },
+            {
+                "name": "Panda",
+                "altKup": 355,
+                "altPol": "panda"
+            },
+            {
+                "name": "Punto",
+                "altKup": 357,
+                "altPol": "punto"
+            },
+            {
+                "name": "Qubo",
+                "altKup": 374,
+                "altPol": "qubo"
+            },
+            {
+                "name": "Ritmo",
+                "altKup": 361,
+                "altPol": "ritmo"
+            },
+            {
+                "name": "Scudo",
+                "altKup": 1347,
+                "altPol": "scudo"
+            },
+            {
+                "name": "Sedici",
+                "altKup": 378,
+                "altPol": "sedici"
+            },
+            {
+                "name": "Seicento",
+                "altKup": 352,
+                "altPol": "seicento"
+            },
+            {
+                "name": "Spider Europa",
+                "altKup": 1508,
+                "altPol": "spider-europa"
+            },
+            {
+                "name": "Stilo",
+                "altKup": 368,
+                "altPol": "stilo"
+            },
+            {
+                "name": "Strada",
+                "altKup": 1439,
+                "altPol": "strada"
+            },
+            {
+                "name": "Tempra",
+                "altKup": 364,
+                "altPol": "tempra"
+            },
+            {
+                "name": "Tipo",
+                "altKup": 363,
+                "altPol": "tipo"
+            },
+            {
+                "name": "Ulysse",
+                "altKup": 376,
+                "altPol": "ulysse"
+            },
+            {
+                "name": "Uno",
+                "altKup": 1509,
+                "altPol": "uno"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Ford",
+        "altPol": "ford",
+        "altKup": "2038",
+        "models": [
+            {
+                "name": "B-Max",
+                "altKup": 384,
+                "altPol": "b-max"
+            },
+            {
+                "name": "C-Max",
+                "altKup": 389,
+                "altPol": "c-max"
+            },
+            {
+                "name": "Courier",
+                "altKup": 1364,
+                "altPol": "courier"
+            },
+            {
+                "name": "EcoSport",
+                "altKup": 402,
+                "altPol": "ecosport"
+            },
+            {
+                "name": "Edge",
+                "altKup": "",
+                "altPol": "edge"
+            },
+            {
+                "name": "Escort",
+                "altKup": 385,
+                "altPol": "escort"
+            },
+            {
+                "name": "Explorer",
+                "altKup": 404,
+                "altPol": "explorer"
+            },
+            {
+                "name": "Festiva",
+                "altKup": 1515,
+                "altPol": "festiva"
+            },
+            {
+                "name": "Fiesta",
+                "altKup": 382,
+                "altPol": "fiesta"
+            },
+            {
+                "name": "Focus",
+                "altKup": 387,
+                "altPol": "focus"
+            },
+            {
+                "name": "Fusion",
+                "altKup": 383,
+                "altPol": "fusion"
+            },
+            {
+                "name": "Galaxy",
+                "altKup": 398,
+                "altPol": "galaxy"
+            },
+            {
+                "name": "Granada",
+                "altKup": 1516,
+                "altPol": "granada"
+            },
+            {
+                "name": "Grand C-Max",
+                "altKup": 390,
+                "altPol": "grand-c-max"
+            },
+            {
+                "name": "Ka",
+                "altKup": 379,
+                "altPol": "ka"
+            },
+            {
+                "name": "Ka+",
+                "altKup": "",
+                "altPol": "ka+"
+            },
+            {
+                "name": "Kuga",
+                "altKup": 403,
+                "altPol": "kuga"
+            },
+            {
+                "name": "Maverick",
+                "altKup": 401,
+                "altPol": "maverick"
+            },
+            {
+                "name": "Mondeo",
+                "altKup": 392,
+                "altPol": "mondeo"
+            },
+            {
+                "name": "Mustang",
+                "altKup": 1393,
+                "altPol": "mustang"
+            },
+            {
+                "name": "Orion",
+                "altKup": 386,
+                "altPol": "orion"
+            },
+            {
+                "name": "Probe",
+                "altKup": 395,
+                "altPol": "probe"
+            },
+            {
+                "name": "Puma",
+                "altKup": 394,
+                "altPol": "puma"
+            },
+            {
+                "name": "Ranger",
+                "altKup": 405,
+                "altPol": "ranger"
+            },
+            {
+                "name": "S-Max",
+                "altKup": 399,
+                "altPol": "s-max"
+            },
+            {
+                "name": "Scorpio",
+                "altKup": 393,
+                "altPol": "scorpio"
+            },
+            {
+                "name": "Sierra",
+                "altKup": 391,
+                "altPol": "sierra"
+            },
+            {
+                "name": "Street Ka",
+                "altKup": 381,
+                "altPol": "street-ka"
+            },
+            {
+                "name": "Taunus",
+                "altKup": 1517,
+                "altPol": "taunus"
+            },
+            {
+                "name": "Tourneo Connect",
+                "altKup": 397,
+                "altPol": "tourneo-connect"
+            },
+            {
+                "name": "Tourneo Custom",
+                "altKup": "",
+                "altPol": "tourneo-custom"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "GAZ",
+        "altPol": "gaz",
+        "altKup": "2040",
+        "models": [
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Great Wall",
+        "altPol": "great-wall",
+        "altKup": "2352",
+        "models": [
+            {
+                "name": "H5",
+                "altKup": 1409,
+                "altPol": "h5"
+            },
+            {
+                "name": "H6",
+                "altKup": 1408,
+                "altPol": "h6"
+            },
+            {
+                "name": "Steed 5",
+                "altKup": 1413,
+                "altPol": "steed-5"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Honda",
+        "altPol": "honda",
+        "altKup": "2041",
+        "models": [
+            {
+                "name": "Accord",
+                "altKup": 414,
+                "altPol": "accord"
+            },
+            {
+                "name": "Civic",
+                "altKup": 412,
+                "altPol": "civic"
+            },
+            {
+                "name": "CR-V",
+                "altKup": 427,
+                "altPol": "cr-v"
+            },
+            {
+                "name": "CR-Z",
+                "altKup": 417,
+                "altPol": "cr-z"
+            },
+            {
+                "name": "CRX",
+                "altKup": 416,
+                "altPol": "crx"
+            },
+            {
+                "name": "FR-V",
+                "altKup": 423,
+                "altPol": "fr-v"
+            },
+            {
+                "name": "HR-V",
+                "altKup": 426,
+                "altPol": "hr-v"
+            },
+            {
+                "name": "Insight",
+                "altKup": 418,
+                "altPol": "insight"
+            },
+            {
+                "name": "Jazz",
+                "altKup": 410,
+                "altPol": "jazz"
+            },
+            {
+                "name": "Legend",
+                "altKup": 415,
+                "altPol": "legend"
+            },
+            {
+                "name": "Prelude",
+                "altKup": 419,
+                "altPol": "prelude"
+            },
+            {
+                "name": "Stream",
+                "altKup": 425,
+                "altPol": "stream"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Hummer",
+        "altPol": "hummer",
+        "altKup": "2042",
+        "models": [
+            {
+                "name": "H2",
+                "altKup": 429,
+                "altPol": "h2"
+            },
+            {
+                "name": "H3",
+                "altKup": 430,
+                "altPol": "h3"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Hyundai",
+        "altPol": "hyundai",
+        "altKup": "2043",
+        "models": [
+            {
+                "name": "Accent",
+                "altKup": 437,
+                "altPol": "accent"
+            },
+            {
+                "name": "Atos",
+                "altKup": 431,
+                "altPol": "atos"
+            },
+            {
+                "name": "Bayon",
+                "altKup": "",
+                "altPol": "bayon"
+            },
+            {
+                "name": "Coupe",
+                "altKup": 446,
+                "altPol": "coupe"
+            },
+            {
+                "name": "Elantra",
+                "altKup": 440,
+                "altPol": "elantra"
+            },
+            {
+                "name": "Galloper",
+                "altKup": "",
+                "altPol": "galloper"
+            },
+            {
+                "name": "Genesis",
+                "altKup": 448,
+                "altPol": "genesis"
+            },
+            {
+                "name": "Getz",
+                "altKup": 433,
+                "altPol": "getz"
+            },
+            {
+                "name": "Grandeur",
+                "altKup": 444,
+                "altPol": "grandeur"
+            },
+            {
+                "name": "H 100",
+                "altKup": "",
+                "altPol": "h-100"
+            },
+            {
+                "name": "i10",
+                "altKup": 432,
+                "altPol": "i10"
+            },
+            {
+                "name": "i20",
+                "altKup": 434,
+                "altPol": "i20"
+            },
+            {
+                "name": "i30",
+                "altKup": 438,
+                "altPol": "i30"
+            },
+            {
+                "name": "i40",
+                "altKup": 442,
+                "altPol": "i40"
+            },
+            {
+                "name": "Ioniq",
+                "altKup": "",
+                "altPol": "ioniq"
+            },
+            {
+                "name": "Ioniq 5",
+                "altKup": "",
+                "altPol": "ioniq-5"
+            },
+            {
+                "name": "ix20",
+                "altKup": 435,
+                "altPol": "ix20"
+            },
+            {
+                "name": "ix35",
+                "altKup": 455,
+                "altPol": "ix35"
+            },
+            {
+                "name": "ix55",
+                "altKup": 458,
+                "altPol": "ix55"
+            },
+            {
+                "name": "Kona",
+                "altKup": 1522,
+                "altPol": "kona"
+            },
+            {
+                "name": "Lantra",
+                "altKup": 439,
+                "altPol": "lantra"
+            },
+            {
+                "name": "Matrix",
+                "altKup": 450,
+                "altPol": "matrix"
+            },
+            {
+                "name": "Pony",
+                "altKup": 436,
+                "altPol": "pony"
+            },
+            {
+                "name": "Santa Fe",
+                "altKup": 456,
+                "altPol": "santa-fe"
+            },
+            {
+                "name": "Sonata",
+                "altKup": 441,
+                "altPol": "sonata"
+            },
+            {
+                "name": "Staria",
+                "altKup": "",
+                "altPol": "staria"
+            },
+            {
+                "name": "Terracan",
+                "altKup": 457,
+                "altPol": "terracan"
+            },
+            {
+                "name": "Trajet",
+                "altKup": 451,
+                "altPol": "trajet"
+            },
+            {
+                "name": "Tucson",
+                "altKup": 454,
+                "altPol": "tucson"
+            },
+            {
+                "name": "Veloster",
+                "altKup": 447,
+                "altPol": "veloster"
+            },
+            {
+                "name": "Venue",
+                "altKup": "",
+                "altPol": "venue"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Infiniti",
+        "altPol": "infiniti",
+        "altKup": "2044",
+        "models": [
+            {
+                "name": "EX30",
+                "altKup": 470,
+                "altPol": "ex30"
+            },
+            {
+                "name": "FX30",
+                "altKup": 1523,
+                "altPol": "fx30"
+            },
+            {
+                "name": "FX35",
+                "altKup": 1524,
+                "altPol": "fx35"
+            },
+            {
+                "name": "FX45",
+                "altKup": 1525,
+                "altPol": "fx45"
+            },
+            {
+                "name": "M30",
+                "altKup": 467,
+                "altPol": "m30"
+            },
+            {
+                "name": "Q50",
+                "altKup": 464,
+                "altPol": "q50"
+            },
+            {
+                "name": "Q70",
+                "altKup": 466,
+                "altPol": "q70"
+            },
+            {
+                "name": "QX30",
+                "altKup": 1527,
+                "altPol": "qx30"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Isuzu",
+        "altPol": "isuzu",
+        "altKup": "2048",
+        "models": [
+            {
+                "name": "D-Max",
+                "altKup": 487,
+                "altPol": "d-max"
+            },
+            {
+                "name": "Gemini",
+                "altKup": "",
+                "altPol": "gemini"
+            },
+            {
+                "name": "Trooper",
+                "altKup": 484,
+                "altPol": "trooper"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Jaguar",
+        "altPol": "jaguar",
+        "altKup": "2051",
+        "models": [
+            {
+                "name": "E-Pace",
+                "altKup": 1529,
+                "altPol": "e-pace"
+            },
+            {
+                "name": "E-Type",
+                "altKup": "",
+                "altPol": "e-type"
+            },
+            {
+                "name": "F-Type",
+                "altKup": 494,
+                "altPol": "f-type"
+            },
+            {
+                "name": "F pace",
+                "altKup": "",
+                "altPol": "f-pace"
+            },
+            {
+                "name": "I-Pace",
+                "altKup": "",
+                "altPol": "i-pace"
+            },
+            {
+                "name": "S-Type",
+                "altKup": 491,
+                "altPol": "s-type"
+            },
+            {
+                "name": "X-Type",
+                "altKup": 490,
+                "altPol": "x-type"
+            },
+            {
+                "name": "XE",
+                "altKup": 1531,
+                "altPol": "xe"
+            },
+            {
+                "name": "XF",
+                "altKup": 492,
+                "altPol": "xf"
+            },
+            {
+                "name": "XJ",
+                "altKup": 493,
+                "altPol": "xj"
+            },
+            {
+                "name": "XJ6",
+                "altKup": 1532,
+                "altPol": "xj6"
+            },
+            {
+                "name": "XJ40",
+                "altKup": "",
+                "altPol": "xj40"
+            },
+            {
+                "name": "XK8",
+                "altKup": "",
+                "altPol": "xk8"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Jeep",
+        "altPol": "jeep",
+        "altKup": "2052",
+        "models": [
+            {
+                "name": "Cherokee",
+                "altKup": 502,
+                "altPol": "cherokee"
+            },
+            {
+                "name": "Commander",
+                "altKup": 504,
+                "altPol": "commander"
+            },
+            {
+                "name": "Compass",
+                "altKup": 501,
+                "altPol": "compass"
+            },
+            {
+                "name": "Grand Cherokee",
+                "altKup": 503,
+                "altPol": "grand-cherokee"
+            },
+            {
+                "name": "Liberty",
+                "altKup": 1535,
+                "altPol": "liberty"
+            },
+            {
+                "name": "Patriot",
+                "altKup": 500,
+                "altPol": "patriot"
+            },
+            {
+                "name": "Renegade",
+                "altKup": 499,
+                "altPol": "renegade"
+            },
+            {
+                "name": "Willys",
+                "altKup": 1536,
+                "altPol": "willys"
+            },
+            {
+                "name": "Wrangler",
+                "altKup": 498,
+                "altPol": "wrangler"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Kia",
+        "altPol": "kia",
+        "altKup": "2053",
+        "models": [
+            {
+                "name": "Carens",
+                "altKup": 521,
+                "altPol": "carens"
+            },
+            {
+                "name": "Carnival",
+                "altKup": 522,
+                "altPol": "carnival"
+            },
+            {
+                "name": "cee`d",
+                "altKup": "",
+                "altPol": "ceed"
+            },
+            {
+                "name": "cee`d sw",
+                "altKup": "",
+                "altPol": "ceed-sw"
+            },
+            {
+                "name": "Cerato",
+                "altKup": 514,
+                "altPol": "cerato"
+            },
+            {
+                "name": "EV6",
+                "altKup": "",
+                "altPol": "ev6"
+            },
+            {
+                "name": "Joice",
+                "altKup": 520,
+                "altPol": "joice"
+            },
+            {
+                "name": "Magentis",
+                "altKup": 517,
+                "altPol": "magentis"
+            },
+            {
+                "name": "Niro",
+                "altKup": "",
+                "altPol": "niro"
+            },
+            {
+                "name": "Optima",
+                "altKup": 518,
+                "altPol": "optima"
+            },
+            {
+                "name": "Picanto",
+                "altKup": 505,
+                "altPol": "picanto"
+            },
+            {
+                "name": "pro_cee`d",
+                "altKup": "",
+                "altPol": "pro-ceed"
+            },
+            {
+                "name": "Rio",
+                "altKup": 509,
+                "altPol": "rio"
+            },
+            {
+                "name": "Sephia",
+                "altKup": 515,
+                "altPol": "sephia"
+            },
+            {
+                "name": "Shuma",
+                "altKup": 510,
+                "altPol": "shuma"
+            },
+            {
+                "name": "Sorento",
+                "altKup": 526,
+                "altPol": "sorento"
+            },
+            {
+                "name": "Soul",
+                "altKup": 508,
+                "altPol": "soul"
+            },
+            {
+                "name": "Sportage",
+                "altKup": 525,
+                "altPol": "sportage"
+            },
+            {
+                "name": "Stonic",
+                "altKup": 1538,
+                "altPol": "stonic"
+            },
+            {
+                "name": "Venga",
+                "altKup": 507,
+                "altPol": "venga"
+            },
+            {
+                "name": "XCeed",
+                "altKup": 1539,
+                "altPol": "xceed"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Lada",
+        "altPol": "lada",
+        "altKup": "2055",
+        "models": [
+            {
+                "name": "110",
+                "altKup": 537,
+                "altPol": "110"
+            },
+            {
+                "name": "111",
+                "altKup": 538,
+                "altPol": "111"
+            },
+            {
+                "name": "112",
+                "altKup": 536,
+                "altPol": "112"
+            },
+            {
+                "name": "1200",
+                "altKup": 1540,
+                "altPol": "1200"
+            },
+            {
+                "name": "1300",
+                "altKup": 1541,
+                "altPol": "1300"
+            },
+            {
+                "name": "1500",
+                "altKup": 1542,
+                "altPol": "1500"
+            },
+            {
+                "name": "1600",
+                "altKup": 1543,
+                "altPol": "1600"
+            },
+            {
+                "name": "2101",
+                "altKup": 1544,
+                "altPol": "2101"
+            },
+            {
+                "name": "2103",
+                "altKup": 1355,
+                "altPol": "2103"
+            },
+            {
+                "name": "2104",
+                "altKup": "",
+                "altPol": "2104"
+            },
+            {
+                "name": "2107",
+                "altKup": 533,
+                "altPol": "2107"
+            },
+            {
+                "name": "Kalina",
+                "altKup": 530,
+                "altPol": "kalina"
+            },
+            {
+                "name": "Niva",
+                "altKup": 540,
+                "altPol": "niva"
+            },
+            {
+                "name": "Riva",
+                "altKup": 1551,
+                "altPol": "riva"
+            },
+            {
+                "name": "Samara",
+                "altKup": 535,
+                "altPol": "samara"
+            },
+            {
+                "name": "Vesta",
+                "altKup": 1368,
+                "altPol": "vesta"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Lamborghini",
+        "altPol": "lamborghini",
+        "altKup": "",
+        "models": [
+            {
+                "name": "Aventador",
+                "altKup": "",
+                "altPol": "aventador"
+            },
+            {
+                "name": "Urus",
+                "altKup": "",
+                "altPol": "urus"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Lancia",
+        "altPol": "lancia",
+        "altKup": "2057",
+        "models": [
+            {
+                "name": "Delta",
+                "altKup": 557,
+                "altPol": "delta"
+            },
+            {
+                "name": "Flavia",
+                "altKup": 566,
+                "altPol": "flavia"
+            },
+            {
+                "name": "Kappa",
+                "altKup": 562,
+                "altPol": "kappa"
+            },
+            {
+                "name": "Lybra",
+                "altKup": 560,
+                "altPol": "lybra"
+            },
+            {
+                "name": "Musa",
+                "altKup": 556,
+                "altPol": "musa"
+            },
+            {
+                "name": "Phedra",
+                "altKup": 565,
+                "altPol": "phedra"
+            },
+            {
+                "name": "Thema",
+                "altKup": 561,
+                "altPol": "thema"
+            },
+            {
+                "name": "Thesis",
+                "altKup": 563,
+                "altPol": "thesis"
+            },
+            {
+                "name": "Voyager",
+                "altKup": 567,
+                "altPol": "voyager"
+            },
+            {
+                "name": "Ypsilon",
+                "altKup": 555,
+                "altPol": "ypsilon"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Land Rover",
+        "altPol": "land-rover",
+        "altKup": "2058",
+        "models": [
+            {
+                "name": "Defender",
+                "altKup": 568,
+                "altPol": "defender"
+            },
+            {
+                "name": "Discovery",
+                "altKup": 571,
+                "altPol": "discovery"
+            },
+            {
+                "name": "Discovery Sport",
+                "altKup": "",
+                "altPol": "discovery-sport"
+            },
+            {
+                "name": "Freelander",
+                "altKup": 570,
+                "altPol": "freelander"
+            },
+            {
+                "name": "Range Rover",
+                "altKup": 573,
+                "altPol": "range-rover"
+            },
+            {
+                "name": "Range Rover Autobiography",
+                "altKup": 1556,
+                "altPol": "range-rover-autobiography"
+            },
+            {
+                "name": "Range Rover Evoque",
+                "altKup": 569,
+                "altPol": "range-rover-evoque"
+            },
+            {
+                "name": "Range Rover Sport",
+                "altKup": 572,
+                "altPol": "range-rover-sport"
+            },
+            {
+                "name": "Range Rover Velar",
+                "altKup": 1557,
+                "altPol": "range-rover-velar"
+            },
+            {
+                "name": "Range Rover Vogue",
+                "altKup": 1558,
+                "altPol": "range-rover-vogue"
+            },
+            {
+                "name": "Serija III",
+                "altKup": "",
+                "altPol": "serija-iii"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Lexus",
+        "altPol": "lexus",
+        "altKup": "2059",
+        "models": [
+            {
+                "name": "CT 200h",
+                "altKup": 574,
+                "altPol": "ct-200h"
+            },
+            {
+                "name": "GS",
+                "altKup": "",
+                "altPol": "gs"
+            },
+            {
+                "name": "GS 300",
+                "altKup": 583,
+                "altPol": "gs-300"
+            },
+            {
+                "name": "GS 450",
+                "altKup": "",
+                "altPol": "gs-450"
+            },
+            {
+                "name": "IS",
+                "altKup": 578,
+                "altPol": "is"
+            },
+            {
+                "name": "IS 200",
+                "altKup": 575,
+                "altPol": "is-200"
+            },
+            {
+                "name": "IS 220",
+                "altKup": 1559,
+                "altPol": "is-220"
+            },
+            {
+                "name": "IS 250",
+                "altKup": 577,
+                "altPol": "is-250"
+            },
+            {
+                "name": "IS 300",
+                "altKup": 576,
+                "altPol": "is-300"
+            },
+            {
+                "name": "LS",
+                "altKup": 1560,
+                "altPol": "ls"
+            },
+            {
+                "name": "LS 460",
+                "altKup": 591,
+                "altPol": "ls-460"
+            },
+            {
+                "name": "RX",
+                "altKup": 1562,
+                "altPol": "rx"
+            },
+            {
+                "name": "RX 400",
+                "altKup": "",
+                "altPol": "rx-400"
+            },
+            {
+                "name": "RX 450",
+                "altKup": 1563,
+                "altPol": "rx-450"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Lincoln",
+        "altPol": "lincoln",
+        "altKup": "",
+        "models": [
+            {
+                "name": "Town car",
+                "altKup": "",
+                "altPol": "town-car"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Linzda",
+        "altPol": "linzda",
+        "altKup": "",
+        "models": [
+            {
+                "name": "M3",
+                "altKup": "",
+                "altPol": "m3"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Mahindra",
+        "altPol": "mahindra",
+        "altKup": "2295",
+        "models": [
+            {
+                "name": "Bolero",
+                "altKup": 1384,
+                "altPol": "bolero"
+            },
+            {
+                "name": "Goa",
+                "altKup": 1386,
+                "altPol": "goa"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Maserati",
+        "altPol": "maserati",
+        "altKup": "2062",
+        "models": [
+            {
+                "name": "4200",
+                "altKup": 1564,
+                "altPol": "4200"
+            },
+            {
+                "name": "Biturbo",
+                "altKup": "",
+                "altPol": "biturbo"
+            },
+            {
+                "name": "Ghibli",
+                "altKup": 610,
+                "altPol": "ghibli"
+            },
+            {
+                "name": "Granturismo",
+                "altKup": 618,
+                "altPol": "granturismo"
+            },
+            {
+                "name": "Levante",
+                "altKup": 1565,
+                "altPol": "levante"
+            },
+            {
+                "name": "Quattroporte",
+                "altKup": 1437,
+                "altPol": "quattroporte"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Mazda",
+        "altPol": "mazda",
+        "altKup": "2064",
+        "models": [
+            {
+                "name": "2",
+                "altKup": 631,
+                "altPol": "2"
+            },
+            {
+                "name": "3",
+                "altKup": 632,
+                "altPol": "3"
+            },
+            {
+                "name": "5",
+                "altKup": 641,
+                "altPol": "5"
+            },
+            {
+                "name": "6",
+                "altKup": 633,
+                "altPol": "6"
+            },
+            {
+                "name": "121",
+                "altKup": 624,
+                "altPol": "121"
+            },
+            {
+                "name": "323",
+                "altKup": 626,
+                "altPol": "323"
+            },
+            {
+                "name": "626",
+                "altKup": 627,
+                "altPol": "626"
+            },
+            {
+                "name": "1500",
+                "altKup": "",
+                "altPol": "1500"
+            },
+            {
+                "name": "B 250",
+                "altKup": 1566,
+                "altPol": "b-250"
+            },
+            {
+                "name": "BT-50",
+                "altKup": 1567,
+                "altPol": "bt-50"
+            },
+            {
+                "name": "CX-3",
+                "altKup": 1404,
+                "altPol": "cx-3"
+            },
+            {
+                "name": "CX-5",
+                "altKup": 644,
+                "altPol": "cx-5"
+            },
+            {
+                "name": "CX-7",
+                "altKup": 645,
+                "altPol": "cx-7"
+            },
+            {
+                "name": "CX-30",
+                "altKup": 1568,
+                "altPol": "cx-30"
+            },
+            {
+                "name": "Demio",
+                "altKup": 625,
+                "altPol": "demio"
+            },
+            {
+                "name": "MPV",
+                "altKup": 642,
+                "altPol": "mpv"
+            },
+            {
+                "name": "MX-5",
+                "altKup": 635,
+                "altPol": "mx-5"
+            },
+            {
+                "name": "MX-6",
+                "altKup": 636,
+                "altPol": "mx-6"
+            },
+            {
+                "name": "Premacy",
+                "altKup": 640,
+                "altPol": "premacy"
+            },
+            {
+                "name": "RX-8",
+                "altKup": 639,
+                "altPol": "rx-8"
+            },
+            {
+                "name": "Serija E",
+                "altKup": "",
+                "altPol": "serija-e"
+            },
+            {
+                "name": "Tribute",
+                "altKup": 643,
+                "altPol": "tribute"
+            },
+            {
+                "name": "Xedos",
+                "altKup": "",
+                "altPol": "xedos"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Mercedes Benz",
+        "altPol": "mercedes-benz",
+        "altKup": "2066",
+        "models": [
+            {
+                "name": "180",
+                "altKup": 1592,
+                "altPol": "180"
+            },
+            {
+                "name": "190",
+                "altKup": 675,
+                "altPol": "190"
+            },
+            {
+                "name": "A Klasa",
+                "altKup": "",
+                "altPol": "a-klasa"
+            },
+            {
+                "name": "A 140",
+                "altKup": 651,
+                "altPol": "a-140"
+            },
+            {
+                "name": "A 150",
+                "altKup": 656,
+                "altPol": "a-150"
+            },
+            {
+                "name": "A 160",
+                "altKup": 652,
+                "altPol": "a-160"
+            },
+            {
+                "name": "A 170",
+                "altKup": 654,
+                "altPol": "a-170"
+            },
+            {
+                "name": "A 180",
+                "altKup": 657,
+                "altPol": "a-180"
+            },
+            {
+                "name": "A 190",
+                "altKup": 653,
+                "altPol": "a-190"
+            },
+            {
+                "name": "A 200",
+                "altKup": 658,
+                "altPol": "a-200"
+            },
+            {
+                "name": "A 210",
+                "altKup": 655,
+                "altPol": "a-210"
+            },
+            {
+                "name": "A 220",
+                "altKup": 660,
+                "altPol": "a-220"
+            },
+            {
+                "name": "A 250",
+                "altKup": 659,
+                "altPol": "a-250"
+            },
+            {
+                "name": "A 35 AMG",
+                "altKup": "",
+                "altPol": "a-35-amg"
+            },
+            {
+                "name": "A 45 AMG",
+                "altKup": 661,
+                "altPol": "a-45-amg"
+            },
+            {
+                "name": "B Klasa",
+                "altKup": "",
+                "altPol": "b-klasa"
+            },
+            {
+                "name": "B 150",
+                "altKup": 663,
+                "altPol": "b-150"
+            },
+            {
+                "name": "B 160",
+                "altKup": 664,
+                "altPol": "b-160"
+            },
+            {
+                "name": "B 170",
+                "altKup": 665,
+                "altPol": "b-170"
+            },
+            {
+                "name": "B 180",
+                "altKup": 666,
+                "altPol": "b-180"
+            },
+            {
+                "name": "B 200",
+                "altKup": 667,
+                "altPol": "b-200"
+            },
+            {
+                "name": "B 250",
+                "altKup": 668,
+                "altPol": "b-250"
+            },
+            {
+                "name": "C Klasa",
+                "altKup": "",
+                "altPol": "c-klasa"
+            },
+            {
+                "name": "C 160",
+                "altKup": 685,
+                "altPol": "c-160"
+            },
+            {
+                "name": "C 180",
+                "altKup": 676,
+                "altPol": "c-180"
+            },
+            {
+                "name": "C 200",
+                "altKup": 677,
+                "altPol": "c-200"
+            },
+            {
+                "name": "C 220",
+                "altKup": 678,
+                "altPol": "c-220"
+            },
+            {
+                "name": "C 230",
+                "altKup": 679,
+                "altPol": "c-230"
+            },
+            {
+                "name": "C 240",
+                "altKup": 680,
+                "altPol": "c-240"
+            },
+            {
+                "name": "C 250",
+                "altKup": 684,
+                "altPol": "c-250"
+            },
+            {
+                "name": "C 270",
+                "altKup": 691,
+                "altPol": "c-270"
+            },
+            {
+                "name": "C 280",
+                "altKup": 681,
+                "altPol": "c-280"
+            },
+            {
+                "name": "C 30 AMG",
+                "altKup": 688,
+                "altPol": "c-30-amg"
+            },
+            {
+                "name": "C 300",
+                "altKup": 699,
+                "altPol": "c-300"
+            },
+            {
+                "name": "C 320",
+                "altKup": 686,
+                "altPol": "c-320"
+            },
+            {
+                "name": "C 43 AMG",
+                "altKup": 683,
+                "altPol": "c-43-amg"
+            },
+            {
+                "name": "C 63 AMG",
+                "altKup": 700,
+                "altPol": "c-63-amg"
+            },
+            {
+                "name": "CE Klasa",
+                "altKup": "",
+                "altPol": "ce-klasa"
+            },
+            {
+                "name": "CE 230",
+                "altKup": 1571,
+                "altPol": "ce-230"
+            },
+            {
+                "name": "CE 300",
+                "altKup": 1572,
+                "altPol": "ce-300"
+            },
+            {
+                "name": "Citan",
+                "altKup": 1402,
+                "altPol": "citan"
+            },
+            {
+                "name": "CLA Klasa",
+                "altKup": "",
+                "altPol": "cla-klasa"
+            },
+            {
+                "name": "CLA 180",
+                "altKup": 670,
+                "altPol": "cla-180"
+            },
+            {
+                "name": "CLA 180 Shooting Brake",
+                "altKup": "",
+                "altPol": "cla-180-shooting-brake"
+            },
+            {
+                "name": "CLA 200",
+                "altKup": 671,
+                "altPol": "cla-200"
+            },
+            {
+                "name": "CLA 200 Shooting Brake",
+                "altKup": "",
+                "altPol": "cla-200-shooting-brake"
+            },
+            {
+                "name": "CLA 220",
+                "altKup": 673,
+                "altPol": "cla-220"
+            },
+            {
+                "name": "CLA 35 AMG",
+                "altKup": "",
+                "altPol": "cla-35-amg"
+            },
+            {
+                "name": "CLA 45 AMG",
+                "altKup": 674,
+                "altPol": "cla-45-amg"
+            },
+            {
+                "name": "CL Klasa",
+                "altKup": "",
+                "altPol": "cl-klasa"
+            },
+            {
+                "name": "CL 500",
+                "altKup": 768,
+                "altPol": "cl-500"
+            },
+            {
+                "name": "CL 600",
+                "altKup": 769,
+                "altPol": "cl-600"
+            },
+            {
+                "name": "CL 63 AMG",
+                "altKup": 776,
+                "altPol": "cl-63-amg"
+            },
+            {
+                "name": "CLC Klasa",
+                "altKup": "",
+                "altPol": "clc-klasa"
+            },
+            {
+                "name": "CLC 180",
+                "altKup": 693,
+                "altPol": "clc-180"
+            },
+            {
+                "name": "CLC 200",
+                "altKup": 694,
+                "altPol": "clc-200"
+            },
+            {
+                "name": "CLC 220",
+                "altKup": 698,
+                "altPol": "clc-220"
+            },
+            {
+                "name": "CLK Klasa",
+                "altKup": "",
+                "altPol": "clk-klasa"
+            },
+            {
+                "name": "CLK 200",
+                "altKup": 730,
+                "altPol": "clk-200"
+            },
+            {
+                "name": "CLK 220",
+                "altKup": 743,
+                "altPol": "clk-220"
+            },
+            {
+                "name": "CLK 230",
+                "altKup": 731,
+                "altPol": "clk-230"
+            },
+            {
+                "name": "CLK 240",
+                "altKup": 738,
+                "altPol": "clk-240"
+            },
+            {
+                "name": "CLK 270",
+                "altKup": 744,
+                "altPol": "clk-270"
+            },
+            {
+                "name": "CLK 320",
+                "altKup": 732,
+                "altPol": "clk-320"
+            },
+            {
+                "name": "CLS Klasa",
+                "altKup": "",
+                "altPol": "cls-klasa"
+            },
+            {
+                "name": "CLS 250",
+                "altKup": 753,
+                "altPol": "cls-250"
+            },
+            {
+                "name": "CLS 250 Shooting Brake",
+                "altKup": "",
+                "altPol": "cls-250-shooting-brake"
+            },
+            {
+                "name": "CLS 300",
+                "altKup": 747,
+                "altPol": "cls-300"
+            },
+            {
+                "name": "CLS 320",
+                "altKup": 752,
+                "altPol": "cls-320"
+            },
+            {
+                "name": "CLS 350",
+                "altKup": 748,
+                "altPol": "cls-350"
+            },
+            {
+                "name": "CLS 350 Shooting Brake",
+                "altKup": "",
+                "altPol": "cls-350-shooting-brake"
+            },
+            {
+                "name": "CLS 400",
+                "altKup": "",
+                "altPol": "cls-400"
+            },
+            {
+                "name": "CLS 450",
+                "altKup": "",
+                "altPol": "cls-450"
+            },
+            {
+                "name": "CLS 500",
+                "altKup": 749,
+                "altPol": "cls-500"
+            },
+            {
+                "name": "CLS 55 AMG",
+                "altKup": 750,
+                "altPol": "cls-55-amg"
+            },
+            {
+                "name": "E Klasa",
+                "altKup": "",
+                "altPol": "e-klasa"
+            },
+            {
+                "name": "E 124",
+                "altKup": "",
+                "altPol": "e-124"
+            },
+            {
+                "name": "E 200",
+                "altKup": 709,
+                "altPol": "e-200"
+            },
+            {
+                "name": "E 220",
+                "altKup": 710,
+                "altPol": "e-220"
+            },
+            {
+                "name": "E 230",
+                "altKup": 723,
+                "altPol": "e-230"
+            },
+            {
+                "name": "E 240",
+                "altKup": 724,
+                "altPol": "e-240"
+            },
+            {
+                "name": "E 250",
+                "altKup": 721,
+                "altPol": "e-250"
+            },
+            {
+                "name": "E 260",
+                "altKup": 1574,
+                "altPol": "e-260"
+            },
+            {
+                "name": "E 270",
+                "altKup": 729,
+                "altPol": "e-270"
+            },
+            {
+                "name": "E 280",
+                "altKup": 712,
+                "altPol": "e-280"
+            },
+            {
+                "name": "E 290",
+                "altKup": 728,
+                "altPol": "e-290"
+            },
+            {
+                "name": "E 300",
+                "altKup": 713,
+                "altPol": "e-300"
+            },
+            {
+                "name": "E 320",
+                "altKup": 715,
+                "altPol": "e-320"
+            },
+            {
+                "name": "E 350",
+                "altKup": 735,
+                "altPol": "e-350"
+            },
+            {
+                "name": "E 400",
+                "altKup": 737,
+                "altPol": "e-400"
+            },
+            {
+                "name": "E 43 AMG",
+                "altKup": 1575,
+                "altPol": "e-43-amg"
+            },
+            {
+                "name": "E 53 AMG",
+                "altKup": "",
+                "altPol": "e-53-amg"
+            },
+            {
+                "name": "E 63 AMG",
+                "altKup": 736,
+                "altPol": "e-63-amg"
+            },
+            {
+                "name": "EQA",
+                "altKup": "",
+                "altPol": "eqa"
+            },
+            {
+                "name": "EQB",
+                "altKup": "",
+                "altPol": "eqb"
+            },
+            {
+                "name": "EQC 400",
+                "altKup": "",
+                "altPol": "eqc-400"
+            },
+            {
+                "name": "EQE",
+                "altKup": "",
+                "altPol": "eqe"
+            },
+            {
+                "name": "EQS",
+                "altKup": "",
+                "altPol": "eqs"
+            },
+            {
+                "name": "G Klasa",
+                "altKup": "",
+                "altPol": "g-klasa"
+            },
+            {
+                "name": "G 250",
+                "altKup": 1577,
+                "altPol": "g-250"
+            },
+            {
+                "name": "G 300",
+                "altKup": 818,
+                "altPol": "g-300"
+            },
+            {
+                "name": "G 320",
+                "altKup": 816,
+                "altPol": "g-320"
+            },
+            {
+                "name": "G 350",
+                "altKup": 819,
+                "altPol": "g-350"
+            },
+            {
+                "name": "G 400",
+                "altKup": 821,
+                "altPol": "g-400"
+            },
+            {
+                "name": "G 500",
+                "altKup": 817,
+                "altPol": "g-500"
+            },
+            {
+                "name": "G 55 AMG",
+                "altKup": 822,
+                "altPol": "g-55-amg"
+            },
+            {
+                "name": "G 63 AMG",
+                "altKup": 823,
+                "altPol": "g-63-amg"
+            },
+            {
+                "name": "GL Klasa",
+                "altKup": "",
+                "altPol": "gl-klasa"
+            },
+            {
+                "name": "GL 320",
+                "altKup": 852,
+                "altPol": "gl-320"
+            },
+            {
+                "name": "GL 350",
+                "altKup": 853,
+                "altPol": "gl-350"
+            },
+            {
+                "name": "GL 420",
+                "altKup": 854,
+                "altPol": "gl-420"
+            },
+            {
+                "name": "GL 450",
+                "altKup": 850,
+                "altPol": "gl-450"
+            },
+            {
+                "name": "GL 500",
+                "altKup": 851,
+                "altPol": "gl-500"
+            },
+            {
+                "name": "GLA Klasa",
+                "altKup": "",
+                "altPol": "gla-klasa"
+            },
+            {
+                "name": "GLA 45 AMG",
+                "altKup": 828,
+                "altPol": "gla-45-amg"
+            },
+            {
+                "name": "GLA 180",
+                "altKup": 1578,
+                "altPol": "gla-180"
+            },
+            {
+                "name": "GLA 200",
+                "altKup": 825,
+                "altPol": "gla-200"
+            },
+            {
+                "name": "GLA 220",
+                "altKup": 827,
+                "altPol": "gla-220"
+            },
+            {
+                "name": "GLA 250",
+                "altKup": 826,
+                "altPol": "gla-250"
+            },
+            {
+                "name": "GLB Klasa",
+                "altKup": "",
+                "altPol": "glb-klasa"
+            },
+            {
+                "name": "GLB 200",
+                "altKup": 1579,
+                "altPol": "glb-200"
+            },
+            {
+                "name": "GLB 220",
+                "altKup": "",
+                "altPol": "glb-220"
+            },
+            {
+                "name": "GLC Klasa",
+                "altKup": "",
+                "altPol": "glc-klasa"
+            },
+            {
+                "name": "GLC 43 AMG",
+                "altKup": "",
+                "altPol": "glc-43-amg"
+            },
+            {
+                "name": "GLC 200",
+                "altKup": "",
+                "altPol": "glc-200"
+            },
+            {
+                "name": "GLC 220",
+                "altKup": 1580,
+                "altPol": "glc-220"
+            },
+            {
+                "name": "GLC 250",
+                "altKup": 1581,
+                "altPol": "glc-250"
+            },
+            {
+                "name": "GLC 300",
+                "altKup": "",
+                "altPol": "glc-300"
+            },
+            {
+                "name": "GLC 350",
+                "altKup": "",
+                "altPol": "glc-350"
+            },
+            {
+                "name": "GLE Klasa",
+                "altKup": "",
+                "altPol": "gle-klasa"
+            },
+            {
+                "name": "GLE 43 AMG",
+                "altKup": "",
+                "altPol": "gle-43-amg"
+            },
+            {
+                "name": "GLE 53 AMG",
+                "altKup": "",
+                "altPol": "gle-53-amg"
+            },
+            {
+                "name": "GLE 63 AMG",
+                "altKup": 1582,
+                "altPol": "gle-63-amg"
+            },
+            {
+                "name": "GLE 250",
+                "altKup": 1583,
+                "altPol": "gle-250"
+            },
+            {
+                "name": "GLE 300",
+                "altKup": 1584,
+                "altPol": "gle-300"
+            },
+            {
+                "name": "GLE 350",
+                "altKup": 1678,
+                "altPol": "gle-350"
+            },
+            {
+                "name": "GLE 400",
+                "altKup": 1585,
+                "altPol": "gle-400"
+            },
+            {
+                "name": "GLE 450",
+                "altKup": "",
+                "altPol": "gle-450"
+            },
+            {
+                "name": "GLE 580",
+                "altKup": "",
+                "altPol": "gle-580"
+            },
+            {
+                "name": "GLK Klasa",
+                "altKup": "",
+                "altPol": "glk-klasa"
+            },
+            {
+                "name": "GLK 200",
+                "altKup": 829,
+                "altPol": "glk-200"
+            },
+            {
+                "name": "GLK 220",
+                "altKup": 830,
+                "altPol": "glk-220"
+            },
+            {
+                "name": "GLK 250",
+                "altKup": 831,
+                "altPol": "glk-250"
+            },
+            {
+                "name": "GLK 320",
+                "altKup": 835,
+                "altPol": "glk-320"
+            },
+            {
+                "name": "GLK 350",
+                "altKup": 834,
+                "altPol": "glk-350"
+            },
+            {
+                "name": "GLS Klasa",
+                "altKup": "",
+                "altPol": "gls-klasa"
+            },
+            {
+                "name": "GLS 63 AMG",
+                "altKup": "",
+                "altPol": "gls-63-amg"
+            },
+            {
+                "name": "GLS 350 D",
+                "altKup": 1586,
+                "altPol": "gls-350-d"
+            },
+            {
+                "name": "GLS 400",
+                "altKup": 1587,
+                "altPol": "gls-400"
+            },
+            {
+                "name": "GLS 450",
+                "altKup": "",
+                "altPol": "gls-450"
+            },
+            {
+                "name": "GLS 580",
+                "altKup": "",
+                "altPol": "gls-580"
+            },
+            {
+                "name": "GLS 600",
+                "altKup": "",
+                "altPol": "gls-600"
+            },
+            {
+                "name": "GT",
+                "altKup": "",
+                "altPol": "gt"
+            },
+            {
+                "name": "GT Klasa",
+                "altKup": "",
+                "altPol": "gt-klasa"
+            },
+            {
+                "name": "GT 43 AMG",
+                "altKup": "",
+                "altPol": "gt-43-amg"
+            },
+            {
+                "name": "GT 63 AMG",
+                "altKup": 1589,
+                "altPol": "gt-63-amg"
+            },
+            {
+                "name": "ML Klasa",
+                "altKup": "",
+                "altPol": "ml-klasa"
+            },
+            {
+                "name": "ML 230",
+                "altKup": 836,
+                "altPol": "ml-230"
+            },
+            {
+                "name": "ML 250",
+                "altKup": 849,
+                "altPol": "ml-250"
+            },
+            {
+                "name": "ML 270",
+                "altKup": 842,
+                "altPol": "ml-270"
+            },
+            {
+                "name": "ML 280",
+                "altKup": 845,
+                "altPol": "ml-280"
+            },
+            {
+                "name": "ML 300",
+                "altKup": 846,
+                "altPol": "ml-300"
+            },
+            {
+                "name": "ML 320",
+                "altKup": 837,
+                "altPol": "ml-320"
+            },
+            {
+                "name": "ML 350",
+                "altKup": 838,
+                "altPol": "ml-350"
+            },
+            {
+                "name": "ML 400",
+                "altKup": 843,
+                "altPol": "ml-400"
+            },
+            {
+                "name": "ML 420",
+                "altKup": 847,
+                "altPol": "ml-420"
+            },
+            {
+                "name": "ML 500",
+                "altKup": 840,
+                "altPol": "ml-500"
+            },
+            {
+                "name": "ML 55 AMG",
+                "altKup": 841,
+                "altPol": "ml-55-amg"
+            },
+            {
+                "name": "ML 63 AMG",
+                "altKup": 844,
+                "altPol": "ml-63-amg"
+            },
+            {
+                "name": "R Klasa",
+                "altKup": "",
+                "altPol": "r-klasa"
+            },
+            {
+                "name": "R 280",
+                "altKup": 809,
+                "altPol": "r-280"
+            },
+            {
+                "name": "R 320",
+                "altKup": 814,
+                "altPol": "r-320"
+            },
+            {
+                "name": "R 350",
+                "altKup": 811,
+                "altPol": "r-350"
+            },
+            {
+                "name": "R 500",
+                "altKup": 812,
+                "altPol": "r-500"
+            },
+            {
+                "name": "S Klasa",
+                "altKup": "",
+                "altPol": "s-klasa"
+            },
+            {
+                "name": "S 250",
+                "altKup": 779,
+                "altPol": "s-250"
+            },
+            {
+                "name": "S 280",
+                "altKup": 760,
+                "altPol": "s-280"
+            },
+            {
+                "name": "S 300",
+                "altKup": 766,
+                "altPol": "s-300"
+            },
+            {
+                "name": "S 320",
+                "altKup": 761,
+                "altPol": "s-320"
+            },
+            {
+                "name": "S 350",
+                "altKup": 765,
+                "altPol": "s-350"
+            },
+            {
+                "name": "S 400",
+                "altKup": 772,
+                "altPol": "s-400"
+            },
+            {
+                "name": "S 450",
+                "altKup": 778,
+                "altPol": "s-450"
+            },
+            {
+                "name": "S 500",
+                "altKup": 763,
+                "altPol": "s-500"
+            },
+            {
+                "name": "S 550",
+                "altKup": 1590,
+                "altPol": "s-550"
+            },
+            {
+                "name": "S 560 Maybach",
+                "altKup": "",
+                "altPol": "s-560-maybach"
+            },
+            {
+                "name": "S 560 SEL",
+                "altKup": "",
+                "altPol": "s-560-sel"
+            },
+            {
+                "name": "S 580",
+                "altKup": "",
+                "altPol": "s-580"
+            },
+            {
+                "name": "S 600",
+                "altKup": 764,
+                "altPol": "s-600"
+            },
+            {
+                "name": "S 63 AMG",
+                "altKup": 773,
+                "altPol": "s-63-amg"
+            },
+            {
+                "name": "SL Klasa",
+                "altKup": "",
+                "altPol": "sl-klasa"
+            },
+            {
+                "name": "SL 280",
+                "altKup": 789,
+                "altPol": "sl-280"
+            },
+            {
+                "name": "SL 300",
+                "altKup": 797,
+                "altPol": "sl-300"
+            },
+            {
+                "name": "SL 350",
+                "altKup": 798,
+                "altPol": "sl-350"
+            },
+            {
+                "name": "SL 500",
+                "altKup": 791,
+                "altPol": "sl-500"
+            },
+            {
+                "name": "SL 43 AMG",
+                "altKup": "",
+                "altPol": "sl-43-amg"
+            },
+            {
+                "name": "SL 55 AMG",
+                "altKup": 794,
+                "altPol": "sl-55-amg"
+            },
+            {
+                "name": "SL 600",
+                "altKup": 792,
+                "altPol": "sl-600"
+            },
+            {
+                "name": "SL 63 AMG",
+                "altKup": 799,
+                "altPol": "sl-63-amg"
+            },
+            {
+                "name": "SLC Klasa",
+                "altKup": "",
+                "altPol": "slc-klasa"
+            },
+            {
+                "name": "SLC 43 AMG",
+                "altKup": "",
+                "altPol": "slc-43-amg"
+            },
+            {
+                "name": "SLK Klasa",
+                "altKup": "",
+                "altPol": "slk-klasa"
+            },
+            {
+                "name": "SLK 200",
+                "altKup": 780,
+                "altPol": "slk-200"
+            },
+            {
+                "name": "SLK 250",
+                "altKup": 784,
+                "altPol": "slk-250"
+            },
+            {
+                "name": "T Klasa",
+                "altKup": "",
+                "altPol": "t-klasa"
+            },
+            {
+                "name": "V Klasa",
+                "altKup": "",
+                "altPol": "v-klasa"
+            },
+            {
+                "name": "Vaneo",
+                "altKup": 662,
+                "altPol": "vaneo"
+            },
+            {
+                "name": "X klasa",
+                "altKup": "",
+                "altPol": "x-klasa"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Mercury",
+        "altPol": "mercury",
+        "altKup": "",
+        "models": [
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "MG",
+        "altPol": "mg",
+        "altKup": "2289",
+        "models": [
+            {
+                "name": "EHS",
+                "altKup": "",
+                "altPol": "ehs"
+            },
+            {
+                "name": "Midget",
+                "altKup": "",
+                "altPol": "midget"
+            },
+            {
+                "name": "TF",
+                "altKup": 1380,
+                "altPol": "tf"
+            },
+            {
+                "name": "ZR",
+                "altKup": 1381,
+                "altPol": "zr"
+            },
+            {
+                "name": "ZS",
+                "altKup": 1382,
+                "altPol": "zs"
+            },
+            {
+                "name": "ZS EV",
+                "altKup": "",
+                "altPol": "zs-ev"
+            },
+            {
+                "name": "ZT",
+                "altKup": 1594,
+                "altPol": "zt"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "MINI",
+        "altPol": "mini",
+        "altKup": "2067",
+        "models": [
+            {
+                "name": "1000",
+                "altKup": 77,
+                "altPol": "1000"
+            },
+            {
+                "name": "Clubman",
+                "altKup": 859,
+                "altPol": "clubman"
+            },
+            {
+                "name": "Cooper",
+                "altKup": 79,
+                "altPol": "cooper"
+            },
+            {
+                "name": "Cooper S",
+                "altKup": 857,
+                "altPol": "cooper-s"
+            },
+            {
+                "name": "Countryman",
+                "altKup": 863,
+                "altPol": "countryman"
+            },
+            {
+                "name": "John Cooper Works",
+                "altKup": 862,
+                "altPol": "john-cooper-works"
+            },
+            {
+                "name": "Paceman",
+                "altKup": 861,
+                "altPol": "paceman"
+            },
+            {
+                "name": "One",
+                "altKup": 856,
+                "altPol": "one"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Mitsubishi",
+        "altPol": "mitsubishi",
+        "altKup": "2068",
+        "models": [
+            {
+                "name": "ASX",
+                "altKup": 885,
+                "altPol": "asx"
+            },
+            {
+                "name": "Carisma",
+                "altKup": 871,
+                "altPol": "carisma"
+            },
+            {
+                "name": "Colt",
+                "altKup": 866,
+                "altPol": "colt"
+            },
+            {
+                "name": "Eclipse",
+                "altKup": 881,
+                "altPol": "eclipse"
+            },
+            {
+                "name": "Galant",
+                "altKup": 872,
+                "altPol": "galant"
+            },
+            {
+                "name": "Grandis",
+                "altKup": 879,
+                "altPol": "grandis"
+            },
+            {
+                "name": "i-MiEV",
+                "altKup": 864,
+                "altPol": "i-miev"
+            },
+            {
+                "name": "L200",
+                "altKup": 890,
+                "altPol": "l200"
+            },
+            {
+                "name": "Lancer",
+                "altKup": 868,
+                "altPol": "lancer"
+            },
+            {
+                "name": "Outlander",
+                "altKup": 887,
+                "altPol": "outlander"
+            },
+            {
+                "name": "Pajero",
+                "altKup": 888,
+                "altPol": "pajero"
+            },
+            {
+                "name": "Pajero Pinin",
+                "altKup": 884,
+                "altPol": "pajero-pinin"
+            },
+            {
+                "name": "Pajero Sport",
+                "altKup": 886,
+                "altPol": "pajero-sport"
+            },
+            {
+                "name": "Space Gear",
+                "altKup": 878,
+                "altPol": "space-gear"
+            },
+            {
+                "name": "Space Star",
+                "altKup": 865,
+                "altPol": "space-star"
+            },
+            {
+                "name": "Space Wagon",
+                "altKup": 877,
+                "altPol": "space-wagon"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Moskvitch",
+        "altPol": "moskvitch",
+        "altKup": "",
+        "models": [
+            {
+                "name": "2140",
+                "altKup": "",
+                "altPol": "2140"
+            },
+            {
+                "name": "Aleko 2141",
+                "altKup": "",
+                "altPol": "aleko-2141"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Nissan",
+        "altPol": "nissan",
+        "altKup": "2071",
+        "models": [
+            {
+                "name": "100 NX",
+                "altKup": 1598,
+                "altPol": "100-nx"
+            },
+            {
+                "name": "200 SX",
+                "altKup": 921,
+                "altPol": "200-sx"
+            },
+            {
+                "name": "350Z",
+                "altKup": 924,
+                "altPol": "350z"
+            },
+            {
+                "name": "Almera",
+                "altKup": 906,
+                "altPol": "almera"
+            },
+            {
+                "name": "Almera Tino",
+                "altKup": 1599,
+                "altPol": "almera-tino"
+            },
+            {
+                "name": "Altima",
+                "altKup": "",
+                "altPol": "altima"
+            },
+            {
+                "name": "Cube",
+                "altKup": 901,
+                "altPol": "cube"
+            },
+            {
+                "name": "Juke",
+                "altKup": 903,
+                "altPol": "juke"
+            },
+            {
+                "name": "Leaf",
+                "altKup": 904,
+                "altPol": "leaf"
+            },
+            {
+                "name": "Micra",
+                "altKup": 900,
+                "altPol": "micra"
+            },
+            {
+                "name": "Murano",
+                "altKup": 932,
+                "altPol": "murano"
+            },
+            {
+                "name": "Navara",
+                "altKup": 936,
+                "altPol": "navara"
+            },
+            {
+                "name": "Note",
+                "altKup": 902,
+                "altPol": "note"
+            },
+            {
+                "name": "Pathfinder",
+                "altKup": 931,
+                "altPol": "pathfinder"
+            },
+            {
+                "name": "Patrol",
+                "altKup": 933,
+                "altPol": "patrol"
+            },
+            {
+                "name": "Pixo",
+                "altKup": 899,
+                "altPol": "pixo"
+            },
+            {
+                "name": "Praire",
+                "altKup": "",
+                "altPol": "praire"
+            },
+            {
+                "name": "Primera",
+                "altKup": 912,
+                "altPol": "primera"
+            },
+            {
+                "name": "Pulsar",
+                "altKup": 908,
+                "altPol": "pulsar"
+            },
+            {
+                "name": "Qashqai",
+                "altKup": 929,
+                "altPol": "qashqai"
+            },
+            {
+                "name": "Qashqai + 2",
+                "altKup": "",
+                "altPol": "qashqai-+-2"
+            },
+            {
+                "name": "Sunny",
+                "altKup": 905,
+                "altPol": "sunny"
+            },
+            {
+                "name": "Terrano",
+                "altKup": 927,
+                "altPol": "terrano"
+            },
+            {
+                "name": "Tiida",
+                "altKup": 907,
+                "altPol": "tiida"
+            },
+            {
+                "name": "X-Trail",
+                "altKup": 930,
+                "altPol": "x-trail"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Opel",
+        "altPol": "opel",
+        "altKup": "2073",
+        "models": [
+            {
+                "name": "Adam",
+                "altKup": 944,
+                "altPol": "adam"
+            },
+            {
+                "name": "Agila",
+                "altKup": 943,
+                "altPol": "agila"
+            },
+            {
+                "name": "Ampera",
+                "altKup": 950,
+                "altPol": "ampera"
+            },
+            {
+                "name": "Antara",
+                "altKup": 976,
+                "altPol": "antara"
+            },
+            {
+                "name": "Ascona",
+                "altKup": 958,
+                "altPol": "ascona"
+            },
+            {
+                "name": "Astra",
+                "altKup": 1604,
+                "altPol": "astra"
+            },
+            {
+                "name": "Astra F",
+                "altKup": 952,
+                "altPol": "astra-f"
+            },
+            {
+                "name": "Astra G",
+                "altKup": 953,
+                "altPol": "astra-g"
+            },
+            {
+                "name": "Astra H",
+                "altKup": 955,
+                "altPol": "astra-h"
+            },
+            {
+                "name": "Astra J",
+                "altKup": 956,
+                "altPol": "astra-j"
+            },
+            {
+                "name": "Astra K",
+                "altKup": 1390,
+                "altPol": "astra-k"
+            },
+            {
+                "name": "Calibra",
+                "altKup": 961,
+                "altPol": "calibra"
+            },
+            {
+                "name": "Cascada",
+                "altKup": 957,
+                "altPol": "cascada"
+            },
+            {
+                "name": "Combo",
+                "altKup": 968,
+                "altPol": "combo"
+            },
+            {
+                "name": "Corsa",
+                "altKup": "",
+                "altPol": "corsa"
+            },
+            {
+                "name": "Corsa A",
+                "altKup": 945,
+                "altPol": "corsa-a"
+            },
+            {
+                "name": "Corsa B",
+                "altKup": 946,
+                "altPol": "corsa-b"
+            },
+            {
+                "name": "Corsa C",
+                "altKup": 947,
+                "altPol": "corsa-c"
+            },
+            {
+                "name": "Corsa D",
+                "altKup": 949,
+                "altPol": "corsa-d"
+            },
+            {
+                "name": "Corsa E",
+                "altKup": 1400,
+                "altPol": "corsa-e"
+            },
+            {
+                "name": "Corsa F",
+                "altKup": 1606,
+                "altPol": "corsa-f"
+            },
+            {
+                "name": "Crossland X",
+                "altKup": 1607,
+                "altPol": "crossland-x"
+            },
+            {
+                "name": "Frontera",
+                "altKup": 975,
+                "altPol": "frontera"
+            },
+            {
+                "name": "GT",
+                "altKup": 973,
+                "altPol": "gt"
+            },
+            {
+                "name": "Grandland X",
+                "altKup": 1608,
+                "altPol": "grandland-x"
+            },
+            {
+                "name": "Insignia",
+                "altKup": 965,
+                "altPol": "insignia"
+            },
+            {
+                "name": "Kadett",
+                "altKup": 951,
+                "altPol": "kadett"
+            },
+            {
+                "name": "Karl",
+                "altKup": 1609,
+                "altPol": "karl"
+            },
+            {
+                "name": "Meriva",
+                "altKup": 948,
+                "altPol": "meriva"
+            },
+            {
+                "name": "Monterey",
+                "altKup": 977,
+                "altPol": "monterey"
+            },
+            {
+                "name": "Mokka",
+                "altKup": 974,
+                "altPol": "mokka"
+            },
+            {
+                "name": "Mokka X",
+                "altKup": 1611,
+                "altPol": "mokka-x"
+            },
+            {
+                "name": "Olympia",
+                "altKup": "",
+                "altPol": "olympia"
+            },
+            {
+                "name": "Omega",
+                "altKup": 966,
+                "altPol": "omega"
+            },
+            {
+                "name": "Rekord",
+                "altKup": 1613,
+                "altPol": "rekord"
+            },
+            {
+                "name": "Senator",
+                "altKup": 967,
+                "altPol": "senator"
+            },
+            {
+                "name": "Signum",
+                "altKup": 964,
+                "altPol": "signum"
+            },
+            {
+                "name": "Tigra",
+                "altKup": 971,
+                "altPol": "tigra"
+            },
+            {
+                "name": "Vauxall",
+                "altKup": "",
+                "altPol": "vauxall"
+            },
+            {
+                "name": "Vectra",
+                "altKup": "",
+                "altPol": "vectra"
+            },
+            {
+                "name": "Vectra A",
+                "altKup": 959,
+                "altPol": "vectra-a"
+            },
+            {
+                "name": "Vectra B",
+                "altKup": 962,
+                "altPol": "vectra-b"
+            },
+            {
+                "name": "Vectra C",
+                "altKup": 963,
+                "altPol": "vectra-c"
+            },
+            {
+                "name": "Zafira",
+                "altKup": 954,
+                "altPol": "zafira"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Peugeot",
+        "altPol": "peugeot",
+        "altKup": "2074",
+        "models": [
+            {
+                "name": "106",
+                "altKup": 979,
+                "altPol": "106"
+            },
+            {
+                "name": "107",
+                "altKup": 980,
+                "altPol": "107"
+            },
+            {
+                "name": "108",
+                "altKup": 981,
+                "altPol": "108"
+            },
+            {
+                "name": "204",
+                "altKup": 1387,
+                "altPol": "204"
+            },
+            {
+                "name": "205",
+                "altKup": 984,
+                "altPol": "205"
+            },
+            {
+                "name": "206",
+                "altKup": 985,
+                "altPol": "206"
+            },
+            {
+                "name": "206 plus",
+                "altKup": "",
+                "altPol": "206-plus"
+            },
+            {
+                "name": "207",
+                "altKup": 986,
+                "altPol": "207"
+            },
+            {
+                "name": "208",
+                "altKup": 987,
+                "altPol": "208"
+            },
+            {
+                "name": "301",
+                "altKup": 1365,
+                "altPol": "301"
+            },
+            {
+                "name": "305",
+                "altKup": 996,
+                "altPol": "305"
+            },
+            {
+                "name": "306",
+                "altKup": 990,
+                "altPol": "306"
+            },
+            {
+                "name": "307",
+                "altKup": 991,
+                "altPol": "307"
+            },
+            {
+                "name": "308",
+                "altKup": 992,
+                "altPol": "308"
+            },
+            {
+                "name": "309",
+                "altKup": 989,
+                "altPol": "309"
+            },
+            {
+                "name": "404",
+                "altKup": 1626,
+                "altPol": "404"
+            },
+            {
+                "name": "405",
+                "altKup": 997,
+                "altPol": "405"
+            },
+            {
+                "name": "406",
+                "altKup": 998,
+                "altPol": "406"
+            },
+            {
+                "name": "407",
+                "altKup": 999,
+                "altPol": "407"
+            },
+            {
+                "name": "504",
+                "altKup": 1001,
+                "altPol": "504"
+            },
+            {
+                "name": "505",
+                "altKup": 1002,
+                "altPol": "505"
+            },
+            {
+                "name": "508",
+                "altKup": 1000,
+                "altPol": "508"
+            },
+            {
+                "name": "508 RXH",
+                "altKup": "",
+                "altPol": "508-rxh"
+            },
+            {
+                "name": "605",
+                "altKup": 1004,
+                "altPol": "605"
+            },
+            {
+                "name": "607",
+                "altKup": 1005,
+                "altPol": "607"
+            },
+            {
+                "name": "806",
+                "altKup": 1010,
+                "altPol": "806"
+            },
+            {
+                "name": "807",
+                "altKup": 1011,
+                "altPol": "807"
+            },
+            {
+                "name": "1007",
+                "altKup": 982,
+                "altPol": "1007"
+            },
+            {
+                "name": "2008",
+                "altKup": 988,
+                "altPol": "2008"
+            },
+            {
+                "name": "3008",
+                "altKup": 993,
+                "altPol": "3008"
+            },
+            {
+                "name": "4007",
+                "altKup": 1012,
+                "altPol": "4007"
+            },
+            {
+                "name": "4008",
+                "altKup": 1013,
+                "altPol": "4008"
+            },
+            {
+                "name": "5008",
+                "altKup": 994,
+                "altPol": "5008"
+            },
+            {
+                "name": "Bipper",
+                "altKup": "",
+                "altPol": "bipper"
+            },
+            {
+                "name": "Expert",
+                "altKup": "",
+                "altPol": "expert"
+            },
+            {
+                "name": "iOn",
+                "altKup": 978,
+                "altPol": "ion"
+            },
+            {
+                "name": "Partner",
+                "altKup": 1008,
+                "altPol": "partner"
+            },
+            {
+                "name": "Ranch",
+                "altKup": 1627,
+                "altPol": "ranch"
+            },
+            {
+                "name": "RCZ",
+                "altKup": 1006,
+                "altPol": "rcz"
+            },
+            {
+                "name": "TePee",
+                "altKup": 1629,
+                "altPol": "tepee"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Polski Fiat",
+        "altPol": "polski-fiat",
+        "altKup": "",
+        "models": [
+            {
+                "name": "125 P",
+                "altKup": "",
+                "altPol": "125-p"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Pontiac",
+        "altPol": "pontiac",
+        "altKup": "2075",
+        "models": [
+            {
+                "name": "Sunfire",
+                "altKup": "",
+                "altPol": "sunfire"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Porsche",
+        "altPol": "porsche",
+        "altKup": "2076",
+        "models": [
+            {
+                "name": "718",
+                "altKup": "",
+                "altPol": "718"
+            },
+            {
+                "name": "911",
+                "altKup": 1024,
+                "altPol": "911"
+            },
+            {
+                "name": "924",
+                "altKup": 1025,
+                "altPol": "924"
+            },
+            {
+                "name": "944",
+                "altKup": 1026,
+                "altPol": "944"
+            },
+            {
+                "name": "Boxster",
+                "altKup": 1018,
+                "altPol": "boxster"
+            },
+            {
+                "name": "Cayenne",
+                "altKup": 1035,
+                "altPol": "cayenne"
+            },
+            {
+                "name": "Cayman",
+                "altKup": 1019,
+                "altPol": "cayman"
+            },
+            {
+                "name": "Macan",
+                "altKup": 1034,
+                "altPol": "macan"
+            },
+            {
+                "name": "Panamera",
+                "altKup": 1033,
+                "altPol": "panamera"
+            },
+            {
+                "name": "Taycan",
+                "altKup": "",
+                "altPol": "taycan"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Proton",
+        "altPol": "proton",
+        "altKup": "",
+        "models": [
+            {
+                "name": "Serija 400",
+                "altKup": "",
+                "altPol": "serija-400"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Renault",
+        "altPol": "renault",
+        "altKup": "2079",
+        "models": [
+            {
+                "name": "Captur",
+                "altKup": 1055,
+                "altPol": "captur"
+            },
+            {
+                "name": "Clio",
+                "altKup": 1053,
+                "altPol": "clio"
+            },
+            {
+                "name": "Espace",
+                "altKup": 1077,
+                "altPol": "espace"
+            },
+            {
+                "name": "Express",
+                "altKup": 1632,
+                "altPol": "express"
+            },
+            {
+                "name": "Fluence",
+                "altKup": 1062,
+                "altPol": "fluence"
+            },
+            {
+                "name": "Grand Espace",
+                "altKup": 1078,
+                "altPol": "grand-espace"
+            },
+            {
+                "name": "Grand Modus",
+                "altKup": 1633,
+                "altPol": "grand-modus"
+            },
+            {
+                "name": "Grand Scenic",
+                "altKup": 1063,
+                "altPol": "grand-scenic"
+            },
+            {
+                "name": "Kadjar",
+                "altKup": 1397,
+                "altPol": "kadjar"
+            },
+            {
+                "name": "Kangoo",
+                "altKup": 1076,
+                "altPol": "kangoo"
+            },
+            {
+                "name": "Koleos",
+                "altKup": 1086,
+                "altPol": "koleos"
+            },
+            {
+                "name": "Laguna",
+                "altKup": 1067,
+                "altPol": "laguna"
+            },
+            {
+                "name": "Latitude",
+                "altKup": 1073,
+                "altPol": "latitude"
+            },
+            {
+                "name": "Megane",
+                "altKup": 1060,
+                "altPol": "megane"
+            },
+            {
+                "name": "Modus",
+                "altKup": 1054,
+                "altPol": "modus"
+            },
+            {
+                "name": "Nevada",
+                "altKup": 1634,
+                "altPol": "nevada"
+            },
+            {
+                "name": "R 4",
+                "altKup": "",
+                "altPol": "r-4"
+            },
+            {
+                "name": "R 5",
+                "altKup": "",
+                "altPol": "r-5"
+            },
+            {
+                "name": "R 9",
+                "altKup": "",
+                "altPol": "r-9"
+            },
+            {
+                "name": "R 10",
+                "altKup": "",
+                "altPol": "r-10"
+            },
+            {
+                "name": "R 11",
+                "altKup": "",
+                "altPol": "r-11"
+            },
+            {
+                "name": "R 18",
+                "altKup": "",
+                "altPol": "r-18"
+            },
+            {
+                "name": "R 19",
+                "altKup": "",
+                "altPol": "r-19"
+            },
+            {
+                "name": "R 21",
+                "altKup": "",
+                "altPol": "r-21"
+            },
+            {
+                "name": "R 25",
+                "altKup": "",
+                "altPol": "r-25"
+            },
+            {
+                "name": "Rapid",
+                "altKup": 1075,
+                "altPol": "rapid"
+            },
+            {
+                "name": "RX",
+                "altKup": 1636,
+                "altPol": "rx"
+            },
+            {
+                "name": "Safrane",
+                "altKup": 1071,
+                "altPol": "safrane"
+            },
+            {
+                "name": "Scenic",
+                "altKup": 1061,
+                "altPol": "scenic"
+            },
+            {
+                "name": "Talisman",
+                "altKup": 1435,
+                "altPol": "talisman"
+            },
+            {
+                "name": "Thalia",
+                "altKup": 1334,
+                "altPol": "thalia"
+            },
+            {
+                "name": "Twingo",
+                "altKup": 1051,
+                "altPol": "twingo"
+            },
+            {
+                "name": "Twizy",
+                "altKup": 1049,
+                "altPol": "twizy"
+            },
+            {
+                "name": "Vel Satis",
+                "altKup": 1072,
+                "altPol": "vel-satis"
+            },
+            {
+                "name": "Wind",
+                "altKup": 1085,
+                "altPol": "wind"
+            },
+            {
+                "name": "Zoe",
+                "altKup": 1050,
+                "altPol": "zoe"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Rolls Royce",
+        "altPol": "rolls-royce",
+        "altKup": "",
+        "models": [
+            {
+                "name": "Flying Spur",
+                "altKup": "",
+                "altPol": "flying-spur"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Rover",
+        "altPol": "rover",
+        "altKup": "2081",
+        "models": [
+            {
+                "name": "Defender",
+                "altKup": "",
+                "altPol": "defender"
+            },
+            {
+                "name": "Discovery",
+                "altKup": "",
+                "altPol": "discovery"
+            },
+            {
+                "name": "Discovery Sport",
+                "altKup": "",
+                "altPol": "discovery-sport"
+            },
+            {
+                "name": "Freelander",
+                "altKup": "",
+                "altPol": "freelander"
+            },
+            {
+                "name": "Range Rover",
+                "altKup": "",
+                "altPol": "range-rover"
+            },
+            {
+                "name": "Range Rover Autobiography",
+                "altKup": "",
+                "altPol": "range-rover-autobiography"
+            },
+            {
+                "name": "Range Rover Evoque",
+                "altKup": "",
+                "altPol": "range-rover-evoque"
+            },
+            {
+                "name": "Range Rover Sport",
+                "altKup": "",
+                "altPol": "range-rover-sport"
+            },
+            {
+                "name": "Range Rover Velar",
+                "altKup": "",
+                "altPol": "range-rover-velar"
+            },
+            {
+                "name": "Range Rover Vogue",
+                "altKup": "",
+                "altPol": "range-rover-vogue"
+            },
+            {
+                "name": "Serija III",
+                "altKup": "",
+                "altPol": "serija-iii"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Saab",
+        "altPol": "saab",
+        "altKup": "2082",
+        "models": [
+            {
+                "name": "900",
+                "altKup": 1094,
+                "altPol": "900"
+            },
+            {
+                "name": "9000",
+                "altKup": 1096,
+                "altPol": "9000"
+            },
+            {
+                "name": "9-3",
+                "altKup": 1095,
+                "altPol": "9-3"
+            },
+            {
+                "name": "9-5",
+                "altKup": 1097,
+                "altPol": "9-5"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Seat",
+        "altPol": "seat",
+        "altKup": "2085",
+        "models": [
+            {
+                "name": "Alhambra",
+                "altKup": 1119,
+                "altPol": "alhambra"
+            },
+            {
+                "name": "Altea",
+                "altKup": 1118,
+                "altPol": "altea"
+            },
+            {
+                "name": "Altea XL",
+                "altKup": 1640,
+                "altPol": "altea-xl"
+            },
+            {
+                "name": "Arona",
+                "altKup": 1641,
+                "altPol": "arona"
+            },
+            {
+                "name": "Arosa",
+                "altKup": 1110,
+                "altPol": "arosa"
+            },
+            {
+                "name": "Ateca",
+                "altKup": 1642,
+                "altPol": "ateca"
+            },
+            {
+                "name": "Cordoba",
+                "altKup": 1113,
+                "altPol": "cordoba"
+            },
+            {
+                "name": "Exeo",
+                "altKup": 1117,
+                "altPol": "exeo"
+            },
+            {
+                "name": "Ibiza",
+                "altKup": 1112,
+                "altPol": "ibiza"
+            },
+            {
+                "name": "Inca",
+                "altKup": 1643,
+                "altPol": "inca"
+            },
+            {
+                "name": "Leon",
+                "altKup": 1116,
+                "altPol": "leon"
+            },
+            {
+                "name": "Mii",
+                "altKup": 1111,
+                "altPol": "mii"
+            },
+            {
+                "name": "Tarraco",
+                "altKup": 1644,
+                "altPol": "tarraco"
+            },
+            {
+                "name": "Toledo",
+                "altKup": 1115,
+                "altPol": "toledo"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Shuanghuan",
+        "altPol": "shuanghuan",
+        "altKup": "",
+        "models": [
+            {
+                "name": "CEO",
+                "altKup": "",
+                "altPol": "ceo"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Smart",
+        "altPol": "smart",
+        "altKup": "2087",
+        "models": [
+            {
+                "name": "ForFour",
+                "altKup": 1141,
+                "altPol": "forfour"
+            },
+            {
+                "name": "ForTwo",
+                "altKup": 1139,
+                "altPol": "fortwo"
+            },
+            {
+                "name": "Roadster",
+                "altKup": 1140,
+                "altPol": "roadster"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "SsangYong",
+        "altPol": "ssangyong",
+        "altKup": "2089",
+        "models": [
+            {
+                "name": "Actyon",
+                "altKup": 1146,
+                "altPol": "actyon"
+            },
+            {
+                "name": "Korando",
+                "altKup": 1145,
+                "altPol": "korando"
+            },
+            {
+                "name": "Kyron",
+                "altKup": 1148,
+                "altPol": "kyron"
+            },
+            {
+                "name": "Rexton",
+                "altKup": 1149,
+                "altPol": "rexton"
+            },
+            {
+                "name": "Rodius",
+                "altKup": 1150,
+                "altPol": "rodius"
+            },
+            {
+                "name": "Tivoli",
+                "altKup": 1645,
+                "altPol": "tivoli"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Subaru",
+        "altPol": "subaru",
+        "altKup": "2090",
+        "models": [
+            {
+                "name": "Forester",
+                "altKup": 1162,
+                "altPol": "forester"
+            },
+            {
+                "name": "Impreza",
+                "altKup": 1154,
+                "altPol": "impreza"
+            },
+            {
+                "name": "Justy",
+                "altKup": 1151,
+                "altPol": "justy"
+            },
+            {
+                "name": "Legacy",
+                "altKup": 1155,
+                "altPol": "legacy"
+            },
+            {
+                "name": "Leone",
+                "altKup": 1153,
+                "altPol": "leone"
+            },
+            {
+                "name": "Outback",
+                "altKup": 1648,
+                "altPol": "outback"
+            },
+            {
+                "name": "Trezia",
+                "altKup": 1156,
+                "altPol": "trezia"
+            },
+            {
+                "name": "Tribeca",
+                "altKup": 1163,
+                "altPol": "tribeca"
+            },
+            {
+                "name": "XV",
+                "altKup": 1649,
+                "altPol": "xv"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Suzuki",
+        "altPol": "suzuki",
+        "altKup": "2091",
+        "models": [
+            {
+                "name": "Alto",
+                "altKup": 1165,
+                "altPol": "alto"
+            },
+            {
+                "name": "Baleno",
+                "altKup": 1170,
+                "altPol": "baleno"
+            },
+            {
+                "name": "Celerio",
+                "altKup": "",
+                "altPol": "celerio"
+            },
+            {
+                "name": "Grand Vitara",
+                "altKup": 1179,
+                "altPol": "grand-vitara"
+            },
+            {
+                "name": "Ignis",
+                "altKup": 1169,
+                "altPol": "ignis"
+            },
+            {
+                "name": "Jimny",
+                "altKup": 1176,
+                "altPol": "jimny"
+            },
+            {
+                "name": "Kizashi",
+                "altKup": 1173,
+                "altPol": "kizashi"
+            },
+            {
+                "name": "Liana",
+                "altKup": 1171,
+                "altPol": "liana"
+            },
+            {
+                "name": "Maruti",
+                "altKup": 1343,
+                "altPol": "maruti"
+            },
+            {
+                "name": "SJ Samurai",
+                "altKup": "",
+                "altPol": "sj-samurai"
+            },
+            {
+                "name": "Splash",
+                "altKup": 1167,
+                "altPol": "splash"
+            },
+            {
+                "name": "Swift",
+                "altKup": 1168,
+                "altPol": "swift"
+            },
+            {
+                "name": "SX4",
+                "altKup": 1172,
+                "altPol": "sx4"
+            },
+            {
+                "name": "SX4 S-Cross",
+                "altKup": "",
+                "altPol": "sx4-s-cross"
+            },
+            {
+                "name": "Vitara",
+                "altKup": 1178,
+                "altPol": "vitara"
+            },
+            {
+                "name": "Wagon R+",
+                "altKup": 1174,
+                "altPol": "wagon-r+"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Talbot",
+        "altPol": "talbot",
+        "altKup": "",
+        "models": [
+            {
+                "name": "Solara",
+                "altKup": "",
+                "altPol": "solara"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Tata",
+        "altPol": "tata",
+        "altKup": "2286",
+        "models": [
+            {
+                "name": "Indigo",
+                "altKup": "",
+                "altPol": "indigo"
+            },
+            {
+                "name": "Safari",
+                "altKup": 1375,
+                "altPol": "safari"
+            },
+            {
+                "name": "Sumo",
+                "altKup": 1376,
+                "altPol": "sumo"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Tavria",
+        "altPol": "tavria",
+        "altKup": "2429",
+        "models": [
+            {
+                "name": "1102",
+                "altKup": 1667,
+                "altPol": "1102"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Tesla",
+        "altPol": "tesla",
+        "altKup": "",
+        "models": [
+            {
+                "name": "Model S",
+                "altKup": "",
+                "altPol": "model-s"
+            },
+            {
+                "name": "Model 3",
+                "altKup": "",
+                "altPol": "model-3"
+            },
+            {
+                "name": "Model X",
+                "altKup": "",
+                "altPol": "model-x"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Toyota",
+        "altPol": "toyota",
+        "altKup": "2095",
+        "models": [
+            {
+                "name": "4Runner",
+                "altKup": 1224,
+                "altPol": "4runner"
+            },
+            {
+                "name": "Auris",
+                "altKup": 1198,
+                "altPol": "auris"
+            },
+            {
+                "name": "Avensis",
+                "altKup": 1203,
+                "altPol": "avensis"
+            },
+            {
+                "name": "Avensis Verso",
+                "altKup": 1221,
+                "altPol": "avensis-verso"
+            },
+            {
+                "name": "Aygo",
+                "altKup": 1192,
+                "altPol": "aygo"
+            },
+            {
+                "name": "Aygo X",
+                "altKup": "",
+                "altPol": "aygo-x"
+            },
+            {
+                "name": "C-HR",
+                "altKup": "",
+                "altPol": "c-hr"
+            },
+            {
+                "name": "Camry",
+                "altKup": 1208,
+                "altPol": "camry"
+            },
+            {
+                "name": "Carina",
+                "altKup": 1200,
+                "altPol": "carina"
+            },
+            {
+                "name": "Celica",
+                "altKup": 1210,
+                "altPol": "celica"
+            },
+            {
+                "name": "Corolla",
+                "altKup": 1197,
+                "altPol": "corolla"
+            },
+            {
+                "name": "Corolla Verso",
+                "altKup": 1218,
+                "altPol": "corolla-verso"
+            },
+            {
+                "name": "Corona",
+                "altKup": 1199,
+                "altPol": "corona"
+            },
+            {
+                "name": "Cressida",
+                "altKup": 1206,
+                "altPol": "cressida"
+            },
+            {
+                "name": "Highlander",
+                "altKup": "",
+                "altPol": "highlander"
+            },
+            {
+                "name": "Hilux",
+                "altKup": 1232,
+                "altPol": "hilux"
+            },
+            {
+                "name": "iQ",
+                "altKup": 1191,
+                "altPol": "iq"
+            },
+            {
+                "name": "Land Cruiser",
+                "altKup": "",
+                "altPol": "land-cruiser"
+            },
+            {
+                "name": "MR2",
+                "altKup": 1211,
+                "altPol": "mr2"
+            },
+            {
+                "name": "Paseo",
+                "altKup": 1209,
+                "altPol": "paseo"
+            },
+            {
+                "name": "Previa",
+                "altKup": 1222,
+                "altPol": "previa"
+            },
+            {
+                "name": "Prius",
+                "altKup": 1204,
+                "altPol": "prius"
+            },
+            {
+                "name": "Proace City",
+                "altKup": "",
+                "altPol": "proace-city"
+            },
+            {
+                "name": "RAV 4",
+                "altKup": "",
+                "altPol": "rav-4"
+            },
+            {
+                "name": "Urban Cruiser",
+                "altKup": 1223,
+                "altPol": "urban-cruiser"
+            },
+            {
+                "name": "Verso",
+                "altKup": 1219,
+                "altPol": "verso"
+            },
+            {
+                "name": "Verso-S",
+                "altKup": 1217,
+                "altPol": "verso-s"
+            },
+            {
+                "name": "Yaris",
+                "altKup": 1195,
+                "altPol": "yaris"
+            },
+            {
+                "name": "Yaris Cross",
+                "altKup": "",
+                "altPol": "yaris-cross"
+            },
+            {
+                "name": "Yaris Verso",
+                "altKup": 1215,
+                "altPol": "yaris-verso"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Trabant",
+        "altPol": "trabant",
+        "altKup": "2096",
+        "models": [
+            {
+                "name": "601",
+                "altKup": 460,
+                "altPol": "601"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Triumph",
+        "altPol": "triumph",
+        "altKup": "",
+        "models": [
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "UAZ",
+        "altPol": "uaz",
+        "altKup": "2098",
+        "models": [
+            {
+                "name": "469",
+                "altKup": 1369,
+                "altPol": "469"
+            },
+            {
+                "name": "31514",
+                "altKup": 1662,
+                "altPol": "31514"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Vauxhall",
+        "altPol": "vauxhall",
+        "altKup": "",
+        "models": [
+            {
+                "name": "Vectra",
+                "altKup": "",
+                "altPol": "vectra"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Volkswagen",
+        "altPol": "volkswagen",
+        "altKup": "2100",
+        "models": [
+            {
+                "name": "181",
+                "altKup": "",
+                "altPol": "181"
+            },
+            {
+                "name": "Amarok",
+                "altKup": 1285,
+                "altPol": "amarok"
+            },
+            {
+                "name": "Arteon",
+                "altKup": 1438,
+                "altPol": "arteon"
+            },
+            {
+                "name": "Bora",
+                "altKup": 1259,
+                "altPol": "bora"
+            },
+            {
+                "name": "Buggy",
+                "altKup": 1658,
+                "altPol": "buggy"
+            },
+            {
+                "name": "Buba",
+                "altKup": "",
+                "altPol": "buba"
+            },
+            {
+                "name": "Nova Buba",
+                "altKup": "",
+                "altPol": "nova-buba"
+            },
+            {
+                "name": "Caddy",
+                "altKup": 1279,
+                "altPol": "caddy"
+            },
+            {
+                "name": "Cross Polo",
+                "altKup": "",
+                "altPol": "cross-polo"
+            },
+            {
+                "name": "EOS",
+                "altKup": 1266,
+                "altPol": "eos"
+            },
+            {
+                "name": "Fox",
+                "altKup": 1247,
+                "altPol": "fox"
+            },
+            {
+                "name": "Golf",
+                "altKup": "",
+                "altPol": "golf"
+            },
+            {
+                "name": "Golf 1",
+                "altKup": 1253,
+                "altPol": "golf-1"
+            },
+            {
+                "name": "Golf 2",
+                "altKup": 1255,
+                "altPol": "golf-2"
+            },
+            {
+                "name": "Golf 3",
+                "altKup": 1256,
+                "altPol": "golf-3"
+            },
+            {
+                "name": "Golf 4",
+                "altKup": 1258,
+                "altPol": "golf-4"
+            },
+            {
+                "name": "Golf 5",
+                "altKup": 1260,
+                "altPol": "golf-5"
+            },
+            {
+                "name": "Golf 6",
+                "altKup": 1261,
+                "altPol": "golf-6"
+            },
+            {
+                "name": "Golf 7",
+                "altKup": 1262,
+                "altPol": "golf-7"
+            },
+            {
+                "name": "Golf 8",
+                "altKup": 1659,
+                "altPol": "golf-8"
+            },
+            {
+                "name": "Golf Plus",
+                "altKup": 1333,
+                "altPol": "golf-plus"
+            },
+            {
+                "name": "Golf Sportsvan",
+                "altKup": "",
+                "altPol": "golf-sportsvan"
+            },
+            {
+                "name": "ID.3",
+                "altKup": "",
+                "altPol": "id3"
+            },
+            {
+                "name": "ID.4",
+                "altKup": "",
+                "altPol": "id4"
+            },
+            {
+                "name": "Jetta",
+                "altKup": 1254,
+                "altPol": "jetta"
+            },
+            {
+                "name": "Lupo",
+                "altKup": 1246,
+                "altPol": "lupo"
+            },
+            {
+                "name": "Passat",
+                "altKup": "",
+                "altPol": "passat"
+            },
+            {
+                "name": "Passat B1",
+                "altKup": 1267,
+                "altPol": "passat-b1"
+            },
+            {
+                "name": "Passat B2",
+                "altKup": 1268,
+                "altPol": "passat-b2"
+            },
+            {
+                "name": "Passat B3",
+                "altKup": 1270,
+                "altPol": "passat-b3"
+            },
+            {
+                "name": "Passat B4",
+                "altKup": 1271,
+                "altPol": "passat-b4"
+            },
+            {
+                "name": "Passat B5",
+                "altKup": 1272,
+                "altPol": "passat-b5"
+            },
+            {
+                "name": "Passat B5.5",
+                "altKup": 1273,
+                "altPol": "passat-b55"
+            },
+            {
+                "name": "Passat B6",
+                "altKup": 1274,
+                "altPol": "passat-b6"
+            },
+            {
+                "name": "Passat B7",
+                "altKup": 1275,
+                "altPol": "passat-b7"
+            },
+            {
+                "name": "Passat B7 Alltrack",
+                "altKup": "",
+                "altPol": "passat-b7-alltrack"
+            },
+            {
+                "name": "Passat B8",
+                "altKup": 1391,
+                "altPol": "passat-b8"
+            },
+            {
+                "name": "Passat B8 Alltrack",
+                "altKup": "",
+                "altPol": "passat-b8-alltrack"
+            },
+            {
+                "name": "Passat CC",
+                "altKup": 1277,
+                "altPol": "passat-cc"
+            },
+            {
+                "name": "Phaeton",
+                "altKup": 1278,
+                "altPol": "phaeton"
+            },
+            {
+                "name": "Polo",
+                "altKup": 1249,
+                "altPol": "polo"
+            },
+            {
+                "name": "Scirocco",
+                "altKup": 1264,
+                "altPol": "scirocco"
+            },
+            {
+                "name": "Sharan",
+                "altKup": 1280,
+                "altPol": "sharan"
+            },
+            {
+                "name": "T-Cross",
+                "altKup": 1660,
+                "altPol": "t-cross"
+            },
+            {
+                "name": "T-Roc",
+                "altKup": "",
+                "altPol": "t-roc"
+            },
+            {
+                "name": "Taigo",
+                "altKup": "",
+                "altPol": "taigo"
+            },
+            {
+                "name": "Tiguan",
+                "altKup": 1283,
+                "altPol": "tiguan"
+            },
+            {
+                "name": "Touareg",
+                "altKup": 1284,
+                "altPol": "touareg"
+            },
+            {
+                "name": "Touran",
+                "altKup": 1263,
+                "altPol": "touran"
+            },
+            {
+                "name": "up!",
+                "altKup": "",
+                "altPol": "up"
+            },
+            {
+                "name": "Vento",
+                "altKup": 1257,
+                "altPol": "vento"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Volvo",
+        "altPol": "volvo",
+        "altKup": "2101",
+        "models": [
+            {
+                "name": "240",
+                "altKup": 1651,
+                "altPol": "240"
+            },
+            {
+                "name": "244",
+                "altKup": 1652,
+                "altPol": "244"
+            },
+            {
+                "name": "245",
+                "altKup": 1653,
+                "altPol": "245"
+            },
+            {
+                "name": "340",
+                "altKup": 1654,
+                "altPol": "340"
+            },
+            {
+                "name": "460",
+                "altKup": 1287,
+                "altPol": "460"
+            },
+            {
+                "name": "740",
+                "altKup": 1388,
+                "altPol": "740"
+            },
+            {
+                "name": "760",
+                "altKup": 1655,
+                "altPol": "760"
+            },
+            {
+                "name": "850",
+                "altKup": 1293,
+                "altPol": "850"
+            },
+            {
+                "name": "940",
+                "altKup": 1298,
+                "altPol": "940"
+            },
+            {
+                "name": "Amazon",
+                "altKup": 1656,
+                "altPol": "amazon"
+            },
+            {
+                "name": "C30",
+                "altKup": 1289,
+                "altPol": "c30"
+            },
+            {
+                "name": "C70",
+                "altKup": 1304,
+                "altPol": "c70"
+            },
+            {
+                "name": "S40",
+                "altKup": 1291,
+                "altPol": "s40"
+            },
+            {
+                "name": "S60",
+                "altKup": 1296,
+                "altPol": "s60"
+            },
+            {
+                "name": "S70",
+                "altKup": 1294,
+                "altPol": "s70"
+            },
+            {
+                "name": "S80",
+                "altKup": 1302,
+                "altPol": "s80"
+            },
+            {
+                "name": "S90",
+                "altKup": 1300,
+                "altPol": "s90"
+            },
+            {
+                "name": "V40",
+                "altKup": 1290,
+                "altPol": "v40"
+            },
+            {
+                "name": "V50",
+                "altKup": 1292,
+                "altPol": "v50"
+            },
+            {
+                "name": "V60",
+                "altKup": 1297,
+                "altPol": "v60"
+            },
+            {
+                "name": "V70",
+                "altKup": 1295,
+                "altPol": "v70"
+            },
+            {
+                "name": "V90",
+                "altKup": 1301,
+                "altPol": "v90"
+            },
+            {
+                "name": "XC40",
+                "altKup": "",
+                "altPol": "xc40"
+            },
+            {
+                "name": "XC60",
+                "altKup": 1345,
+                "altPol": "xc60"
+            },
+            {
+                "name": "XC70",
+                "altKup": 1346,
+                "altPol": "xc70"
+            },
+            {
+                "name": "XC90",
+                "altKup": 1344,
+                "altPol": "xc90"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Wartburg",
+        "altPol": "wartburg",
+        "altKup": "2102",
+        "models": [
+            {
+                "name": "353",
+                "altKup": 461,
+                "altPol": "353"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Zastava",
+        "altPol": "zastava",
+        "altKup": "2161",
+        "models": [
+            {
+                "name": "10",
+                "altKup": 1305,
+                "altPol": "10"
+            },
+            {
+                "name": "101",
+                "altKup": 1306,
+                "altPol": "101"
+            },
+            {
+                "name": "128",
+                "altKup": 1307,
+                "altPol": "128"
+            },
+            {
+                "name": "1300",
+                "altKup": 1308,
+                "altPol": "1300"
+            },
+            {
+                "name": "1500",
+                "altKup": 1309,
+                "altPol": "1500"
+            },
+            {
+                "name": "750",
+                "altKup": 1310,
+                "altPol": "750"
+            },
+            {
+                "name": "850",
+                "altKup": 1311,
+                "altPol": "850"
+            },
+            {
+                "name": "AR 55",
+                "altKup": 1312,
+                "altPol": "ar-55"
+            },
+            {
+                "name": "Florida",
+                "altKup": 1313,
+                "altPol": "florida"
+            },
+            {
+                "name": "Florida In",
+                "altKup": 1314,
+                "altPol": "florida-in"
+            },
+            {
+                "name": "Koral",
+                "altKup": 1315,
+                "altPol": "koral"
+            },
+            {
+                "name": "Koral In",
+                "altKup": 1316,
+                "altPol": "koral-in"
+            },
+            {
+                "name": "Poly",
+                "altKup": 1317,
+                "altPol": "poly"
+            },
+            {
+                "name": "Skala 55",
+                "altKup": 1318,
+                "altPol": "skala-55"
+            },
+            {
+                "name": "Yugo",
+                "altKup": "",
+                "altPol": "yugo"
+            },
+            {
+                "name": "Yugo 45",
+                "altKup": 1319,
+                "altPol": "yugo-45"
+            },
+            {
+                "name": "Yugo 55",
+                "altKup": 1320,
+                "altPol": "yugo-55"
+            },
+            {
+                "name": "Yugo 60",
+                "altKup": 1321,
+                "altPol": "yugo-60"
+            },
+            {
+                "name": "Yugo 65",
+                "altKup": 1322,
+                "altPol": "yugo-65"
+            },
+            {
+                "name": "Yugo Cabrio",
+                "altKup": 1323,
+                "altPol": "yugo-cabrio"
+            },
+            {
+                "name": "Yugo In L",
+                "altKup": 1325,
+                "altPol": "yugo-in-l"
+            },
+            {
+                "name": "Yugo Tempo",
+                "altKup": 1326,
+                "altPol": "yugo-tempo"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "ZhiDou",
+        "altPol": "zhidou",
+        "altKup": "",
+        "models": [
+            {
+                "name": "D2",
+                "altKup": 1676,
+                "altPol": "d2"
+            },
+            {
+                "name": "D2S",
+                "altKup": 1677,
+                "altPol": "d2s"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    },
+    {
+        "name": "Skoda",
+        "altPol": "skoda",
+        "altKup": "2086",
+        "models": [
+            {
+                "name": "100",
+                "altKup": "",
+                "altPol": "100"
+            },
+            {
+                "name": "105",
+                "altKup": "",
+                "altPol": "105"
+            },
+            {
+                "name": "110",
+                "altKup": "",
+                "altPol": "110"
+            },
+            {
+                "name": "120",
+                "altKup": "",
+                "altPol": "120"
+            },
+            {
+                "name": "Citigo",
+                "altKup": "",
+                "altPol": "citigo"
+            },
+            {
+                "name": "Fabia",
+                "altKup": "",
+                "altPol": "fabia"
+            },
+            {
+                "name": "Favorit",
+                "altKup": "",
+                "altPol": "favorit"
+            },
+            {
+                "name": "Felicia",
+                "altKup": "",
+                "altPol": "felicia"
+            },
+            {
+                "name": "Forman",
+                "altKup": "",
+                "altPol": "forman"
+            },
+            {
+                "name": "Kamiq",
+                "altKup": "",
+                "altPol": "kamiq"
+            },
+            {
+                "name": "Karoq",
+                "altKup": "",
+                "altPol": "karoq"
+            },
+            {
+                "name": "Kodiaq",
+                "altKup": "",
+                "altPol": "kodiaq"
+            },
+            {
+                "name": "Octavia",
+                "altKup": "",
+                "altPol": "octavia"
+            },
+            {
+                "name": "Praktik",
+                "altKup": "",
+                "altPol": "praktik"
+            },
+            {
+                "name": "Rapid",
+                "altKup": "",
+                "altPol": "rapid"
+            },
+            {
+                "name": "Roomster",
+                "altKup": "",
+                "altPol": "roomster"
+            },
+            {
+                "name": "Scala",
+                "altKup": "",
+                "altPol": "scala"
+            },
+            {
+                "name": "Superb",
+                "altKup": "",
+                "altPol": "superb"
+            },
+            {
+                "name": "Yeti",
+                "altKup": "",
+                "altPol": "yeti"
+            },
+            {
+                "name": "Ostalo",
+                "altKup": "",
+                "altPol": "ostalo"
+            }
+        ]
+    }
+]
