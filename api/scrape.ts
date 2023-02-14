@@ -16,20 +16,21 @@ async function scrapeWebsites(req: Request, res: Response) {
   const resultKupujem: any[] = [];
 
   const pageNumKup = reqData.kupujemNum > '10' ? '10' : reqData.kupujemNum;
-  const pageNumPol = reqData.polovniNum > '10' ? '10' : reqData.polovniNum;
+  // const pageNumPol = reqData.polovniNum > '10' ? '10' : reqData.polovniNum;
 
   try {
     await Promise.race([
       Promise.all([
         kupujemHandler(reqData, resultKupujem, pageNumKup),
-        polovniHandler(reqData, resultPolovni, pageNumPol),
+        // polovniHandler(reqData, resultPolovni, pageNumPol),
       ]),
       timeoutTimer(9000),
     ]);
   } catch (e) {
     console.log(e);
   }
-  res.json({ kupujemResult: resultKupujem, polovniResult: resultPolovni });
+  // res.json({ kupujemResult: resultKupujem, polovniResult: resultPolovni });
+  res.json({ kupujemResult: resultKupujem });
 }
 
 scrapeRouter.get('/num', getNum);
