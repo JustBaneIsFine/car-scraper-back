@@ -4,6 +4,7 @@ import puppeteer from 'puppeteer-core';
 const exePath = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
 
 export default async function getBrowser() {
+  
   const options = process.env.AWS_REGION
     ? {
         args: chrome.args,
@@ -13,7 +14,7 @@ export default async function getBrowser() {
     : {
         args: [],
         executablePath: exePath,
-        headless: false,
+        headless: true,
       };
 
   const browser = await puppeteer.launch(options);
