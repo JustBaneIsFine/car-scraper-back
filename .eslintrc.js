@@ -20,12 +20,14 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'prettier'],
   rules: {
+    'no-param-reassign': 0,
     'prettier/prettier': ['error'],
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-unused-vars': [
       'error',
       { args: 'none', ignoreRestSiblings: true },
     ],
+    '@typescript-eslint/no-use-before-define': ['error', { functions: false }],
   },
   settings: {
     'import/resolver': {
