@@ -80,7 +80,8 @@ async function scrapeKupujemPage(
           console.log(response.ok());
           console.log(response.status());
           console.log(await response.text());
-          return true;
+          resultList.push(await response.text());
+
           const text = await response.text();
           const result: any = ['test'];
           const $ = cheerio.load(text);
