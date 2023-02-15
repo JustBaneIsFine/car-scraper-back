@@ -17,10 +17,18 @@ export default async function kupujemHandler(
   const transformedValues = nameTransformer(data);
 
   // Generate urls for pages:
-  for (let i = 1; i <= pageNumber; i += 1) {
-    const kupujemUrl = `https://novi.kupujemprodajem.com/automobili/pretraga?categoryId=2013&groupId=${transformedValues.kupujem.makeId}&carModel=${transformedValues.kupujem.modelId}&vehicleMakeYearMin=${data.carYearStart}.&vehicleMakeYearMax=${data.carYearEnd}.&page={${i}}`;
-    urls.push(kupujemUrl);
+  console.log(' iterate about to run');
+  console.log(pageNum);
+  try {
+    for (let i = 1; i <= pageNumber; i += 1) {
+      const kupujemUrl = `https://novi.kupujemprodajem.com/automobili/pretraga?categoryId=2013&groupId=${transformedValues.kupujem.makeId}&carModel=${transformedValues.kupujem.modelId}&vehicleMakeYearMin=${data.carYearStart}.&vehicleMakeYearMax=${data.carYearEnd}.&page={${i}}`;
+      urls.push(kupujemUrl);
+      console.log(' iterate runs');
+    }
+  } catch (error) {
+    console.log(error);
   }
+  console.log('after itterate');
   await scrapeKupujem(browser, urls, resultList);
   console.log(resultList.length, 'returned value 2');
   if (browser.isConnected()) {
@@ -74,8 +82,7 @@ async function scrapeKupujemPage(
           const result: any = ['test'];
           const $ = cheerio.load(text);
           const list = $(text).find('[class*=AdItem_adOuterHolder]');
-          console.log(list.length);
-          console.log(list);
+
           if (list === null) {
             console.log('list is null');
             return false;
