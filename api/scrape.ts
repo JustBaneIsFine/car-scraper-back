@@ -29,6 +29,7 @@ async function scrapeWebsites(req: Request, res: Response) {
   } catch (e) {
     console.log(e);
   }
+  console.log(resultKupujem.length, 'returned value 3');
   // res.json({ kupujemResult: resultKupujem, polovniResult: resultPolovni });
   res.json({ kupujemResult: resultKupujem });
 }

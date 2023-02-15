@@ -22,7 +22,7 @@ export default async function kupujemHandler(
     urls.push(kupujemUrl);
   }
   await scrapeKupujem(browser, urls, resultList);
-
+  console.log(resultList.length, 'returned value 2');
   if (browser.isConnected()) {
     await browser.close();
   }
@@ -47,6 +47,7 @@ async function scrapeKupujem(
 
     // eslint-disable-next-line no-await-in-loop
     await scrapeKupujemPage(browser, urlsArray[x], resultList);
+    console.log(resultList.length, 'returned value 1');
   }
 }
 
@@ -125,7 +126,7 @@ async function scrapeKupujemPage(
   if (resultList.length === 0) {
     console.log('length is 0');
   } else {
-    console.log('there is some data');
+    console.log('there is some data', resultList.length);
   }
   await page.close();
 }
