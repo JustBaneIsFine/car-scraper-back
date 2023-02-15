@@ -1,5 +1,7 @@
 import chrome from 'chrome-aws-lambda';
 import { addExtra } from 'puppeteer-extra';
+import 'puppeteer-extra-plugin-stealth/evasions/chrome.app';
+
 import stealthPlugin from 'puppeteer-extra-plugin-stealth';
 
 const puppeteerExtra = addExtra(chrome.puppeteer);
