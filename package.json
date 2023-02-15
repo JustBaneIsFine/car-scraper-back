@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "main": "./src/server.ts",
+  "pkg": {
+    "assets": "node_modules/puppeteer-extra-plugin-stealth/**/*.*"
+  },
   "engines": {
     "node": "^14.x"
   },
