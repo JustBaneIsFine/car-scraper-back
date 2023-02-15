@@ -72,12 +72,15 @@ async function scrapeKupujemPage(
         const result: any = ['test'];
         const $ = cheerio.load(text);
         const list = $(text).find('[class*=AdItem_adOuterHolder]');
+        console.log(list.length);
+        console.log(list);
         if (list === null) {
           console.log('list is null');
           return false;
         }
         console.log('list found');
         console.log('about to itterate');
+
         $(list).each((i, e) => {
           console.log('itterating over items in list');
           const name = $(e).find('[class*=AdItem_name]').text();
@@ -126,10 +129,6 @@ async function scrapeKupujemPage(
     }),
     await page.goto(url, { waitUntil: 'domcontentloaded' }),
   ]);
-  if (resultList.length === 0) {
-    console.log('length is 0');
-  } else {
-    console.log('there is some data', resultList.length);
-  }
+
   await page.close();
 }
