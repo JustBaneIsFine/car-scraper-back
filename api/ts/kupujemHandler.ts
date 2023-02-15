@@ -67,62 +67,67 @@ async function scrapeKupujemPage(
         response.url().includes('pretraga?categoryId') &&
         response.headers()['content-type'] === 'text/html; charset=utf-8'
       ) {
-        console.log('found response');
-        const text = await response.text();
-        const result: any = ['test'];
-        const $ = cheerio.load(text);
-        const list = $(text).find('[class*=AdItem_adOuterHolder]');
-        console.log(list.length);
-        console.log(list);
-        if (list === null) {
-          console.log('list is null');
-          return false;
+        try {
+          console.log('found response');
+
+          const text = await response.text();
+          const result: any = ['test'];
+          const $ = cheerio.load(text);
+          const list = $(text).find('[class*=AdItem_adOuterHolder]');
+          console.log(list.length);
+          console.log(list);
+          if (list === null) {
+            console.log('list is null');
+            return false;
+          }
+          console.log('list found');
+          console.log('about to itterate');
+
+          $(list).each((i, e) => {
+            console.log('itterating over items in list');
+            const name = $(e).find('[class*=AdItem_name]').text();
+            const price = $(e).find('[class*=AdItem_price_]').text();
+            const imageUrl = $(e)
+              .find('[class*=AdItem_imageHolder]')
+              .find('img')
+              .attr('src');
+            const href = $(e).find('a').attr('href');
+            const descriptionRaw = $(e)
+              .find('[class*=AdItem_adTextHolder]')
+              .find('p')
+              .text();
+
+            const id = '';
+            const descriptionArray = descriptionRaw.split(',');
+            const FuelAndDescArray = descriptionArray[3].split('.');
+            const year = descriptionArray[0].match('[0-9]+')?.[0];
+            const km = descriptionArray[1]
+              .trim()
+              .replaceAll('.', '')
+              .replace(' km', '');
+            const cc = descriptionArray[2].trim().replace(' cm3', '');
+            const fuel = FuelAndDescArray[0].trim();
+
+            const object = {
+              Name: name,
+              Price: price,
+              Fuel: fuel,
+              Km: km,
+              Cc: cc,
+              Year: year,
+              Href: href,
+              Id: id,
+              ImageUrl: imageUrl,
+            };
+            console.log(object.Name);
+            result.push(object);
+          });
+
+          resultList.push(result);
+          return true;
+        } catch (error) {
+          console.log(error);
         }
-        console.log('list found');
-        console.log('about to itterate');
-
-        $(list).each((i, e) => {
-          console.log('itterating over items in list');
-          const name = $(e).find('[class*=AdItem_name]').text();
-          const price = $(e).find('[class*=AdItem_price_]').text();
-          const imageUrl = $(e)
-            .find('[class*=AdItem_imageHolder]')
-            .find('img')
-            .attr('src');
-          const href = $(e).find('a').attr('href');
-          const descriptionRaw = $(e)
-            .find('[class*=AdItem_adTextHolder]')
-            .find('p')
-            .text();
-
-          const id = '';
-          const descriptionArray = descriptionRaw.split(',');
-          const FuelAndDescArray = descriptionArray[3].split('.');
-          const year = descriptionArray[0].match('[0-9]+')?.[0];
-          const km = descriptionArray[1]
-            .trim()
-            .replaceAll('.', '')
-            .replace(' km', '');
-          const cc = descriptionArray[2].trim().replace(' cm3', '');
-          const fuel = FuelAndDescArray[0].trim();
-
-          const object = {
-            Name: name,
-            Price: price,
-            Fuel: fuel,
-            Km: km,
-            Cc: cc,
-            Year: year,
-            Href: href,
-            Id: id,
-            ImageUrl: imageUrl,
-          };
-          console.log(object.Name);
-          result.push(object);
-        });
-
-        resultList.push(result);
-        return true;
       }
 
       return false;
