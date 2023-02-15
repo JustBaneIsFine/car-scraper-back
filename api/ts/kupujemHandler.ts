@@ -77,7 +77,7 @@ async function scrapeKupujemPage(
       ) {
         try {
           console.log('found response');
-          resultList.push(response.text());
+          resultList.push(await response.text());
           return true;
           const text = await response.text();
 
