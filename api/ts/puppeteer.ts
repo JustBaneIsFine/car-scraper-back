@@ -32,8 +32,6 @@ export default async function getBrowser() {
 
   const exePath = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
 
-  console.log('Enabled EVASIONS:, ', stealth.availableEvasions);
-
   const options = process.env.AWS_REGION
     ? {
         args: chrome.args,
