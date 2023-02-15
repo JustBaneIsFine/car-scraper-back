@@ -1,5 +1,5 @@
 import express, { Request, Response } from 'express';
-import kupujemHandler from './ts/kupujemHandler';
+// import kupujemHandler from './ts/kupujemHandler';
 import polovniHandler from './ts/polovniHandler';
 import timeoutTimer from './ts/timer';
 import getPageNum from './ts/pageNum';
@@ -11,10 +11,8 @@ scrapeRouter.get('/', scrapeWebsites);
 
 async function scrapeWebsites(req: Request, res: Response) {
   const reqData: CarRequestValues = req.body;
-  console.log('body:', req.body);
-  console.log('runs 1');
   const resultPolovni: any[] = [];
-  const resultKupujem: any[] = [];
+  // const resultKupujem: any[] = [];
 
   // const pageNumKup = reqData.kupujemNum > '10' ? '10' : reqData.kupujemNum;
   const pageNumPol = reqData.polovniNum > '10' ? '10' : reqData.polovniNum;
@@ -30,7 +28,6 @@ async function scrapeWebsites(req: Request, res: Response) {
   } catch (e) {
     console.log(e);
   }
-  console.log(resultKupujem.length, 'returned value 3');
   // res.json({ kupujemResult: resultKupujem, polovniResult: resultPolovni });
   res.json({ polovniResult: resultPolovni });
 }

@@ -7,55 +7,55 @@ export default async function getPageNum(data: CarValues) {
   console.log(transformedValues);
 
   // create URL's for data
-  const kupujemUrl = `https://novi.kupujemprodajem.com/automobili/pretraga?categoryId=2013&groupId=${transformedValues.kupujem.makeId}&carModel=${transformedValues.kupujem.modelId}&vehicleMakeYearMin=${data.carYearStart}.&vehicleMakeYearMax=${data.carYearEnd}.&page=1`;
+  // const kupujemUrl = `https://novi.kupujemprodajem.com/automobili/pretraga?categoryId=2013&groupId=${transformedValues.kupujem.makeId}&carModel=${transformedValues.kupujem.modelId}&vehicleMakeYearMin=${data.carYearStart}.&vehicleMakeYearMax=${data.carYearEnd}.&page=1`;
   const polovniUrl = `https://www.polovniautomobili.com/auto-oglasi/pretraga?page=1&brand=${transformedValues.polovni.makeId}&model[]=${transformedValues.polovni.modelId}&year_from=${data.carYearStart}&year_to=${data.carYearEnd}`;
 
   const polovniResult = await polovniPageNum(polovniUrl);
-  const kupujemResult = await kupujemPageNum(kupujemUrl);
+  // const kupujemResult = await kupujemPageNum(kupujemUrl);
 
   return {
     polovniResultNum: polovniResult,
-    kupujemResultNum: kupujemResult,
+    // kupujemResultNum: kupujemResult,
   };
 }
 
-async function kupujemPageNum(url: string) {
-  const browser = await getBrowser();
-  const page = await browser.newPage();
-  await page.goto(url, { waitUntil: 'domcontentloaded' });
+// async function kupujemPageNum(url: string) {
+//   const browser = await getBrowser();
+//   const page = await browser.newPage();
+//   await page.goto(url, { waitUntil: 'domcontentloaded' });
 
-  await page.waitForSelector('[class*=breadcrumbHolder]');
+//   await page.waitForSelector('[class*=breadcrumbHolder]');
 
-  const dataIsThere = await page.evaluate(async () => {
-    const textNotification = document.querySelector(
-      '.NotificationBox_text__FgaiD'
-    );
+//   const dataIsThere = await page.evaluate(async () => {
+//     const textNotification = document.querySelector(
+//       '.NotificationBox_text__FgaiD'
+//     );
 
-    if (textNotification === null) {
-      return true;
-    }
-    return false;
-  });
+//     if (textNotification === null) {
+//       return true;
+//     }
+//     return false;
+//   });
 
-  if (dataIsThere === false) {
-    return 'there is no data';
-  }
+//   if (dataIsThere === false) {
+//     return 'there is no data';
+//   }
 
-  const pageNum: number | undefined = await page.evaluate(() => {
-    const resultNumber = document
-      .querySelector('[class*=breadcrumbHolder]')
-      ?.querySelector('span')
-      ?.querySelector('span');
-    const resultNumExtracted: any = resultNumber?.innerText.match(/(\d+)/)?.[0];
+//   const pageNum: number | undefined = await page.evaluate(() => {
+//     const resultNumber = document
+//       .querySelector('[class*=breadcrumbHolder]')
+//       ?.querySelector('span')
+//       ?.querySelector('span');
+//     const resultNumExtracted: any = resultNumber?.innerText.match(/(\d+)/)?.[0];
 
-    if (resultNumExtracted === undefined) {
-      return undefined;
-    }
-    return Math.ceil(resultNumExtracted / 30);
-  });
+//     if (resultNumExtracted === undefined) {
+//       return undefined;
+//     }
+//     return Math.ceil(resultNumExtracted / 30);
+//   });
 
-  return pageNum;
-}
+//   return pageNum;
+// }
 
 async function polovniPageNum(url: string) {
   const browser = await getBrowser();

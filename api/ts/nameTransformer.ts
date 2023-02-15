@@ -17,11 +17,11 @@ export default function nameTransformer(data: CarValues) {
       yearStart: data.carYearStart,
       yearEnd: data.carYearEnd,
     },
-    kupujem: {
-      makeId: foundObject?.altKup,
-      modelId: foundModel?.altKup,
-      yearStart: data.carYearStart,
-      yearEnd: data.carYearEnd,
-    },
+    // kupujem: {
+    //   makeId: foundObject?.altKup,
+    //   modelId: foundModel?.altKup,
+    //   yearStart: data.carYearStart,
+    //   yearEnd: data.carYearEnd,
+    // },
   };
 }

@@ -55,8 +55,6 @@ async function scrapePolovniPage(
   url: string,
   resultList: any[]
 ) {
-  //
-
   const page = await browser.newPage();
   await Promise.all([
     page.waitForResponse(async (response) => {
