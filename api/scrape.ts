@@ -11,7 +11,7 @@ scrapeRouter.get('/', scrapeWebsites);
 
 async function scrapeWebsites(req: Request, res: Response) {
   const reqData: CarRequestValues = req.body;
-
+  console.log('runs 1');
   const resultPolovni: any[] = [];
   const resultKupujem: any[] = [];
 

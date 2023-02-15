@@ -9,7 +9,9 @@ export default async function kupujemHandler(
   resultList: any[],
   pageNum: string
 ) {
+  console.log('handler runs');
   const browser = await getBrowser();
+  console.log('handler runs after get browser');
   const urls: Array<string> = [];
   const pageNumber = parseInt(pageNum, 10);
   const transformedValues = nameTransformer(data);
@@ -53,6 +55,7 @@ async function scrapeKupujemPage(
   url: string,
   resultList: any[]
 ) {
+  console.log('page scraping loads');
   const page = await browser.newPage();
   await Promise.all([
     page.waitForResponse(async (response) => {
