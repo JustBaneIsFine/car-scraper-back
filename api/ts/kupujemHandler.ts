@@ -110,8 +110,8 @@ async function scrapeKupujemPage(
             const year = descriptionArray[0].match('[0-9]+')?.[0];
             const km = descriptionArray[1]
               .trim()
-              .replaceAll('.', '')
-              .replace(' km', '');
+              .replace(/./g, '')
+              .replace(/ km/g, '');
             const cc = descriptionArray[2].trim().replace(' cm3', '');
             const fuel = FuelAndDescArray[0].trim();
 
