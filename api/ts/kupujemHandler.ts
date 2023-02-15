@@ -89,8 +89,10 @@ async function scrapeKupujemPage(
           }
           console.log('list found');
           console.log('about to itterate');
+          console.log(list.length);
+          console.log(list.toArray().length);
 
-          list.toArray().forEach((l) => {
+          list.toArray().forEach((e) => {
             console.log('list item');
           });
 
