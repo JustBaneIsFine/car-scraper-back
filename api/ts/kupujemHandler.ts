@@ -87,6 +87,7 @@ async function scrapeKupujemPage(
             console.log('list is null');
             return false;
           }
+          console.log(list);
           console.log('list found');
           console.log('about to itterate');
           console.log(list.length);
