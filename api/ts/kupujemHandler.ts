@@ -81,12 +81,14 @@ async function scrapeKupujemPage(
           const text = await response.text();
           const result: any = ['test'];
           const $ = cheerio.load(text);
-          const list = $(text).find('[class*=AdItem_adOuterHolder]');
+          const list = $('[class*=AdItem_adOuterHolder]');
 
           if (list === null) {
             console.log('list is null');
             return false;
           }
+          console.log('type:', typeof list);
+          console.log('type 2:', typeof $(list));
           console.log($(list).html());
           console.log('list found');
           console.log('about to itterate');
