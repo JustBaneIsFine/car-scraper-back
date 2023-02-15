@@ -101,7 +101,7 @@ async function scrapePolovniPage(
               priceDiscount = x
                 .text()
                 .trim()
-                .replaceAll('.', '')
+                .replace(/./g, '')
                 .replace(' €', '');
             }
           } catch (error) {
@@ -112,7 +112,7 @@ async function scrapePolovniPage(
               .find('div[class*="price"]')
               .text()
               .trim()
-              .replaceAll('.', '')
+              .replace(/./g, '')
               .replace(' €', '');
           }
           const descriptionRaw1 = $(e).find('div[class*="setInfo"]')[0];
@@ -150,7 +150,7 @@ async function scrapePolovniPage(
             .find('div[class="top"]')
             .text()
             .replace(' km', '')
-            .replaceAll('.', '');
+            .replace(/./g, '');
 
           const link = `https://www.polovniautomobili.com${linkRaw}`;
 
