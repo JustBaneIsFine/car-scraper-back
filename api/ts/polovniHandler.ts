@@ -71,8 +71,9 @@ async function scrapePolovniPage(
         // gather data
 
         const ordinaryList = $('article[class*="classified"]');
-
+        console.log('before EACH');
         $(ordinaryList).each((i, e) => {
+          console.log('inside each');
           // if element is hidden, don't load it
           let hidden = false;
           try {
@@ -167,6 +168,7 @@ async function scrapePolovniPage(
           resultList.push(object);
         });
         return true;
+        console.log('after EACH');
       }
 
       return false;
