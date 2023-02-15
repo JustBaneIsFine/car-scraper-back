@@ -90,45 +90,47 @@ async function scrapeKupujemPage(
           console.log('list found');
           console.log('about to itterate');
           try {
-            list.toArray().forEach((e) => {
-              console.log('itterating over items in list');
-              const name = $(e).find('[class*=AdItem_name]').text();
-              const price = $(e).find('[class*=AdItem_price_]').text();
-              const imageUrl = $(e)
-                .find('[class*=AdItem_imageHolder]')
-                .find('img')
-                .attr('src');
-              const href = $(e).find('a').attr('href');
-              const descriptionRaw = $(e)
-                .find('[class*=AdItem_adTextHolder]')
-                .find('p')
-                .text();
+            $(list)
+              .toArray()
+              .forEach((e) => {
+                console.log('itterating over items in list');
+                // const name = $(e).find('[class*=AdItem_name]').text();
+                // const price = $(e).find('[class*=AdItem_price_]').text();
+                // const imageUrl = $(e)
+                //   .find('[class*=AdItem_imageHolder]')
+                //   .find('img')
+                //   .attr('src');
+                // const href = $(e).find('a').attr('href');
+                // const descriptionRaw = $(e)
+                //   .find('[class*=AdItem_adTextHolder]')
+                //   .find('p')
+                //   .text();
 
-              const id = '';
-              const descriptionArray = descriptionRaw.split(',');
-              const FuelAndDescArray = descriptionArray[3].split('.');
-              const year = descriptionArray[0].match('[0-9]+')?.[0];
-              const km = descriptionArray[1]
-                .trim()
-                .replace(/./g, '')
-                .replace(/km/g, '');
-              const cc = descriptionArray[2].trim().replace(' cm3', '');
-              const fuel = FuelAndDescArray[0].trim();
+                // const id = '';
+                // const descriptionArray = descriptionRaw.split(',');
+                // const FuelAndDescArray = descriptionArray[3].split('.');
+                // const year = descriptionArray[0].match('[0-9]+')?.[0];
+                // const km = descriptionArray[1]
+                //   .trim()
+                //   .replace(/./g, '')
+                //   .replace(/km/g, '');
+                // const cc = descriptionArray[2].trim().replace(' cm3', '');
+                // const fuel = FuelAndDescArray[0].trim();
 
-              const object = {
-                Name: name,
-                Price: price,
-                Fuel: fuel,
-                Km: km,
-                Cc: cc,
-                Year: year,
-                Href: href,
-                Id: id,
-                ImageUrl: imageUrl,
-              };
-              console.log(object.Name);
-              result.push(object);
-            });
+                // const object = {
+                //   Name: name,
+                //   Price: price,
+                //   Fuel: fuel,
+                //   Km: km,
+                //   Cc: cc,
+                //   Year: year,
+                //   Href: href,
+                //   Id: id,
+                //   ImageUrl: imageUrl,
+                // };
+                // console.log(object.Name);
+                // result.push(object);
+              });
           } catch (error) {
             console.log('----ERROR:', error);
           }
