@@ -90,7 +90,7 @@ async function scrapeKupujemPage(
           console.log('list found');
           console.log('about to itterate');
 
-          list.each((i, e) => {
+          list.toArray().forEach((e) => {
             console.log('itterating over items in list');
             const name = $(e).find('[class*=AdItem_name]').text();
             const price = $(e).find('[class*=AdItem_price_]').text();
