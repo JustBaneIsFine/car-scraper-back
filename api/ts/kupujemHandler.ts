@@ -69,10 +69,11 @@ async function scrapeKupujemPage(
       ) {
         console.log('found response');
         const text = await response.text();
-        const result: any = [];
+        const result: any = ['test'];
         const $ = cheerio.load(text);
         const list = $(text).find('[class*=AdItem_adOuterHolder]');
         if (list === null) {
+          console.log('list is null');
           return false;
         }
 
@@ -111,7 +112,7 @@ async function scrapeKupujemPage(
             Id: id,
             ImageUrl: imageUrl,
           };
-
+          console.log(object.Name);
           result.push(object);
         });
 
