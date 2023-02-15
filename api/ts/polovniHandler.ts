@@ -66,6 +66,7 @@ async function scrapePolovniPage(
       ) {
         // load html with cheerio
         const dataHtml = await response.text();
+
         const $ = cheerio.load(dataHtml);
 
         // gather data
