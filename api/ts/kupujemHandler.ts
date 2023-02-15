@@ -88,7 +88,7 @@ async function scrapeKupujemPage(
             return false;
           }
           console.log('type:', typeof list);
-          console.log('type 2:', typeof $(list));
+          console.log('keys', Object.keys(list));
           console.log($(list).html());
           console.log('list found');
           console.log('about to itterate');
