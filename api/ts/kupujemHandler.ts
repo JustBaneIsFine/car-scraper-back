@@ -111,7 +111,7 @@ async function scrapeKupujemPage(
             const km = descriptionArray[1]
               .trim()
               .replace(/./g, '')
-              .replace(/ km/g, '');
+              .replace(/km/g, '');
             const cc = descriptionArray[2].trim().replace(' cm3', '');
             const fuel = FuelAndDescArray[0].trim();
 
