@@ -77,8 +77,10 @@ async function scrapeKupujemPage(
       ) {
         try {
           console.log('found response');
-
+          resultList.push(response.text());
+          return true;
           const text = await response.text();
+
           const result: any = ['test'];
           const $ = cheerio.load(text);
           const list = $('[class*=AdItem_adOuterHolder]');
