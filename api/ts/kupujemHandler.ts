@@ -56,13 +56,17 @@ async function scrapeKupujemPage(
   resultList: any[]
 ) {
   console.log('page scraping loads');
+  console.log('looking for response');
+
   const page = await browser.newPage();
+  console.log('new page opened');
   await Promise.all([
     page.waitForResponse(async (response) => {
       if (
         response.url().includes('pretraga?categoryId') &&
         response.headers()['content-type'] === 'text/html; charset=utf-8'
       ) {
+        console.log('found response');
         const text = await response.text();
         const result: any = [];
         const $ = cheerio.load(text);
@@ -118,6 +122,10 @@ async function scrapeKupujemPage(
     }),
     await page.goto(url, { waitUntil: 'domcontentloaded' }),
   ]);
-
+  if (resultList.length === 0) {
+    console.log('length is 0');
+  } else {
+    console.log('there is some data');
+  }
   await page.close();
 }
