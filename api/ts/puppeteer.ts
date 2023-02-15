@@ -1,5 +1,8 @@
 import chrome from 'chrome-aws-lambda';
-import puppeteer from 'puppeteer-core';
+import puppeteer from 'puppeteer-extra';
+import stealthPlugin from 'puppeteer-extra-plugin-stealth';
+
+puppeteer.use(stealthPlugin());
 
 const exePath = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
 
