@@ -1,5 +1,5 @@
 import * as cheerio from 'cheerio';
-import { Browser } from 'puppeteer';
+import { Browser } from 'puppeteer-core';
 import { CarValues } from '../interfaces/general';
 import nameTransformer from './nameTransformer';
 import getBrowser from './puppeteer';
