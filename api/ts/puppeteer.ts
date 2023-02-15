@@ -23,16 +23,17 @@ import 'puppeteer-extra-plugin-user-data-dir';
 
 import stealthPlugin from 'puppeteer-extra-plugin-stealth';
 
-const puppeteerExtra = addExtra(chrome.puppeteer);
-
-const stealth = stealthPlugin();
-console.log('AVAILABLE EVASIONS:, ', stealth.availableEvasions);
-
-puppeteerExtra.use(stealth);
-
-const exePath = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
-
 export default async function getBrowser() {
+  const puppeteerExtra = addExtra(chrome.puppeteer);
+
+  const stealth = stealthPlugin();
+
+  puppeteerExtra.use(stealth);
+
+  const exePath = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
+
+  console.log('AVAILABLE EVASIONS:, ', stealth.availableEvasions);
+
   const options = process.env.AWS_REGION
     ? {
         args: chrome.args,
