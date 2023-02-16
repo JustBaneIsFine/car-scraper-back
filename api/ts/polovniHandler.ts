@@ -167,7 +167,6 @@ async function scrapePolovniPage(
           resultList.push(object);
         });
         return true;
-        console.log('after EACH');
       }
 
       return false;

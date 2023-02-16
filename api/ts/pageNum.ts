@@ -13,10 +13,8 @@ export default async function getPageNum(data: CarValues) {
   const polovniResult = await polovniPageNum(polovniUrl);
   // const kupujemResult = await kupujemPageNum(kupujemUrl);
 
-  return {
-    polovniResultNum: polovniResult,
-    // kupujemResultNum: kupujemResult,
-  };
+  return polovniResult;
+  // kupujemResultNum: kupujemResult,
 }
 
 // async function kupujemPageNum(url: string) {
@@ -57,7 +55,7 @@ export default async function getPageNum(data: CarValues) {
 //   return pageNum;
 // }
 
-async function polovniPageNum(url: string) {
+async function polovniPageNum(url: string): Promise<number | false> {
   const browser = await getBrowser();
   const page = await browser.newPage();
   await page.goto(url, { waitUntil: 'domcontentloaded' });
@@ -93,6 +91,8 @@ async function polovniPageNum(url: string) {
     }
     return undefined;
   });
-
+  if (pageNum === undefined) {
+    return false;
+  }
   return pageNum;
 }

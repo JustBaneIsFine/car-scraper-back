@@ -29,13 +29,16 @@ async function scrapeWebsites(req: Request, res: Response) {
     console.log(e);
   }
   // res.json({ kupujemResult: resultKupujem, polovniResult: resultPolovni });
-  res.json({ polovniResult: resultPolovni });
+  if (resultPolovni.length === 0) {
+    res.json({ data: false });
+  }
+  res.json({ data: resultPolovni });
 }
 
 scrapeRouter.get('/num', getNum);
 
 async function getNum(req: Request, res: Response) {
   const result = await getPageNum(req.body);
-  res.json(result);
+  res.json({ data: result });
 }
 export default scrapeRouter;
