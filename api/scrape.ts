@@ -42,15 +42,15 @@ async function getNum(req: Request, res: Response) {
   console.log(req.body);
 
   if (Object.keys(req.body).length < 4) {
-    res.json({ data: false });
+    res.json({ data: false, error: 'invalid data 1' });
     return;
   }
 
   const result = await getPageNum(req.body);
   if (result === false) {
-    res.json({ data: false });
+    res.json({ data: false, error: 'invalid data 2' });
     return;
   }
-  res.json({ data: result });
+  res.json({ data: result, error: 'valid data 3' });
 }
 export default scrapeRouter;
