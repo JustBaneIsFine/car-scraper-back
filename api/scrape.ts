@@ -7,7 +7,7 @@ import { CarRequestValues } from './interfaces/general';
 
 const scrapeRouter = express.Router();
 
-scrapeRouter.get('/', scrapeWebsites);
+scrapeRouter.post('/', scrapeWebsites);
 
 async function scrapeWebsites(req: Request, res: Response) {
   const resultPolovni: any[] = [];
@@ -36,7 +36,7 @@ async function scrapeWebsites(req: Request, res: Response) {
   res.json({ data: resultPolovni });
 }
 
-scrapeRouter.get('/num', getNum);
+scrapeRouter.post('/num', getNum);
 
 async function getNum(req: Request, res: Response) {
   console.log(req.body);
