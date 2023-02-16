@@ -4,8 +4,12 @@ import getBrowser from './puppeteer';
 
 export default async function getPageNum(data: CarValues) {
   const transformedValues = nameTransformer(data);
-  console.log(transformedValues);
-
+  if (
+    transformedValues.polovni.makeId === undefined ||
+    transformedValues.polovni.modelId === undefined
+  ) {
+    return false;
+  }
   // create URL's for data
   // const kupujemUrl = `https://novi.kupujemprodajem.com/automobili/pretraga?categoryId=2013&groupId=${transformedValues.kupujem.makeId}&carModel=${transformedValues.kupujem.modelId}&vehicleMakeYearMin=${data.carYearStart}.&vehicleMakeYearMax=${data.carYearEnd}.&page=1`;
   const polovniUrl = `https://www.polovniautomobili.com/auto-oglasi/pretraga?page=1&brand=${transformedValues.polovni.makeId}&model[]=${transformedValues.polovni.modelId}&year_from=${data.carYearStart}&year_to=${data.carYearEnd}`;
@@ -73,7 +77,7 @@ async function polovniPageNum(url: string): Promise<number | false> {
   });
 
   if (dataIsThere === false) {
-    return 'there is no data';
+    return false;
   }
 
   const pageNum: number | undefined = await page.evaluate(() => {

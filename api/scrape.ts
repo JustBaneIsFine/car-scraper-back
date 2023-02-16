@@ -10,7 +10,7 @@ const scrapeRouter = express.Router();
 scrapeRouter.get('/', scrapeWebsites);
 
 async function scrapeWebsites(req: Request, res: Response) {
-  const reqData: CarRequestValues = JSON.parse(req.body);
+  const reqData: CarRequestValues = req.body;
   const resultPolovni: any[] = [];
   // const resultKupujem: any[] = [];
 
@@ -31,6 +31,7 @@ async function scrapeWebsites(req: Request, res: Response) {
   // res.json({ kupujemResult: resultKupujem, polovniResult: resultPolovni });
   if (resultPolovni.length === 0) {
     res.json({ data: false });
+    return;
   }
   res.json({ data: resultPolovni });
 }
@@ -38,8 +39,18 @@ async function scrapeWebsites(req: Request, res: Response) {
 scrapeRouter.get('/num', getNum);
 
 async function getNum(req: Request, res: Response) {
-  const reqData = JSON.parse(req.body);
-  const result = await getPageNum(reqData);
+  console.log(req.body);
+
+  if (Object.keys(req.body).length < 4) {
+    res.json({ data: false });
+    return;
+  }
+
+  const result = await getPageNum(req.body);
+  if (result === false) {
+    res.json({ data: false });
+    return;
+  }
   res.json({ data: result });
 }
 export default scrapeRouter;
