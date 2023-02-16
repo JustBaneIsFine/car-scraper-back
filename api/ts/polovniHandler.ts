@@ -2,7 +2,7 @@ import * as cheerio from 'cheerio';
 import { Browser } from 'puppeteer-core';
 import getBrowser from './puppeteer';
 import nameTransformer from './nameTransformer';
-import { CarValues } from '../interfaces/general';
+import { CarObject, CarValues } from '../interfaces/general';
 
 export default async function polovniHandler(
   data: CarValues,
@@ -53,7 +53,7 @@ async function scrapePolovni(
 async function scrapePolovniPage(
   browser: Browser,
   url: string,
-  resultList: any[]
+  resultList: CarObject[]
 ) {
   const page = await browser.newPage();
   await Promise.all([
@@ -114,6 +114,9 @@ async function scrapePolovniPage(
               .replace(/./g, '')
               .replace(' €', '');
           }
+          if (priceRaw === undefined) {
+            priceRaw = 'no price';
+          }
           const descriptionRaw1 = $(e).find('div[class*="setInfo"]')[0];
           const descriptionRaw2 = $(e).find('div[class*="setInfo"]')[1];
           const year = $(descriptionRaw1)
@@ -153,16 +156,16 @@ async function scrapePolovniPage(
 
           const link = `https://www.polovniautomobili.com${linkRaw}`;
 
-          const object = {
-            Name: name,
-            Price: priceDiscount === undefined ? priceRaw : priceDiscount,
-            Fuel: fuel,
-            Km: km,
-            Cc: cc,
-            Year: year,
+          const object: CarObject = {
+            CarName: name,
+            CarPrice: priceDiscount !== undefined ? priceDiscount : priceRaw,
+            CarFuel: fuel,
+            CarKM: km,
+            CarCC: cc !== undefined ? cc : 'no data',
+            CarYear: year !== undefined ? year : 'no data',
             Href: link,
             Id: '',
-            ImageUrl: imageLink,
+            ImageUrl: imageLink === undefined ? 'no data' : imageLink,
           };
           resultList.push(object);
         });
