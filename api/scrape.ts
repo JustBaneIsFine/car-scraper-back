@@ -10,18 +10,18 @@ const scrapeRouter = express.Router();
 scrapeRouter.get('/', scrapeWebsites);
 
 async function scrapeWebsites(req: Request, res: Response) {
-  const reqData: CarRequestValues = req.body;
   const resultPolovni: any[] = [];
   // const resultKupujem: any[] = [];
-
+  console.log(req.body);
   // const pageNumKup = reqData.kupujemNum > '10' ? '10' : reqData.kupujemNum;
-  const pageNumPol = reqData.polovniNum > '10' ? '10' : reqData.polovniNum;
+  const pageNumPol =
+    req.body.pageNumPolovni > '10' ? '10' : req.body.pageNumPolovni;
 
   try {
     await Promise.race([
       Promise.all([
         // kupujemHandler(reqData, resultKupujem, pageNumKup),
-        polovniHandler(reqData, resultPolovni, pageNumPol),
+        polovniHandler(req.body.reqData, resultPolovni, pageNumPol),
       ]),
       timeoutTimer(9000),
     ]);
