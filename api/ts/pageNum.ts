@@ -2,6 +2,7 @@ import * as cheerio from 'cheerio';
 import { CarValues } from '../interfaces/general';
 import nameTransformer from './nameTransformer';
 import getBrowser from './puppeteer';
+import timeoutTimer, { timeoutTimerPageLoad } from './timer';
 
 export default async function getPageNum(data: CarValues) {
   console.log('transforming values');
@@ -105,9 +106,12 @@ async function polovniPageNum(url: string): Promise<number | false> {
       }
       return false;
     }),
-    await page.goto(url, { waitUntil: 'domcontentloaded' }).then(() => {
-      console.log('page loaded________________________');
-    }),
+    Promise.race([
+      timeoutTimerPageLoad(2000),
+      page.goto(url, { waitUntil: 'domcontentloaded' }).then(() => {
+        console.log('page loaded________________________');
+      }),
+    ]),
   ]);
   console.log('finished everything');
 

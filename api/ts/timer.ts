@@ -6,3 +6,13 @@ export default function timeoutTimer(ms: number) {
   });
   return timerPromise;
 }
+
+export function timeoutTimerPageLoad(ms: number) {
+  const timerPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log('resolved page load');
+      resolve('resolved');
+    }, ms);
+  });
+  return timerPromise;
+}
