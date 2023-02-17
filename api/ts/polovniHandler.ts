@@ -97,24 +97,35 @@ async function scrapePolovniPage(
           try {
             const x = $(e).find('span[class*="discount"i]');
             if (x.length > 0) {
+              // eslint-disable-next-line prefer-destructuring
               priceDiscount = x
                 .text()
                 .trim()
-                .replace(/./g, '')
-                .replace(' €', '');
+                .replace('.', '')
+                .replace(' €', '')
+                .replace(/\t/g, '')
+                .replace(/\n/g, '')
+                .split('+')[0]
+                .trim();
             }
           } catch (error) {
-            //
+            console.log(error);
           }
-          if (priceDiscount === undefined) {
+          if (priceDiscount === undefined || priceDiscount === '') {
+            // eslint-disable-next-line prefer-destructuring
             priceRaw = $(e)
               .find('div[class*="price"]')
               .text()
               .trim()
-              .replace(/./g, '')
-              .replace(' €', '');
+              .replace('.', '')
+              .replace(' €', '')
+              .replace(/\t/g, '')
+              .replace(/\n/g, '')
+              .split('+')[0]
+              .trim();
           }
-          if (priceRaw === undefined) {
+          console.log(priceRaw);
+          if (priceRaw === undefined || priceRaw === '') {
             priceRaw = 'no price';
           }
           const descriptionRaw1 = $(e).find('div[class*="setInfo"]')[0];
@@ -152,8 +163,7 @@ async function scrapePolovniPage(
             .find('div[class="top"]')
             .text()
             .replace(' km', '')
-            .replace(/./g, '');
-
+            .replace('.', '');
           const link = `https://www.polovniautomobili.com${linkRaw}`;
 
           const object: CarObject = {

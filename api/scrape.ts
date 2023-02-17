@@ -26,7 +26,7 @@ async function scrapeWebsites(req: Request, res: Response) {
       timeoutTimer(9000),
     ]);
   } catch (e) {
-    console.log(e);
+    console.log('Timer error', e);
   }
   // res.json({ kupujemResult: resultKupujem, polovniResult: resultPolovni });
   if (resultPolovni.length === 0) {
