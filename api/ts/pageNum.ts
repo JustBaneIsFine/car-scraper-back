@@ -3,6 +3,7 @@ import nameTransformer from './nameTransformer';
 import getBrowser from './puppeteer';
 
 export default async function getPageNum(data: CarValues) {
+  console.log('transforming values');
   const transformedValues = nameTransformer(data);
   if (
     transformedValues.polovni.makeId === undefined ||
@@ -10,10 +11,11 @@ export default async function getPageNum(data: CarValues) {
   ) {
     return false;
   }
+  console.log('values transformed');
   // create URL's for data
   // const kupujemUrl = `https://novi.kupujemprodajem.com/automobili/pretraga?categoryId=2013&groupId=${transformedValues.kupujem.makeId}&carModel=${transformedValues.kupujem.modelId}&vehicleMakeYearMin=${data.carYearStart}.&vehicleMakeYearMax=${data.carYearEnd}.&page=1`;
   const polovniUrl = `https://www.polovniautomobili.com/auto-oglasi/pretraga?page=1&brand=${transformedValues.polovni.makeId}&model[]=${transformedValues.polovni.modelId}&year_from=${data.carYearStart}&year_to=${data.carYearEnd}`;
-
+  console.log('going into polovni page num');
   const polovniResult = await polovniPageNum(polovniUrl);
   // const kupujemResult = await kupujemPageNum(kupujemUrl);
 
@@ -60,10 +62,12 @@ export default async function getPageNum(data: CarValues) {
 // }
 
 async function polovniPageNum(url: string): Promise<number | false> {
+  console.log('waiting for browser');
   const browser = await getBrowser();
+  console.log(' browser loaded');
   const page = await browser.newPage();
   await page.goto(url, { waitUntil: 'domcontentloaded' });
-
+  console.log(' page loaded');
   await page.waitForSelector('.paBlueButtonPrimary');
   console.log('waiting for no result test');
   const dataIsThere = await page.evaluate(async () => {
