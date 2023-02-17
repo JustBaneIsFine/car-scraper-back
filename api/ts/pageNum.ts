@@ -115,5 +115,8 @@ async function polovniPageNum(url: string): Promise<number | false> {
   ]);
   console.log('finished everything');
 
+  if (browser.isConnected()) {
+    await browser.close();
+  }
   return num;
 }
