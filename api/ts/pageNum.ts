@@ -1,3 +1,4 @@
+import * as cheerio from 'cheerio';
 import { CarValues } from '../interfaces/general';
 import nameTransformer from './nameTransformer';
 import getBrowser from './puppeteer';
@@ -62,45 +63,44 @@ export default async function getPageNum(data: CarValues) {
 // }
 
 async function polovniPageNum(url: string): Promise<number | false> {
-  console.log('waiting for browser');
   const browser = await getBrowser();
-  console.log(' browser loaded');
   const page = await browser.newPage();
-  await page.goto(url, { waitUntil: 'domcontentloaded' });
-  console.log(' page loaded');
-  await page.waitForSelector('.paBlueButtonPrimary');
-  console.log('waiting for no result test');
-  const dataIsThere = await page.evaluate(async () => {
-    const text = document.querySelector('.paBlueButtonPrimary')?.parentElement
-      ?.parentElement?.innerText;
+  let num: number | false = 0;
 
-    if (text !== undefined && text.includes('Trenutno nema rezultata')) {
+  await Promise.all([
+    page.waitForResponse(async (response) => {
+      if (
+        response.url().includes('pretraga?') &&
+        response.headers()['content-type'] === 'text/html; charset=UTF-8'
+      ) {
+        // load html with cheerio
+        const dataHtml = await response.text();
+
+        const $ = cheerio.load(dataHtml);
+
+        const text = $('.reversre-search').text();
+        if (text !== null && text.includes('Trenutno nema rezultata')) {
+          num = false;
+          return true;
+        }
+
+        const smallText = $(
+          'div.js-hide-on-filter:nth-child(3) > small:nth-child(1)'
+        );
+        if (smallText !== null && smallText !== undefined) {
+          const numOfAds = $(smallText).text();
+          const number: number = parseInt(
+            numOfAds.slice(-5).replace(/\D/g, ''),
+            10
+          );
+          num = Math.ceil(number / 25);
+          return true;
+        }
+        return true;
+      }
       return false;
-    }
-    return true;
-  });
-
-  if (dataIsThere === false) {
-    return false;
-  }
-  console.log('getting page num');
-  const pageNum: number | undefined = await page.evaluate(() => {
-    const smallText: HTMLElement | null = document.querySelector(
-      'div.js-hide-on-filter:nth-child(3) > small:nth-child(1)'
-    );
-
-    if (smallText !== null && smallText !== undefined) {
-      const numOfAds = smallText.innerText;
-      const number: number = parseInt(
-        numOfAds.slice(-5).replace(/\D/g, ''),
-        10
-      );
-      return Math.ceil(number / 25);
-    }
-    return undefined;
-  });
-  if (pageNum === undefined) {
-    return false;
-  }
-  return pageNum;
+    }),
+    await page.goto(url, { waitUntil: 'domcontentloaded' }),
+  ]);
+  return num;
 }
