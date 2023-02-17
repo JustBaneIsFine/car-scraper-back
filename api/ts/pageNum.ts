@@ -105,7 +105,9 @@ async function polovniPageNum(url: string): Promise<number | false> {
       }
       return false;
     }),
-    await page.goto(url, { waitUntil: 'domcontentloaded' }),
+    await page.goto(url, { waitUntil: 'domcontentloaded' }).then(() => {
+      console.log('page loaded________________________');
+    }),
   ]);
   console.log('finished everything');
 
