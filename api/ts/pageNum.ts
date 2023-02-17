@@ -65,7 +65,7 @@ async function polovniPageNum(url: string): Promise<number | false> {
   await page.goto(url, { waitUntil: 'domcontentloaded' });
 
   await page.waitForSelector('.paBlueButtonPrimary');
-
+  console.log('waiting for no result test');
   const dataIsThere = await page.evaluate(async () => {
     const text = document.querySelector('.paBlueButtonPrimary')?.parentElement
       ?.parentElement?.innerText;
@@ -79,7 +79,7 @@ async function polovniPageNum(url: string): Promise<number | false> {
   if (dataIsThere === false) {
     return false;
   }
-
+  console.log('getting page num');
   const pageNum: number | undefined = await page.evaluate(() => {
     const smallText: HTMLElement | null = document.querySelector(
       'div.js-hide-on-filter:nth-child(3) > small:nth-child(1)'
