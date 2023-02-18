@@ -15,13 +15,12 @@ async function scrapeWebsites(req: Request, res: Response) {
   console.log(req.body);
   // const pageNumKup = reqData.kupujemNum > '10' ? '10' : reqData.kupujemNum;
   const pageNumberParsed = parseInt(req.body.pageNumPolovni, 10);
-  const pageNumPol = pageNumberParsed > 10 ? 10 : pageNumberParsed;
 
   try {
     await Promise.race([
       Promise.all([
         // kupujemHandler(reqData, resultKupujem, pageNumKup),
-        polovniHandler(req.body.reqData, resultPolovni, pageNumPol),
+        polovniHandler(req.body.reqData, resultPolovni, pageNumberParsed),
       ]),
       timeoutTimer(9000),
     ]);

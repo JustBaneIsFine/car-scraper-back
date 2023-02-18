@@ -10,15 +10,16 @@ export default async function polovniHandler(
   pageNum: number
 ) {
   const browser = await getBrowser();
-  const urls: Array<string> = [];
+  // const urls: Array<string> = [];
   const transformedValues = nameTransformer(data);
   // Generate urls for pages:
-  for (let i = 1; i <= pageNum; i += 1) {
-    const polovniUrl = `https://www.polovniautomobili.com/auto-oglasi/pretraga?page=${i}&brand=${transformedValues.polovni.makeId}&model[]=${transformedValues.polovni.modelId}&year_from=${data.carYearStart}&year_to=${data.carYearEnd}`;
-    urls.push(polovniUrl);
-  }
+  // for (let i = 1; i <= pageNum; i += 1) {
+  //   const polovniUrl = `https://www.polovniautomobili.com/auto-oglasi/pretraga?page=${i}&brand=${transformedValues.polovni.makeId}&model[]=${transformedValues.polovni.modelId}&year_from=${data.carYearStart}&year_to=${data.carYearEnd}`;
+  //   urls.push(polovniUrl);
+  // }
+  const polovniUrl = `https://www.polovniautomobili.com/auto-oglasi/pretraga?page=${pageNum}&brand=${transformedValues.polovni.makeId}&model[]=${transformedValues.polovni.modelId}&year_from=${data.carYearStart}&year_to=${data.carYearEnd}`;
 
-  await scrapePolovni(browser, urls, resultList);
+  await scrapePolovni(browser, polovniUrl, resultList);
 
   if (browser.isConnected()) {
     await browser.close();
@@ -27,24 +28,24 @@ export default async function polovniHandler(
 
 async function scrapePolovni(
   browser: Browser,
-  urlsArray: string[],
+  urlsArray: string,
   resultList: any[]
 ) {
-  let timeIsUp = false;
+  // let timeIsUp = false;
 
-  setTimeout(() => {
-    timeIsUp = true;
-  }, 8700);
+  // setTimeout(() => {
+  //   timeIsUp = true;
+  // }, 8700);
 
-  for (let x = 0; x < urlsArray.length; x += 1) {
-    if (timeIsUp) {
-      console.log('time is up.');
-      return;
-    }
+  // for (let x = 0; x < urlsArray.length; x += 1) {
+  //   if (timeIsUp) {
+  //     console.log('time is up.');
+  //     return;
+  //   }
 
-    // eslint-disable-next-line no-await-in-loop
-    await scrapePolovniPage(browser, urlsArray[x], resultList);
-  }
+  // eslint-disable-next-line no-await-in-loop
+  await scrapePolovniPage(browser, urlsArray, resultList);
+  // }
 }
 
 async function scrapePolovniPage(
