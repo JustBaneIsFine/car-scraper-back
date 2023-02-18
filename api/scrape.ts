@@ -14,8 +14,8 @@ async function scrapeWebsites(req: Request, res: Response) {
   // const resultKupujem: any[] = [];
   console.log(req.body);
   // const pageNumKup = reqData.kupujemNum > '10' ? '10' : reqData.kupujemNum;
-  const pageNumPol =
-    req.body.pageNumPolovni > '10' ? '10' : req.body.pageNumPolovni;
+  const pageNumberParsed = parseInt(req.body.pageNumPolovni, 10);
+  const pageNumPol = pageNumberParsed > 10 ? 10 : pageNumberParsed;
 
   try {
     await Promise.race([

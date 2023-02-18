@@ -7,17 +7,14 @@ import { CarObject, CarValues } from '../interfaces/general';
 export default async function polovniHandler(
   data: CarValues,
   resultList: any[],
-  pageNum: string
+  pageNum: number
 ) {
   const browser = await getBrowser();
   const urls: Array<string> = [];
-  const pageNumber = parseInt(pageNum, 10);
   const transformedValues = nameTransformer(data);
-
   // Generate urls for pages:
-
-  for (let i = 1; i <= pageNumber; i += 1) {
-    const polovniUrl = `https://www.polovniautomobili.com/auto-oglasi/pretraga?page=1&brand=${transformedValues.polovni.makeId}&model[]=${transformedValues.polovni.modelId}&year_from=${data.carYearStart}&year_to=${data.carYearEnd}`;
+  for (let i = 1; i <= pageNum; i += 1) {
+    const polovniUrl = `https://www.polovniautomobili.com/auto-oglasi/pretraga?page=${i}&brand=${transformedValues.polovni.makeId}&model[]=${transformedValues.polovni.modelId}&year_from=${data.carYearStart}&year_to=${data.carYearEnd}`;
     urls.push(polovniUrl);
   }
 
