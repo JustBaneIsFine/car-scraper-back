@@ -1,3 +1,6 @@
+import { Session } from 'express-session';
+import { UserInterface } from './user';
+
 export interface CarObject {
   CarName: string;
   CarPrice: string;
@@ -35,4 +38,8 @@ export interface CarValues {
 export interface CarRequestValues extends CarValues {
   polovniNum: string;
   kupujemNum: string;
+}
+
+export interface CustomSession extends Session {
+  user?: UserInterface; // Define the user property here
 }
