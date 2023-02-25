@@ -13,16 +13,24 @@ export async function logOut(
   if (req.session.user) {
     const deleted = await deleteSession(req.session.user.username);
     if (!deleted) {
-      res.json({ error: 'failed to delete session' });
+      res.json({
+        success: false,
+        error: 'failed to delete session',
+        loggedIn: true,
+      });
     }
     req.session.destroy((error) => {
       console.log(error);
     });
     res.status(200);
-    res.json({ loggedIn: false });
+    res.json({ success: true, error: false, loggedIn: false });
   } else {
     res.status(200);
-    res.send({ loggedIn: 'you were not logged in' });
+    res.send({
+      success: false,
+      error: 'you were not logged in',
+      loggedIn: false,
+    });
   }
 }
 export default logoutRouter;

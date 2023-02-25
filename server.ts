@@ -5,7 +5,7 @@ import cors from 'cors';
 import indexRouter from './api/index';
 import scrapeRouter from './api/scrape';
 import registerRouter from './api/register';
-import loginRouter from './api/login';
+import loginRouter, { loginCheck } from './api/login';
 import logoutRouter from './api/logout';
 import getURI from './api/mongoCom/uri';
 
@@ -15,7 +15,7 @@ const uri = getURI();
 console.log('uri:-----', uri);
 app.use(
   cors({
-    origin: 'https://car-scraper.netlify.app',
+    origin: 'http://localhost:5173',
     credentials: true,
   })
 );
@@ -44,6 +44,7 @@ app.use('/scrape', scrapeRouter);
 app.use('/register', registerRouter);
 app.use('/login', loginRouter);
 app.use('/logout', logoutRouter);
+app.use('/loginCheck', loginCheck);
 app.use((req, res) => {
   res.send('error2');
 });

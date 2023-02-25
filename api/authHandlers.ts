@@ -26,6 +26,7 @@ export async function handleRegister(
   }
   const userObject = await findUserByName(username);
   if (userObject) {
+    userObject.password = '';
     return userObject;
   }
   console.log('user object is false');

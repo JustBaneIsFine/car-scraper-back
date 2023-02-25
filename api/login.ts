@@ -19,7 +19,7 @@ async function loginHandler(
     if (handled.passGood === true) {
       req.session.user = handled.user;
       res.status(200);
-      res.json({ success: true });
+      res.json({ success: true, user: handled.user });
     } else {
       res.status(200);
       res.json({
@@ -46,6 +46,22 @@ export async function loginCheckMid(
     res.json({ loggedIn: true, user: req.session.user });
   } else {
     next();
+  }
+}
+
+export async function loginCheck(
+  req: Request & { session: CustomSession },
+  res: Response
+) {
+  if (req.session.user) {
+    res.status(200);
+    res.json({
+      loggedIn: true,
+      user: req.session.user,
+    });
+  } else {
+    res.status(200);
+    res.json({ loggedIn: false, user: false });
   }
 }
 
