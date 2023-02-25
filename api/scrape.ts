@@ -3,7 +3,6 @@ import express, { Request, Response } from 'express';
 import polovniHandler from './ts/polovniHandler';
 import timeoutTimer from './ts/timer';
 import getPageNum from './ts/pageNum';
-import { CarRequestValues } from './interfaces/general';
 
 const scrapeRouter = express.Router();
 
