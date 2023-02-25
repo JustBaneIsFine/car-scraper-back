@@ -4,10 +4,11 @@ import {
   UserInterface,
   UserInterfaceDB,
 } from '../interfaces/user';
-import uri from './uri';
+import getURI from './uri';
 
 const database = 'Car-Scraper';
 const userCollection = 'Users';
+const uri = getURI();
 
 async function mainComm<ArgType, ReturnType>(
   funcToRun: (arg1: MongoClient, arg2: ArgType) => ReturnType,
