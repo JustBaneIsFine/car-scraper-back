@@ -10,5 +10,5 @@ function getURI() {
   const uriJson = JSON.parse(uriJsonData);
   return uriJson.data as string;
 }
-const uri = getURI();
-export default uri;
+
+export default getURI;

@@ -7,11 +7,12 @@ import scrapeRouter from './api/scrape';
 import registerRouter from './api/register';
 import loginRouter from './api/login';
 import logoutRouter from './api/logout';
-import uri from './api/mongoCom/uri';
+import getURI from './api/mongoCom/uri';
 
 const port = process.env.PORT || 3000;
 const app = express();
-
+const uri = getURI();
+console.log('uri:-----', uri);
 app.use(
   cors({
     origin: 'https://car-scraper.netlify.app',
