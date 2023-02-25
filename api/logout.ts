@@ -21,8 +21,8 @@ export async function logOut(
     res.status(200);
     res.json({ loggedIn: false });
   } else {
-    res.status(400);
-    res.send();
+    res.status(200);
+    res.send({ loggedIn: 'you were not logged in' });
   }
 }
 export default logoutRouter;
