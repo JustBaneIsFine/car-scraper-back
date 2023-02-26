@@ -15,7 +15,7 @@ const uri = getURI();
 console.log('uri:-----', uri);
 app.use(
   cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://car-scraper.netlify.app',
     credentials: true,
   })
 );
