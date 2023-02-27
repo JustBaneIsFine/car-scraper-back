@@ -11,3 +11,5 @@ Note: Node version had to be lowered to 14 due to puppeteer-core and chrome-aws-
 
 
 Deployed to Vercel
+<br>
+Car scraper front: https://github.com/JustBaneIsFine/car-scraper-front
