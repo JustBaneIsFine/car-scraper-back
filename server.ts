@@ -8,6 +8,7 @@ import registerRouter from './api/register';
 import loginRouter, { loginCheck } from './api/login';
 import logoutRouter from './api/logout';
 import getURI from './api/mongoCom/uri';
+import returnIndexRouter from './api/clientRouting';
 
 const port = process.env.PORT || 3000;
 const app = express();
@@ -20,7 +21,7 @@ app.use(
   })
 );
 // https://car-scraper.netlify.app
-// http://localhost:5173
+// http://localhost:3002
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(
@@ -45,6 +46,7 @@ app.use('/register', registerRouter);
 app.use('/login', loginRouter);
 app.use('/logout', logoutRouter);
 app.use('/loginCheck', loginCheck);
+app.use('/*', returnIndexRouter);
 app.use((req, res) => {
   res.send('error2');
 });
