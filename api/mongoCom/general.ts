@@ -1,9 +1,10 @@
 import { MongoClient, ObjectId } from 'mongodb';
 import {
-  SessionUserDB,
-  UserInterface,
-  UserInterfaceDB,
-} from '../interfaces/user';
+  DocUpdateData,
+  UserBasic,
+  UserSafeFull,
+  UserUnsafeFull,
+} from '../interfaces/general';
 import getURI from './uri';
 
 const database = 'Car-Scraper';
@@ -29,7 +30,7 @@ async function mainComm<ArgType, ReturnType>(
 
 async function createUserComm(
   client: MongoClient,
-  data: UserInterface
+  data: UserBasic
 ): Promise<ObjectId | false> {
   const result = await client
     .db(database)
@@ -44,7 +45,7 @@ async function createUserComm(
 async function findUserComm(
   client: MongoClient,
   id: string
-): Promise<false | UserInterfaceDB> {
+): Promise<false | UserUnsafeFull> {
   const item = await client
     .db(database)
     .collection(userCollection)
@@ -52,28 +53,38 @@ async function findUserComm(
   if (!item) {
     return false;
   }
-  return item as UserInterfaceDB;
+
+  const userObject: UserUnsafeFull = {
+    username: item.username,
+    password: item.password,
+    email: item.email,
+    joinDate: item.joinDate,
+    favorites: item.favorites,
+    posts: item.posts,
+    userImageUrl: item.userImageUrl,
+  };
+  return userObject;
 }
 
-async function createSessionComm(
-  client: MongoClient,
-  id: string
-): Promise<false | ObjectId> {
-  const result = await client
-    .db(database)
-    .collection('Sessions')
-    .insertOne({ sessionId: id });
-  if (!result) {
-    return false;
-  }
-  return result.insertedId;
-}
+// async function createSessionComm(
+//   client: MongoClient,
+//   id: string
+// ): Promise<false | ObjectId> {
+//   const result = await client
+//     .db(database)
+//     .collection('Sessions')
+//     .insertOne({ sessionId: id });
+//   if (!result) {
+//     return false;
+//   }
+//   return result.insertedId;
+// }
 
-async function deleteSessionComm(client: MongoClient, user: string) {
+async function deleteSessionComm(client: MongoClient, id: string) {
   const deletion = await client
     .db(database)
     .collection('Session')
-    .deleteOne({ username: user });
+    .deleteOne({ _id: id });
   if (deletion.acknowledged) {
     return true;
   }
@@ -94,21 +105,29 @@ async function deleteUserComm(client: MongoClient, user: string) {
 async function findSessionComm(
   client: MongoClient,
   id: string
-): Promise<false | SessionUserDB> {
+): Promise<false | UserSafeFull> {
   const item = await client
     .db(database)
     .collection('Sessions')
-    .findOne({ sessionId: id });
+    .findOne({ _id: id });
   if (!item) {
     return false;
   }
-  return item as SessionUserDB;
+  const userObject: UserSafeFull = {
+    username: item.username,
+    email: item.email,
+    joinDate: item.joinDate,
+    favorites: item.favorites,
+    posts: item.posts,
+    userImageUrl: item.userImageUrl,
+  };
+  return userObject;
 }
 
 async function findUserByNameComm(
   client: MongoClient,
   user: string
-): Promise<false | UserInterfaceDB> {
+): Promise<false | UserUnsafeFull> {
   const item = await client
     .db(database)
     .collection(userCollection)
@@ -117,9 +136,88 @@ async function findUserByNameComm(
     return false;
   }
 
-  return item as UserInterfaceDB;
+  const userObject: UserUnsafeFull = {
+    username: item.username,
+    password: item.password,
+    email: item.email,
+    joinDate: item.joinDate,
+    favorites: item.favorites,
+    posts: item.posts,
+    userImageUrl: item.userImageUrl,
+  };
+
+  return userObject;
 }
-export async function createUser(data: UserInterface) {
+
+async function updateDocumentComm(client: MongoClient, data: DocUpdateData) {
+  const item = await client
+    .db(database)
+    .collection(data.collection)
+    .updateOne(
+      {
+        [data.documentToChange.keyType]: data.documentToChange.keySearchValue,
+      },
+      {
+        $set: {
+          [data.dataToChange.dataType]: data.dataToChange.newData,
+        },
+      }
+    );
+  console.log('updated: result_____', item);
+  console.log(
+    'sent request to mongo:____',
+    {
+      [data.documentToChange.keyType]: data.documentToChange.keySearchValue,
+    },
+    {
+      set: {
+        [data.dataToChange.dataType]: data.dataToChange.newData,
+      },
+    }
+  );
+
+  return item;
+}
+
+async function updateMultipleDocumentsComm(
+  client: MongoClient,
+  data: DocUpdateData
+) {
+  const item = await client
+    .db(database)
+    .collection(data.collection)
+    .updateMany(
+      {
+        [data.documentToChange.keyType]: data.documentToChange.keySearchValue,
+      },
+      {
+        $set: {
+          [data.dataToChange.dataType]: data.dataToChange.newData,
+        },
+      }
+    );
+  console.log(item, 'updated: result');
+
+  return item;
+}
+
+export async function updateDocument(data: DocUpdateData) {
+  const result = await mainComm(updateDocumentComm, data);
+  if (result && result.modifiedCount) {
+    return true;
+  }
+  return false;
+}
+
+export async function updateMultipleDocuments(data: DocUpdateData) {
+  const result = await mainComm(updateMultipleDocumentsComm, data);
+  if (result && result.modifiedCount) {
+    return true;
+  }
+  return false;
+}
+
+export async function createUser(data: UserUnsafeFull) {
   const result = await mainComm(createUserComm, data);
   return result;
 }
@@ -129,10 +227,10 @@ export async function findUser(itemId: string) {
   return result;
 }
 
-export async function createSession(id: string) {
-  const result = await mainComm(createSessionComm, id);
-  return result;
-}
+// export async function createSession(id: string) {
+//   const result = await mainComm(createSessionComm, id);
+//   return result;
+// }
 
 export async function findSession(id: string) {
   const result = await mainComm(findSessionComm, id);
@@ -145,8 +243,8 @@ export async function findUserByName(username: string) {
   return result;
 }
 
-export async function deleteSession(user: string) {
-  const result = await mainComm(deleteSessionComm, user);
+export async function deleteSession(id: string) {
+  const result = await mainComm(deleteSessionComm, id);
   return result;
 }
 
