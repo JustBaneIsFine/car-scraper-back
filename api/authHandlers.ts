@@ -1,22 +1,29 @@
+import date from 'date-and-time';
 import { generateHash, passMatches } from './hashing';
-import { UserInterface, UserInterfaceDB } from './interfaces/user';
+import { UserSafeFull, UserUnsafeFull } from './interfaces/general';
 import { createUser, findUserByName } from './mongoCom/general';
+
+const now = new Date();
 
 export async function handleRegister(
   username: string,
   email: string,
   password: string
-): Promise<false | UserInterfaceDB> {
+): Promise<false | UserSafeFull> {
   if (await findUserByName(username)) {
     console.log('user already exists');
     return false;
   }
   const newHash = await generateHash(password);
 
-  const newUser: UserInterface = {
+  const newUser: UserUnsafeFull = {
     username,
     email,
     password: newHash,
+    joinDate: date.format(now, 'YYYY/MM/DD HH:mm:ss'),
+    favorites: [],
+    posts: [],
+    userImageUrl: '',
   };
 
   const userCreated = await createUser(newUser);
@@ -26,8 +33,8 @@ export async function handleRegister(
   }
   const userObject = await findUserByName(username);
   if (userObject) {
-    userObject.password = '';
-    return userObject;
+    const { password: ignore, ...userObjectSafe } = userObject;
+    return userObjectSafe as UserSafeFull;
   }
   console.log('user object is false');
   return false;
@@ -44,5 +51,6 @@ export async function handleLogin(
   }
 
   const passCheck = await passMatches(password, userObject.password);
-  return { passGood: passCheck, user: userObject };
+  const { password: ignore, ...userObjectSafe } = userObject;
+  return { passGood: passCheck, user: userObjectSafe };
 }
