@@ -10,9 +10,7 @@ scrapeRouter.post('/', scrapeWebsites);
 
 async function scrapeWebsites(req: Request, res: Response) {
   const resultPolovni: any[] = [];
-  // const resultKupujem: any[] = [];
   console.log(req.body);
-  // const pageNumKup = reqData.kupujemNum > '10' ? '10' : reqData.kupujemNum;
   const pageNumberParsed = parseInt(req.body.pageNumPolovni, 10);
 
   try {

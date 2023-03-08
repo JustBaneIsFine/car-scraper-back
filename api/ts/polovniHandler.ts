@@ -174,6 +174,7 @@ async function scrapePolovniPage(
             Href: link,
             Id: '',
             ImageUrl: imageLink === undefined ? 'no data' : imageLink,
+            PostedBy: 'Polovni Automobili',
           };
           resultList.push(object);
         });

@@ -9,6 +9,7 @@ import loginRouter, { loginCheck } from './api/login';
 import logoutRouter from './api/logout';
 import getURI from './api/mongoCom/uri';
 import returnIndexRouter from './api/clientRouting';
+import updateUserRouter from './api/update';
 
 const port = process.env.PORT || 3000;
 const app = express();
@@ -46,6 +47,7 @@ app.use('/register', registerRouter);
 app.use('/login', loginRouter);
 app.use('/logout', logoutRouter);
 app.use('/loginCheck', loginCheck);
+app.use('/updateUser', updateUserRouter);
 app.use('/*', returnIndexRouter);
 app.use((req, res) => {
   res.send('error2');
