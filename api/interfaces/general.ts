@@ -100,8 +100,5 @@ export interface DocUpdateData {
     keyType: 'username' | 'Id' | 'posts.Id' | 'favorites.Id'; // ex. 'if updating user data it would be: {username : } or {posts.id : }'
     keySearchValue: string;
   };
-  dataToChange: {
-    dataType: string; // can be {username: new value} or {posts.$.CarName : new value }
-    newData: string;
-  };
+  dataToChange: any;
 }

@@ -1,5 +1,6 @@
 import { MongoClient, ObjectId } from 'mongodb';
 import {
+  CarObject,
   DocUpdateData,
   UserBasic,
   UserSafeFull,
@@ -8,7 +9,8 @@ import {
 import getURI from './uri';
 
 const database = 'Car-Scraper';
-const userCollection = 'Users';
+const userColl = 'Users';
+const CarsColl = 'UsersCars';
 const uri = getURI();
 
 async function mainComm<ArgType, ReturnType>(
@@ -32,10 +34,7 @@ async function createUserComm(
   client: MongoClient,
   data: UserBasic
 ): Promise<ObjectId | false> {
-  const result = await client
-    .db(database)
-    .collection(userCollection)
-    .insertOne(data);
+  const result = await client.db(database).collection(userColl).insertOne(data);
   if (!result) {
     return false;
   }
@@ -48,7 +47,7 @@ async function findUserComm(
 ): Promise<false | UserUnsafeFull> {
   const item = await client
     .db(database)
-    .collection(userCollection)
+    .collection(userColl)
     .findOne({ _id: id });
   if (!item) {
     return false;
@@ -94,7 +93,7 @@ async function deleteSessionComm(client: MongoClient, id: string) {
 async function deleteUserComm(client: MongoClient, user: string) {
   const deletion = await client
     .db(database)
-    .collection(userCollection)
+    .collection(userColl)
     .deleteOne({ username: user });
   if (deletion.acknowledged) {
     return true;
@@ -130,7 +129,7 @@ async function findUserByNameComm(
 ): Promise<false | UserUnsafeFull> {
   const item = await client
     .db(database)
-    .collection(userCollection)
+    .collection(userColl)
     .findOne({ username: user });
   if (!item) {
     return false;
@@ -158,9 +157,7 @@ async function updateDocumentComm(client: MongoClient, data: DocUpdateData) {
         [data.documentToChange.keyType]: data.documentToChange.keySearchValue,
       },
       {
-        $set: {
-          [data.dataToChange.dataType]: data.dataToChange.newData,
-        },
+        $set: data.dataToChange,
       }
     );
   console.log('updated: result_____', item);
@@ -170,15 +167,14 @@ async function updateDocumentComm(client: MongoClient, data: DocUpdateData) {
       [data.documentToChange.keyType]: data.documentToChange.keySearchValue,
     },
     {
-      set: {
-        [data.dataToChange.dataType]: data.dataToChange.newData,
-      },
+      $set: data.dataToChange,
     }
   );
 
   return item;
 }
-
+//  const filter = { "mainKey.id": mainKeyId };
+// const update = { $set: { "mainKey.$": newObject } };
 async function updateMultipleDocumentsComm(
   client: MongoClient,
   data: DocUpdateData
@@ -191,14 +187,116 @@ async function updateMultipleDocumentsComm(
         [data.documentToChange.keyType]: data.documentToChange.keySearchValue,
       },
       {
-        $set: {
-          [data.dataToChange.dataType]: data.dataToChange.newData,
-        },
+        $set: data.dataToChange,
       }
     );
   console.log(item, 'updated: result');
 
   return item;
+}
+
+async function addToFavoritesComm(
+  client: MongoClient,
+  data: { user: string; data: CarObject }
+) {
+  const item = await client
+    .db(database)
+    .collection(userColl)
+    .updateOne({ username: data.user }, { $push: { favorites: data.data } });
+  console.log('result from update', item);
+  if (item && item.modifiedCount) {
+    return true;
+  }
+  return false;
+}
+
+async function addToPostsCollComm(
+  client: MongoClient,
+  data: { user: string; data: CarObject }
+) {
+  const item = await client.db(database).collection(CarsColl).insertOne(data);
+  console.log('result from update', item);
+  if (item.insertedId) {
+    return true;
+  }
+  return false;
+}
+
+async function deleteFromUserPostsComm(
+  client: MongoClient,
+  data: { user: string; dataId: string }
+) {
+  const item = await client
+    .db(database)
+    .collection(userColl)
+    .updateOne(
+      { username: data.user },
+      {
+        $pull: {
+          posts: {
+            Id: data.dataId,
+          },
+        },
+      }
+    );
+  console.log(item);
+  if (item && item.modifiedCount) {
+    return true;
+  }
+  return false;
+}
+
+async function deleteFromPostsCollComm(client: MongoClient, dataId: string) {
+  const item = await client.db(database).collection(CarsColl).updateOne(
+    { Id: dataId },
+    {
+      $pull: {},
+    }
+  );
+  console.log(item);
+  if (item && item.modifiedCount) {
+    return true;
+  }
+  return false;
+}
+
+async function addToUserPostsComm(
+  client: MongoClient,
+  data: { user: string; data: CarObject }
+) {
+  const item = await client
+    .db(database)
+    .collection(userColl)
+    .updateOne({ username: data.user }, { $push: { posts: data.data } });
+  console.log('result from update', item);
+  if (item && item.modifiedCount) {
+    return true;
+  }
+  return false;
+}
+
+async function deleteFromFavoritesComm(
+  client: MongoClient,
+  data: { user: string; dataId: string }
+) {
+  const item = await client
+    .db(database)
+    .collection(userColl)
+    .updateOne(
+      { username: data.user },
+      {
+        $pull: {
+          favorites: {
+            Id: data.dataId,
+          },
+        },
+      }
+    );
+  console.log(item);
+  if (item && item.modifiedCount) {
+    return true;
+  }
+  return false;
 }
 
 export async function updateDocument(data: DocUpdateData) {
@@ -250,5 +348,35 @@ export async function deleteSession(id: string) {
 
 export async function deleteUser(user: string) {
   const result = await mainComm(deleteUserComm, user);
+  return result;
+}
+
+export async function addToFavorites(user: string, data: CarObject) {
+  const result = await mainComm(addToFavoritesComm, { user, data });
+  return result;
+}
+
+export async function deleteFromFavorites(user: string, dataId: string) {
+  const result = await mainComm(deleteFromFavoritesComm, { user, dataId });
+  return result;
+}
+
+export async function addToPostsColl(user: string, data: CarObject) {
+  const result = await mainComm(addToPostsCollComm, { user, data });
+  return result;
+}
+
+export async function addToUserPosts(user: string, data: CarObject) {
+  const result = await mainComm(addToUserPostsComm, { user, data });
+  return result;
+}
+
+export async function deleteFromPostsColl(user: string, dataId: string) {
+  const result = await mainComm(deleteFromPostsCollComm, { user, dataId });
+  return result;
+}
+
+export async function deleteFromUserPosts(user: string, dataId: string) {
+  const result = await mainComm(deleteFromUserPostsComm, { user, dataId });
   return result;
 }

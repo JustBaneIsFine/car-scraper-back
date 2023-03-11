@@ -1,5 +1,5 @@
 import date from 'date-and-time';
-import { generateHash, passMatches } from './hashing';
+import { generateHash, passMatches } from './ts/hashing';
 import { UserSafeFull, UserUnsafeFull } from './interfaces/general';
 import { createUser, findUserByName } from './mongoCom/general';
 

@@ -16,7 +16,7 @@ export function validateInput(
     req.body.password = passTrimmed;
     return next();
   } else {
-    //respond with error
+    // respond with error
     res.send();
   }
 }

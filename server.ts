@@ -5,11 +5,15 @@ import cors from 'cors';
 import indexRouter from './api/index';
 import scrapeRouter from './api/scrape';
 import registerRouter from './api/register';
-import loginRouter, { loginCheck } from './api/login';
+import loginRouter from './api/login';
 import logoutRouter from './api/logout';
 import getURI from './api/mongoCom/uri';
 import returnIndexRouter from './api/clientRouting';
-import updateUserRouter from './api/update';
+import updateUserRouter from './api/updateUser';
+import deleteUserRouter from './api/deleteUser';
+import newPostRouter from './api/newPost';
+import updatePostRouter from './api/updatePost';
+import deletePostRouter from './api/deletePost';
 
 const port = process.env.PORT || 3000;
 const app = express();
@@ -46,8 +50,18 @@ app.use('/scrape', scrapeRouter);
 app.use('/register', registerRouter);
 app.use('/login', loginRouter);
 app.use('/logout', logoutRouter);
-app.use('/loginCheck', loginCheck);
+// app.use('/loginCheck', loginCheck);
+
+// old api to rewrite
 app.use('/updateUser', updateUserRouter);
+
+// new APIs to handle
+app.use('/deleteUser', deleteUserRouter);
+app.use('/newPost', newPostRouter);
+app.use('/updatePost', updatePostRouter);
+app.use('/deletePost', deletePostRouter);
+// new APIs to handle
+
 app.use('/*', returnIndexRouter);
 app.use((req, res) => {
   res.send('error2');
