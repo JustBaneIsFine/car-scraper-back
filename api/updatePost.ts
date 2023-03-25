@@ -1,27 +1,27 @@
 import express, { Request, Response } from 'express';
 import { CustomSession, DocUpdateData } from './interfaces/general';
-import { updateDocument, updateMultipleDocuments } from './mongoCom/general';
+import loginCheck from './middleware/loginCheck';
+import { updateDocument, updateDocuments } from './mongoCom/general';
 import sendJsonResponse, { updateSessionAndRespond } from './ts/responses';
 
 const updatePostRouter = express.Router();
 
-updatePostRouter.post('/', updatePost);
+updatePostRouter.post('/', loginCheck, updatePost);
 
 async function updatePost(
   req: Request & { session: CustomSession },
   res: Response
 ) {
-  if (req.session.user) {
-    if (req.body.dataToChange && Object.keys(req.body.dataToChange)) {
-      const result = await updatePostData(req.body);
-      await updateSessionAndRespond(result, req, res);
+  if (req.body.dataToChange && Object.keys(req.body.dataToChange)) {
+    const result = await updatePostData(req.body);
+    if (!result) {
+      sendJsonResponse(res, 200, false, false, 'Failed to update data');
       return;
     }
-    sendJsonResponse(res, 200, false, false, 'There is no new data');
+    await updateSessionAndRespond(result, req, res);
     return;
   }
-
-  sendJsonResponse(res, 200, false, false, 'You are not logged in');
+  sendJsonResponse(res, 200, false, false, 'There is no new data');
 }
 
 export default updatePostRouter;
@@ -29,8 +29,6 @@ export default updatePostRouter;
 async function updatePostData(data: DocUpdateData) {
   // update main post in posts collection
   const resultMain = await updateMainPostData(data);
-  // const newDataKey = Object.keys(data.dataToChange)[0];
-  // const newDataValue = data.dataToChange[newDataKey];
 
   // update secondary posts in users posts
   if (!resultMain) {
@@ -44,8 +42,8 @@ async function updatePostData(data: DocUpdateData) {
     'posts.$': data.dataToChange,
   };
 
-  const resultSec = await updateSecondaryPostData(newData);
-  if (!resultSec) {
+  const updatedUserPosts = await updateSecondaryPostData(newData);
+  if (!updatedUserPosts) {
     return false;
   }
   // update secondary posts in users favorites
@@ -53,20 +51,31 @@ async function updatePostData(data: DocUpdateData) {
   newData.dataToChange = {
     'favorites.$': data.dataToChange,
   };
-  const resultFav = await updateSecondaryPostData(newData);
+  const updatedUserFavorites = await updateSecondaryPostData(newData);
 
-  if (!resultFav) {
+  if (!updatedUserFavorites) {
     return false;
   }
   return true;
 }
 
 async function updateMainPostData(data: DocUpdateData) {
-  const result = await updateDocument(data);
+  const result = await updateDocument({
+    collection: data.collection,
+    searchType: data.documentToChange.keyType,
+    searchValue: data.documentToChange.keySearchValue,
+    data: data.dataToChange,
+  });
+
   return result;
 }
 
 async function updateSecondaryPostData(data: DocUpdateData) {
-  const result = await updateMultipleDocuments(data);
+  const result = await updateDocuments({
+    collection: data.collection,
+    searchType: data.documentToChange.keyType,
+    searchValue: data.documentToChange.keySearchValue,
+    data: data.dataToChange,
+  });
   return result;
 }

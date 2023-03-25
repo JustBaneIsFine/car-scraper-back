@@ -1,7 +1,7 @@
 import date from 'date-and-time';
 import { generateHash, passMatches } from './ts/hashing';
 import { UserSafeFull, UserUnsafeFull } from './interfaces/general';
-import { createUser, findUserByName } from './mongoCom/general';
+import { createNewUser, findUserByName } from './mongoCom/general';
 
 const now = new Date();
 
@@ -9,10 +9,13 @@ export async function handleRegister(
   username: string,
   email: string,
   password: string
-): Promise<false | UserSafeFull> {
-  if (await findUserByName(username)) {
+): Promise<{
+  error: string | false;
+  user: UserSafeFull | false;
+}> {
+  if (!(await findUserByName(username))) {
     console.log('user already exists');
-    return false;
+    return { error: 'user already exists', user: false };
   }
   const newHash = await generateHash(password);
 
@@ -26,18 +29,14 @@ export async function handleRegister(
     userImageUrl: '',
   };
 
-  const userCreated = await createUser(newUser);
+  const userCreated = await createNewUser(newUser);
   if (!userCreated) {
     console.log('failed to create user');
-    return false;
+    return { error: 'failed to create user', user: false };
   }
-  const userObject = await findUserByName(username);
-  if (userObject) {
-    const { password: ignore, ...userObjectSafe } = userObject;
-    return userObjectSafe as UserSafeFull;
-  }
-  console.log('user object is false');
-  return false;
+
+  const { password: ignore, ...userObjectSafe } = newUser;
+  return { error: false, user: userObjectSafe };
 }
 export async function handleLogin(
   username: string,

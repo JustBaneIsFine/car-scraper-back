@@ -3,7 +3,6 @@ import { handleLogin } from './authHandlers';
 import { CustomSession } from './interfaces/general';
 
 const loginRouter = express.Router();
-
 loginRouter.post('/', loginCheckMid, loginHandler);
 
 async function loginHandler(
@@ -16,7 +15,7 @@ async function loginHandler(
   const handled = await handleLogin(username, email, password);
 
   if (handled !== false) {
-    if (handled.passGood === true) {
+    if (handled.passGood) {
       req.session.user = handled.user;
       res.status(200);
       res.json({ success: true, user: handled.user });
@@ -48,21 +47,5 @@ export async function loginCheckMid(
     next();
   }
 }
-
-// export async function loginCheck(
-//   req: Request & { session: CustomSession },
-//   res: Response
-// ) {
-//   if (req.session.user) {
-//     res.status(200);
-//     res.json({
-//       loggedIn: true,
-//       user: req.session.user,
-//     });
-//   } else {
-//     res.status(200);
-//     res.json({ loggedIn: false, user: false });
-//   }
-// }
 
 export default loginRouter;
