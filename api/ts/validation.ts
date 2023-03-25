@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from 'express';
-import { CustomSession } from './interfaces/general';
+import { CustomSession } from '../interfaces/general';
 
-export function validateInput(
+export default function validateInput(
   req: Request & { session: CustomSession },
   res: Response,
   next: NextFunction
@@ -14,50 +14,48 @@ export function validateInput(
   if (usernameIsValid(userTrimmed, res) && passwordIsValid(passTrimmed, res)) {
     req.body.username = userTrimmed;
     req.body.password = passTrimmed;
-    return next();
-  } else {
-    // respond with error
-    res.send();
+    next();
+    return;
   }
+  // respond with error
+  res.json({ false: 'ff' });
 }
 
-function usernameIsValid(username: string, res) {
+function usernameIsValid(username: string, res: Response) {
   const userLengthValid = checkLengthUsername(username);
   if (userLengthValid === true) {
     return true;
-  } else {
-    res.status(401);
-    res.json(userLengthValid);
-    return false;
   }
+  res.status(401);
+  res.json(userLengthValid);
+  return false;
 }
-function passwordIsValid(password: string, res) {
+function passwordIsValid(password: string, res: Response) {
   const x = password ? password.trim() : '';
   const passLengthValid = checkLengthPass(x);
   if (passLengthValid === true) {
     return true;
-  } else {
-    res.status(401);
-    res.json(passLengthValid);
-    return false;
   }
+  res.status(401);
+  res.json(passLengthValid);
+  return false;
 }
 
 function checkLengthPass(pass: string) {
   if (pass.length < 8) {
     return { error: 'password is too short' };
-  } else if (pass.length > 25) {
-    return { error: 'password is too long' };
-  } else {
-    return true;
   }
+  if (pass.length > 25) {
+    return { error: 'password is too long' };
+  }
+  return true;
 }
 function checkLengthUsername(name: string) {
   if (name.length < 3) {
     return { error: 'username is too short' };
-  } else if (name.length > 20) {
-    return { error: 'username is too long' };
-  } else {
-    return true;
   }
+  if (name.length > 20) {
+    return { error: 'username is too long' };
+  }
+  return true;
 }
