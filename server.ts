@@ -41,6 +41,7 @@ app.use(
       mongoUrl: uri,
       dbName: 'Car-Scraper',
       collectionName: 'Sessions',
+      stringify: true,
     }),
   })
 );
