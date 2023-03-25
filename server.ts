@@ -50,17 +50,11 @@ app.use('/scrape', scrapeRouter);
 app.use('/register', registerRouter);
 app.use('/login', loginRouter);
 app.use('/logout', logoutRouter);
-// app.use('/loginCheck', loginCheck);
-
-// old api to rewrite
 app.use('/updateUser', updateUserRouter);
-
-// new APIs to handle
 app.use('/deleteUser', deleteUserRouter);
 app.use('/newPost', newPostRouter);
 app.use('/updatePost', updatePostRouter);
 app.use('/deletePost', deletePostRouter);
-// new APIs to handle
 
 app.use('/*', returnIndexRouter);
 app.use((req, res) => {
