@@ -13,7 +13,7 @@ export async function handleRegister(
   error: string | false;
   user: UserSafeFull | false;
 }> {
-  if (!(await findUserByName(username))) {
+  if (await findUserByName(username)) {
     console.log('user already exists');
     return { error: 'user already exists', user: false };
   }
