@@ -1,7 +1,7 @@
 import express, { Request, Response } from 'express';
 import { CarObject, CustomSession } from './interfaces/general';
 import loginCheck from './middleware/loginCheck';
-import { addObjectToDocument } from './mongoCom/general';
+import { addObjectToDocument, createNewCarPost } from './mongoCom/general';
 import sendJsonResponse from './ts/responses';
 
 const newPostRouter = express.Router();
@@ -16,13 +16,8 @@ async function newPost(
     const carObject: CarObject = req.body.data;
     const { username } = req.session.user;
 
-    // 1. Add this car post to the main collectio
-    const updatedMainCollection = await addObjectToDocument({
-      collection: 'UsersCars',
-      searchType: 'username',
-      searchValue: username,
-      data: carObject,
-    });
+    const updatedMainCollection = await createNewCarPost(carObject);
+
     if (!updatedMainCollection) {
       sendJsonResponse(
         res,
@@ -34,18 +29,17 @@ async function newPost(
       return;
     }
 
-    // 2. Add this car post to the users posts collection
     const updatedUsersPosts = await addObjectToDocument({
       collection: 'Users',
       searchType: 'username',
       searchValue: username,
       data: carObject,
+      setType: 'post',
     });
     if (!updatedUsersPosts) {
       sendJsonResponse(res, 200, false, false, 'failed to update users posts');
       return;
     }
-    // 3. update the session.user.posts
     req.session.user.posts.push(carObject);
     sendJsonResponse(res, 200, true, req.session.user, false);
     return;

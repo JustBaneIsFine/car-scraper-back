@@ -1,5 +1,5 @@
 import express, { Request, Response } from 'express';
-import { CustomSession, DocUpdateData } from './interfaces/general';
+import { CustomSession } from './interfaces/general';
 import loginCheck from './middleware/loginCheck';
 import { updateDocument, updateDocuments } from './mongoCom/general';
 import sendJsonResponse, { updateSessionAndRespond } from './ts/responses';
@@ -12,7 +12,7 @@ async function updatePost(
   req: Request & { session: CustomSession },
   res: Response
 ) {
-  if (req.body.dataToChange && Object.keys(req.body.dataToChange)) {
+  if (req.body.postData && Object.keys(req.body.postData).length) {
     const result = await updatePostData(req.body);
     if (!result) {
       sendJsonResponse(res, 200, false, false, 'Failed to update data');
@@ -26,56 +26,53 @@ async function updatePost(
 
 export default updatePostRouter;
 
-async function updatePostData(data: DocUpdateData) {
-  // update main post in posts collection
+async function updatePostData(data: { postId: string; postData: any }) {
   const resultMain = await updateMainPostData(data);
-
-  // update secondary posts in users posts
   if (!resultMain) {
     return false;
   }
 
-  const newData = JSON.parse(JSON.stringify(data));
-  newData.collection = 'Users';
-  newData.documentToChange.keyType = 'posts.Id';
-  newData.dataToChange = {
-    'posts.$': data.dataToChange,
-  };
-
-  const updatedUserPosts = await updateSecondaryPostData(newData);
+  const updatedUserPosts = await updateUsersPostData(data);
   if (!updatedUserPosts) {
     return false;
   }
-  // update secondary posts in users favorites
-  newData.documentToChange.keyType = 'favorites.Id';
-  newData.dataToChange = {
-    'favorites.$': data.dataToChange,
-  };
-  const updatedUserFavorites = await updateSecondaryPostData(newData);
 
+  const updatedUserFavorites = await updateFavoritesPostData(data);
   if (!updatedUserFavorites) {
     return false;
   }
   return true;
 }
 
-async function updateMainPostData(data: DocUpdateData) {
+async function updateMainPostData(data: { postId: string; postData: any }) {
   const result = await updateDocument({
-    collection: data.collection,
-    searchType: data.documentToChange.keyType,
-    searchValue: data.documentToChange.keySearchValue,
-    data: data.dataToChange,
+    collection: 'UsersCars',
+    searchType: 'Id',
+    searchValue: data.postId,
+    data: data.postData,
   });
-
   return result;
 }
 
-async function updateSecondaryPostData(data: DocUpdateData) {
+async function updateUsersPostData(data: { postId: string; postData: any }) {
   const result = await updateDocuments({
-    collection: data.collection,
-    searchType: data.documentToChange.keyType,
-    searchValue: data.documentToChange.keySearchValue,
-    data: data.dataToChange,
+    collection: 'Users',
+    searchType: 'post',
+    searchValue: data.postId,
+    data: data.postData,
+  });
+  return result;
+}
+
+async function updateFavoritesPostData(data: {
+  postId: string;
+  postData: any;
+}) {
+  const result = await updateDocuments({
+    collection: 'Users',
+    searchType: 'favorite',
+    searchValue: data.postId,
+    data: data.postData,
   });
   return result;
 }

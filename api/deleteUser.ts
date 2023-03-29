@@ -20,10 +20,11 @@ async function deleteUser(
     });
     if (!deletedUser) {
       sendJsonResponse(res, 200, false, false, 'false to delete user');
+      return;
     }
 
-    req.session.destroy((error) => {
-      sendJsonResponse(res, 200, false, false, 'failed to destroy session');
+    req.session.destroy((x) => {
+      console.log(x);
     });
 
     sendJsonResponse(res, 200, true, false, false);

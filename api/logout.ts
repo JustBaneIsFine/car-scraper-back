@@ -10,12 +10,8 @@ export async function logOut(
   req: Request & { session: CustomSession },
   res: Response
 ) {
-  req.session.destroy((error) => {
-    res.json({
-      success: false,
-      error: 'failed to delete session',
-      loggedIn: true,
-    });
+  req.session.destroy((x) => {
+    console.log(x);
   });
   res.status(200);
   res.json({ success: true, error: false, loggedIn: false });

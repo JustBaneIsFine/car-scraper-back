@@ -21,7 +21,7 @@ async function deletePost(
     const updatedMainCollection = await deleteDocument({
       collection: 'UsersCars',
       searchType: 'Id',
-      searchValue: req.body.data.postId,
+      searchValue: req.body.postId,
     });
     if (!updatedMainCollection) {
       sendJsonResponse(
@@ -54,7 +54,7 @@ async function deletePost(
       searchType: 'username',
       searchValue: req.session.user.username,
       deleteKey: 'favorite',
-      deleteValue: req.body.data.postId,
+      deleteValue: req.body.postId,
     });
     if (!updatedFavorites) {
       sendJsonResponse(

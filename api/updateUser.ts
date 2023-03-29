@@ -17,11 +17,13 @@ async function updateHandler(
   res: Response
 ) {
   if (req.session.user) {
-    if (req.body.newData && Object.keys(req.body.newData).length) {
-      // req.body.newData = modifyType : [user | favorites]; updateType: [push|delete] data: {username: 'xxx', password: 'gawg'} or {CarName: 'x' ...} or {'Id' of post for}
+    if (req.body.data && Object.keys(req.body.data).length) {
       if (req.body.modifyType === 'user') {
         // modify user data
-        const updatedUser = await updateUserData(req.body.newData);
+        const updatedUser = await updateUserData(
+          req.session.user.username,
+          req.body.data
+        );
         await updateSessionAndRespond(updatedUser, req, res);
         return;
       }
@@ -69,13 +71,12 @@ async function updateHandler(
   sendJsonResponse(res, 200, false, false, 'You are not logged in');
 }
 
-async function updateUserData(data: DocUpdateData) {
-  // takes the raw values and updates the data
+async function updateUserData(username: string, data: object) {
   const result = await updateDocument({
     collection: 'Users',
-    searchType: data.documentToChange.keyType,
-    searchValue: data.documentToChange.keySearchValue,
-    data: data.dataToChange,
+    searchType: 'username',
+    searchValue: username,
+    data,
   });
   if (result) {
     return true;

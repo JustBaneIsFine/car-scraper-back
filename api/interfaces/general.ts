@@ -97,7 +97,7 @@ export interface CustomSession extends Session {
 export interface DocUpdateData {
   collection: 'Users' | 'UsersCars' | 'Sessions';
   documentToChange: {
-    keyType: 'username' | 'Id' | 'posts.Id' | 'favorites.Id'; // ex. 'if updating user data it would be: {username : } or {posts.id : }'
+    keyType: 'username' | 'Id'; // ex. 'if updating user data it would be: {username : } or {posts.id : }'
     keySearchValue: string;
   };
   dataToChange: any;
