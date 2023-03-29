@@ -2,7 +2,7 @@ import * as cheerio from 'cheerio';
 import { CarValues } from '../interfaces/general';
 import nameTransformer from './nameTransformer';
 import getBrowser from './puppeteer';
-import timeoutTimer, { timeoutTimerPageLoad } from './timer';
+import { timeoutTimerPageLoad } from './timer';
 
 export default async function getPageNum(data: CarValues) {
   console.log('transforming values');

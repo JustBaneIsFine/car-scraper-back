@@ -18,7 +18,6 @@ import deletePostRouter from './api/deletePost';
 const port = process.env.PORT || 3000;
 const app = express();
 const uri = getURI();
-console.log('uri:-----', uri);
 app.use(
   cors({
     origin: 'https://car-scraper.netlify.app',
@@ -41,6 +40,7 @@ app.use(
       mongoUrl: uri,
       dbName: 'Car-Scraper',
       collectionName: 'Sessions',
+      stringify: true,
     }),
   })
 );

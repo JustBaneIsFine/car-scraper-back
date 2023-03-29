@@ -1,72 +1,78 @@
 import express, { Request, Response } from 'express';
-import { CustomSession, DocUpdateData } from './interfaces/general';
-import { updateDocument, updateMultipleDocuments } from './mongoCom/general';
+import { CustomSession } from './interfaces/general';
+import loginCheck from './middleware/loginCheck';
+import { updateDocument, updateDocuments } from './mongoCom/general';
 import sendJsonResponse, { updateSessionAndRespond } from './ts/responses';
 
 const updatePostRouter = express.Router();
 
-updatePostRouter.post('/', updatePost);
+updatePostRouter.post('/', loginCheck, updatePost);
 
 async function updatePost(
   req: Request & { session: CustomSession },
   res: Response
 ) {
-  if (req.session.user) {
-    if (req.body.dataToChange && Object.keys(req.body.dataToChange)) {
-      const result = await updatePostData(req.body);
-      await updateSessionAndRespond(result, req, res);
+  if (req.body.postData && Object.keys(req.body.postData).length) {
+    const result = await updatePostData(req.body);
+    if (!result) {
+      sendJsonResponse(res, 200, false, false, 'Failed to update data');
       return;
     }
-    sendJsonResponse(res, 200, false, false, 'There is no new data');
+    await updateSessionAndRespond(result, req, res);
     return;
   }
-
-  sendJsonResponse(res, 200, false, false, 'You are not logged in');
+  sendJsonResponse(res, 200, false, false, 'There is no new data');
 }
 
 export default updatePostRouter;
 
-async function updatePostData(data: DocUpdateData) {
-  // update main post in posts collection
+async function updatePostData(data: { postId: string; postData: any }) {
   const resultMain = await updateMainPostData(data);
-  // const newDataKey = Object.keys(data.dataToChange)[0];
-  // const newDataValue = data.dataToChange[newDataKey];
-
-  // update secondary posts in users posts
   if (!resultMain) {
     return false;
   }
 
-  const newData = JSON.parse(JSON.stringify(data));
-  newData.collection = 'Users';
-  newData.documentToChange.keyType = 'posts.Id';
-  newData.dataToChange = {
-    'posts.$': data.dataToChange,
-  };
-
-  const resultSec = await updateSecondaryPostData(newData);
-  if (!resultSec) {
+  const updatedUserPosts = await updateUsersPostData(data);
+  if (!updatedUserPosts) {
     return false;
   }
-  // update secondary posts in users favorites
-  newData.documentToChange.keyType = 'favorites.Id';
-  newData.dataToChange = {
-    'favorites.$': data.dataToChange,
-  };
-  const resultFav = await updateSecondaryPostData(newData);
 
-  if (!resultFav) {
+  const updatedUserFavorites = await updateFavoritesPostData(data);
+  if (!updatedUserFavorites) {
     return false;
   }
   return true;
 }
 
-async function updateMainPostData(data: DocUpdateData) {
-  const result = await updateDocument(data);
+async function updateMainPostData(data: { postId: string; postData: any }) {
+  const result = await updateDocument({
+    collection: 'UsersCars',
+    searchType: 'Id',
+    searchValue: data.postId,
+    data: data.postData,
+  });
   return result;
 }
 
-async function updateSecondaryPostData(data: DocUpdateData) {
-  const result = await updateMultipleDocuments(data);
+async function updateUsersPostData(data: { postId: string; postData: any }) {
+  const result = await updateDocuments({
+    collection: 'Users',
+    searchType: 'post',
+    searchValue: data.postId,
+    data: data.postData,
+  });
+  return result;
+}
+
+async function updateFavoritesPostData(data: {
+  postId: string;
+  postData: any;
+}) {
+  const result = await updateDocuments({
+    collection: 'Users',
+    searchType: 'favorite',
+    searchValue: data.postId,
+    data: data.postData,
+  });
   return result;
 }

@@ -1,36 +1,19 @@
 import express, { Request, Response } from 'express';
 import { CustomSession } from './interfaces/general';
-import { deleteSession } from './mongoCom/general';
+import loginCheck from './middleware/loginCheck';
 
 const logoutRouter = express.Router();
 
-logoutRouter.get('', logOut);
+logoutRouter.get('', loginCheck, logOut);
 
 export async function logOut(
   req: Request & { session: CustomSession },
   res: Response
 ) {
-  if (req.session.user) {
-    const deleted = await deleteSession(req.session.user.username);
-    if (!deleted) {
-      res.json({
-        success: false,
-        error: 'failed to delete session',
-        loggedIn: true,
-      });
-    }
-    req.session.destroy((error) => {
-      console.log(error);
-    });
-    res.status(200);
-    res.json({ success: true, error: false, loggedIn: false });
-  } else {
-    res.status(200);
-    res.send({
-      success: false,
-      error: 'you were not logged in',
-      loggedIn: false,
-    });
-  }
+  req.session.destroy((x) => {
+    console.log(x);
+  });
+  res.status(200);
+  res.json({ success: true, error: false, loggedIn: false });
 }
 export default logoutRouter;
